@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta
+    name="description"
+    content="Zorix Nex Coder 3.8 Preview — Neptune model documentation."
+  >
+  <meta name="theme-color" content="#ffffff">
+
+  <title>Nex Coder 3.8 Neptune Model | Zorix API</title>
+  <link rel="canonical" href="https://developer.zorix.it/api/docs/models/nex-coder-38-neptune/">
+
+  <link rel="preconnect" href="https://updates.zorix.it">
+  <link rel="preconnect" href="https://doc.zorix.it">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+<div class="search-dialog" id="searchDialog" aria-hidden="true">
+  <div class="search-backdrop" data-close-search></div>
+
+  <div class="search-panel">
+    <div class="search-box">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="11" cy="11" r="6"></circle>
+        <path d="m16 16 4 4"></path>
+      </svg>
+
+      <input
+        id="searchInput"
+        autocomplete="off"
+        placeholder="Search Zorix docs"
+      >
+
+      <kbd>Esc</kbd>
+    </div>
+
+    <div class="search-results" id="searchResults">
+      <div class="search-label">Suggested</div>
+
+      <button data-target="overview">Nex Coder 3.8 Neptune</button>
+      <button data-target="pricing">pricing</button>
+      <button data-target="capabilities">capabilities</button>
+      <button data-target="availability">availability</button>
+    </div>
+  </div>
+</div>
+
+
+<header class="topbar">
+  <div class="topbar-inner">
+
+    <button
+      class="mobile-menu"
+      id="mobileMenu"
+      aria-label="Open navigation"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <a class="brand" href="#overview" aria-label="Zorix Developers">
+      <span class="brand-mark">Z</span>
+      <span>Zorix</span>
+    </a>
+
+    <nav class="global-nav">
+      <a class="active" href="#overview">API</a>
+      <a href="/models/">Models</a>
+      <a href="https://doc.zorix.it/" target="_blank" rel="noopener">Docs</a>
+      <a href="https://updates.zorix.it/" target="_blank" rel="noopener">Updates</a>
+    </nav>
+
+    <div class="top-actions">
+      <button class="search-trigger" id="searchTrigger">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="6"></circle>
+          <path d="m16 16 4 4"></path>
+        </svg>
+        <span>Search docs</span>
+        <kbd>⌘ K</kbd>
+      </button>
+
+      <a
+        class="dashboard-button"
+        href="https://subs.zorix.it/"
+        target="_blank"
+        rel="noopener"
+      >
+        Get Zorix Code
+        <span>↗</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="secondary-nav">
+    <div class="secondary-inner">
+      <span class="section-current">Overview</span>
+      <a href="#overview">Models</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#availability">Availability</a>
+      <a href="#resources">Resources</a>
+    </div>
+  </div>
+</header>
+
+
+<div class="page-shell">
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+
+      <a class="sidebar-home" href="#overview">
+        <svg viewBox="0 0 24 24">
+          <path d="M4 10.5 12 4l8 6.5V20H4Z"></path>
+          <path d="M9 20v-6h6v6"></path>
+        </svg>
+        Home
+      </a>
+
+      <div class="sidebar-group">
+        <div class="sidebar-title">Get started</div>
+        <a href="#overview">Overview</a>
+        <a href="#quickstart">Quickstart</a>
+        <a href="#resources">Model resources</a>
+      </div>
+
+      <div class="sidebar-group">
+        <div class="sidebar-title">Models</div>
+        <a href="/api/docs/models/nex-coder-38-mercury/">
+          Nex Coder 3.8 Mercury
+        </a>
+
+        <a class="sidebar-active" href="#overview">
+          Nex Coder 3.8 Neptune
+        </a>
+
+        <a href="/models/">
+          All models
+        </a>
+        <a href="#family">Nex Coder 3.8 family</a>
+        <a href="#capabilities">Model capabilities</a>
+        <a href="#pricing">Pricing</a>
+      </div>
+
+      <div class="sidebar-group">
+        <div class="sidebar-title">Build</div>
+        <a href="#capabilities">Text & code</a>
+        <a href="#reasoning">Reasoning</a>
+        <a href="#availability">Availability</a>
+      </div>
+
+      <div class="sidebar-group">
+        <div class="sidebar-title">Resources</div>
+        <a
+          href="https://updates.zorix.it/nex-coder-38-neptune/"
+          target="_blank"
+          rel="noopener"
+        >
+          Neptune announcement ↗
+        </a>
+
+        <a
+          href="https://doc.zorix.it/zorix-nex-coder-3.8-aa4-zorix4-official-preview"
+          target="_blank"
+          rel="noopener"
+        >
+          AA4 preview ↗
+        </a>
+      </div>
+
+    </div>
+  </aside>
+
+
+  <main class="content">
+
+    <div class="content-inner">
+
+      <div class="breadcrumb">
+        <a href="#overview">Models</a>
+        <span>/</span>
+        <span>Nex Coder 3.8 Neptune</span>
+      </div>
+
+
+      <section class="model-hero" id="overview">
+
+        <div class="model-heading">
+          <div class="model-icon" aria-hidden="true">
+            <div class="planet">
+              <div class="planet-line p1"></div>
+              <div class="planet-line p2"></div>
+              <div class="planet-line p3"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="title-row">
+              <h1>Nex Coder 3.8 Neptune</h1>
+              <span class="badge">Preview</span>
+            </div>
+
+            <p class="tagline">
+              Depth-oriented AA4 model for repository-scale software engineering.
+            </p>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a
+            class="button-secondary"
+            href="https://doc.zorix.it/zorix-nex-coder-3.8-aa4-zorix4-official-preview"
+            target="_blank"
+            rel="noopener"
+          >
+            Model guide
+          </a>
+
+          <a
+            class="button-primary"
+            href="https://subs.zorix.it/"
+            target="_blank"
+            rel="noopener"
+          >
+            Get Zorix Code ↗
+          </a>
+        </div>
+
+
+        <div class="model-stats">
+
+          <div class="stat">
+            <div class="stat-name">Reasoning</div>
+            <div class="rating">
+              <span class="on"></span>
+              <span class="on"></span>
+              <span class="on"></span>
+              <span class="on"></span>
+              <span class="on"></span>
+            </div>
+          </div>
+
+          <div class="stat">
+            <div class="stat-name">Speed</div>
+            <div class="rating">
+              <span class="on"></span>
+              <span class="on"></span>
+              <span class="off"></span>
+              <span class="off"></span>
+              <span class="off"></span>
+            </div>
+          </div>
+
+          <div class="stat price-stat">
+            <div class="stat-name">Price</div>
+            <div class="price-compact">
+              <span>$12</span>
+              <span class="price-dot">•</span>
+              <span>$47</span>
+            </div>
+            <div class="price-labels">
+              <span>Input</span>
+              <span>Output</span>
+            </div>
+          </div>
+
+        </div>
+
+
+        <p class="intro">
+          Nex Coder 3.8 Preview — Neptune is the depth-oriented profile of
+          Zorix's AA4 / Zorix4 generation. It is designed for difficult coding
+          work spanning repositories, tools, execution environments, long
+          decision chains, and verification-heavy engineering workflows.
+        </p>
+
+        <p class="notice-inline">
+          Neptune is currently a preview profile with staged availability.
+          Model visibility can vary between Zorix Code accounts.
+        </p>
+
+
+        <div class="headline-specs">
+
+          <div class="headline-spec">
+            <strong>2,000,000</strong>
+            <span>context window</span>
+          </div>
+
+          <div class="headline-spec">
+            <strong>AA4</strong>
+            <span>Zorix4 architecture</span>
+          </div>
+
+          <div class="headline-spec">
+            <strong>Closed</strong>
+            <span>parameters undisclosed</span>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <section class="doc-section" id="pricing">
+        <h2>Pricing</h2>
+
+        <p>
+          API preview pricing is based on text token usage.
+          Prices below are per one million tokens.
+          At this stage, only Nex Coder 3.8 Mercury and
+          Nex Coder 3.8 Neptune are listed as API-supported models.
+        </p>
+
+        <div class="pricing-card">
+          <div class="table-header">
+            <div>
+              <span class="eyebrow">Text tokens</span>
+              <strong>Per 1M tokens</strong>
+            </div>
+          </div>
+
+          <div class="data-row">
+            <span>Input</span>
+            <strong>$12.00</strong>
+          </div>
+
+          <div class="data-row">
+            <span>Output</span>
+            <strong>$47.00</strong>
+          </div>
+        </div>
+
+        <div class="callout">
+          <div class="callout-icon">i</div>
+          <div>
+            <strong>API pricing vs. Zorix Code</strong>
+            <p>
+              The rates above represent the API preview pricing shown on this
+              documentation page. Zorix's published Neptune preview currently
+              describes input and output usage for the Zorix Code profile as
+              included with an eligible paid subscription.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="doc-section" id="capabilities">
+        <h2>Capabilities</h2>
+
+        <p>
+          Neptune is optimized around a long-running engineering loop:
+          understand the system, plan from evidence, execute with tools,
+          inspect results, and continue until verification supports the change.
+        </p>
+
+        <div class="feature-grid">
+
+          <article class="feature-card">
+            <div class="feature-number">01</div>
+            <h3>Repository-scale understanding</h3>
+            <p>
+              A published 2M-token context window provides room for source,
+              configuration, documentation, and task state across large
+              repositories.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-number">02</div>
+            <h3>Adaptive planning</h3>
+            <p>
+              Plans can be revised as commands, tests, diffs, or newly
+              discovered files invalidate earlier assumptions.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-number">03</div>
+            <h3>Tool execution</h3>
+            <p>
+              Search, code inspection, terminal execution, and test feedback
+              are treated as part of the engineering reasoning loop.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-number">04</div>
+            <h3>Verification-heavy completion</h3>
+            <p>
+              Neptune is positioned to continue past the first plausible patch
+              and use observed evidence to determine whether work is complete.
+            </p>
+          </article>
+
+        </div>
+      </section>
+
+
+      <section class="doc-section" id="reasoning">
+        <h2>Reasoning</h2>
+
+        <p>
+          The AA4 preview presents multiple effort levels for the 3.8 family.
+          Neptune represents the deepest configuration in the announced lineup.
+        </p>
+
+        <div class="effort-list">
+          <span>Low</span>
+          <span>Medium</span>
+          <span>High</span>
+          <span>XHigh</span>
+          <span>Max</span>
+          <span>Ultra</span>
+        </div>
+
+        <div class="reasoning-flow">
+          <div>
+            <span>1</span>
+            <strong>Understand</strong>
+          </div>
+          <b>→</b>
+          <div>
+            <span>2</span>
+            <strong>Plan</strong>
+          </div>
+          <b>→</b>
+          <div>
+            <span>3</span>
+            <strong>Execute</strong>
+          </div>
+          <b>→</b>
+          <div>
+            <span>4</span>
+            <strong>Verify</strong>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="doc-section" id="modalities">
+        <h2>Modalities</h2>
+
+        <div class="simple-table">
+          <div class="simple-row">
+            <div>
+              <span class="modality-dot"></span>
+              Text & code
+            </div>
+            <strong>Primary workload</strong>
+          </div>
+
+          <div class="simple-row muted-row">
+            <div>
+              <span class="modality-dot empty"></span>
+              Image
+            </div>
+            <span>Not specified in preview documentation</span>
+          </div>
+
+          <div class="simple-row muted-row">
+            <div>
+              <span class="modality-dot empty"></span>
+              Audio
+            </div>
+            <span>Not specified</span>
+          </div>
+
+          <div class="simple-row muted-row">
+            <div>
+              <span class="modality-dot empty"></span>
+              Video
+            </div>
+            <span>Not specified</span>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="doc-section" id="availability">
+        <h2>Availability</h2>
+
+        <div class="simple-table">
+          <div class="simple-row">
+            <span>Status</span>
+            <strong>Preview</strong>
+          </div>
+
+          <div class="simple-row">
+            <span>Rollout</span>
+            <strong>Staged availability</strong>
+          </div>
+
+          <div class="simple-row">
+            <span>Zorix Code</span>
+            <strong>Paid subscription required</strong>
+          </div>
+
+          <div class="simple-row">
+            <span>Architecture</span>
+            <strong>Closed / AA4</strong>
+          </div>
+
+          <div class="simple-row">
+            <span>Parameter count</span>
+            <strong>Undisclosed</strong>
+          </div>
+
+          <div class="simple-row">
+            <span>Published context</span>
+            <strong>2M tokens</strong>
+          </div>
+        </div>
+
+        <p class="section-note">
+          Public preview documentation states that model-selector visibility
+          may differ between accounts while rollout remains active.
+        </p>
+      </section>
+
+
+      <section class="doc-section" id="api">
+        <h2>API compatibility</h2>
+
+        <div class="api-placeholder">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span>API status</span>
+          </div>
+
+          <pre><code>Model family:     Nex Coder 3.8
+Variant:          Neptune
+Architecture:     AA4 / Zorix4
+Status:           Preview
+Context:          2,000,000 tokens
+
+Public API model identifier:
+Not specified in the cited Zorix preview documentation.</code></pre>
+        </div>
+
+        <p class="section-note">
+          This page intentionally does not invent an endpoint or model ID that
+          has not been publicly specified by Zorix.
+        </p>
+      </section>
+
+
+      <section class="doc-section" id="family">
+        <h2>Nex Coder 3.8 family</h2>
+
+        <p>
+          The 3.8 preview is presented as a three-variant AA4 generation.
+        </p>
+
+        <div class="family-list">
+
+          <div class="family-item">
+            <div class="family-index">01</div>
+            <div>
+              <h3>Mercury</h3>
+              <p>Speed and responsive daily coding assistance.</p>
+            </div>
+          </div>
+
+          <div class="family-item">
+            <div class="family-index">02</div>
+            <div>
+              <h3>Uranus</h3>
+              <p>Balanced sustained-engineering tier.</p>
+            </div>
+          </div>
+
+          <div class="family-item active-family">
+            <div class="family-index">03</div>
+            <div>
+              <h3>Neptune</h3>
+              <p>
+                Deep frontier variant for heavier planning and long-horizon
+                repository work.
+              </p>
+            </div>
+            <span class="current-pill">Current</span>
+          </div>
+
+        </div>
+      </section>
+
+
+      <section class="doc-section" id="snapshots">
+        <h2>Snapshots</h2>
+
+        <p>
+          Neptune is presently described as a preview rather than a finalized
+          public snapshot series.
+        </p>
+
+        <div class="snapshot-card">
+          <div class="snapshot-icon">
+            <div class="mini-planet"></div>
+          </div>
+
+          <div>
+            <strong>Nex Coder 3.8 Preview — Neptune</strong>
+            <span>AA4 / Zorix4 · Preview channel</span>
+          </div>
+
+          <span class="badge">Preview</span>
+        </div>
+      </section>
+
+
+      <section class="doc-section" id="rate-limits">
+        <h2>Rate limits</h2>
+
+        <p>
+          Public Neptune preview materials cited by this page do not publish
+          API RPM, TPM, or batch-queue limits.
+        </p>
+
+        <div class="simple-table">
+          <div class="simple-row muted-row">
+            <span>RPM</span>
+            <strong>Not published</strong>
+          </div>
+          <div class="simple-row muted-row">
+            <span>TPM</span>
+            <strong>Not published</strong>
+          </div>
+          <div class="simple-row muted-row">
+            <span>Batch queue</span>
+            <strong>Not published</strong>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="doc-section" id="quickstart">
+        <h2>Get started</h2>
+
+        <div class="resource-links">
+          <a
+            href="https://updates.zorix.it/nex-coder-38-neptune/"
+            target="_blank"
+            rel="noopener"
+          >
+            <div>
+              <strong>Nex Coder 3.8 Preview — Neptune</strong>
+              <span>Zorix announcement and preview profile</span>
+            </div>
+            <span>↗</span>
+          </a>
+
+          <a
+            href="https://doc.zorix.it/zorix-nex-coder-3.8-aa4-zorix4-official-preview"
+            target="_blank"
+            rel="noopener"
+          >
+            <div>
+              <strong>Previewing Zorix Nex Coder 3.8</strong>
+              <span>AA4 / Zorix4 architecture preview</span>
+            </div>
+            <span>↗</span>
+          </a>
+
+          <a
+            href="https://subs.zorix.it/"
+            target="_blank"
+            rel="noopener"
+          >
+            <div>
+              <strong>Zorix Subscriptions</strong>
+              <span>Access Zorix Code</span>
+            </div>
+            <span>↗</span>
+          </a>
+        </div>
+      </section>
+
+
+      <section class="doc-section source-section" id="resources">
+        <h2>Sources</h2>
+
+        <p>
+          Product facts on this page are derived from Zorix's published
+          September 2026 Neptune preview and August 29, 2026 AA4 / Zorix4
+          preview. API token prices shown above are the preview rates specified
+          for this documentation build.
+        </p>
+      </section>
+
+
+      <footer>
+        <div>
+          <span class="footer-mark">Z</span>
+          <strong>Zorix developer model reference</strong>
+        </div>
+
+        <p>
+          Independent documentation implementation. Not an OpenAI website.
+        </p>
+      </footer>
+
+    </div>
+  </main>
+
+
+  <aside class="toc">
+    <div class="toc-inner">
+      <div class="toc-title">On this page</div>
+
+      <a class="toc-active" href="#overview">Overview</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#reasoning">Reasoning</a>
+      <a href="#modalities">Modalities</a>
+      <a href="#availability">Availability</a>
+      <a href="#api">API compatibility</a>
+      <a href="#family">3.8 family</a>
+      <a href="#snapshots">Snapshots</a>
+      <a href="#rate-limits">Rate limits</a>
+      <a href="#quickstart">Get started</a>
+    </div>
+  </aside>
+
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
