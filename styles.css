@@ -1316,3 +1316,191 @@ footer p {
     display: none;
   }
 }
+
+
+/* ==========================================================
+   ZORIX-MOBILE-V2
+   ========================================================== */
+
+.mobile-nav-backdrop {
+  display: none;
+}
+
+@media (max-width: 850px) {
+
+  body.sidebar-visible {
+    overflow: hidden;
+  }
+
+  .mobile-nav-backdrop {
+    position: fixed;
+
+    inset: 103px 0 0;
+
+    z-index: 140;
+
+    display: block;
+
+    background: rgba(0,0,0,.18);
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition: opacity .2s ease;
+
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+  }
+
+  .mobile-nav-backdrop.visible {
+    opacity: 1;
+
+    pointer-events: auto;
+  }
+
+  .sidebar {
+    overscroll-behavior: contain;
+  }
+
+  .sidebar-inner {
+    height: 100%;
+  }
+
+  .content-inner {
+    width: min(
+      calc(100% - 32px),
+      760px
+    );
+  }
+
+}
+
+
+@media (max-width: 560px) {
+
+  html {
+    scroll-padding-top: 112px;
+  }
+
+  .topbar-inner {
+    min-height: 55px;
+  }
+
+  .secondary-nav {
+    height: 43px;
+  }
+
+  .secondary-inner {
+    gap: 18px;
+
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .section-current {
+    padding-right: 18px;
+  }
+
+  .breadcrumb {
+    margin-bottom: 22px;
+  }
+
+  .model-heading {
+    align-items: flex-start;
+  }
+
+  .model-heading > div:last-child {
+    min-width: 0;
+  }
+
+  .title-row {
+    display: block;
+  }
+
+  .title-row .badge {
+    margin-top: 6px;
+  }
+
+  h1 {
+    overflow-wrap: anywhere;
+  }
+
+  .hero-actions {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 8px;
+  }
+
+  .button-primary,
+  .button-secondary {
+    width: 100%;
+  }
+
+  .model-stats {
+    margin-top: 26px;
+  }
+
+  .stat {
+    padding: 17px 18px;
+  }
+
+  .doc-section {
+    padding: 40px 0;
+  }
+
+  .doc-section h2 {
+    font-size: 23px;
+  }
+
+  .feature-card {
+    padding: 20px;
+  }
+
+  .reasoning-flow {
+    padding: 18px;
+  }
+
+  .simple-row,
+  .data-row {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    padding: 13px 0;
+  }
+
+  .snapshot-card {
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+  }
+
+  pre {
+    padding: 16px;
+
+    font-size: 10px;
+  }
+
+}
+
+
+@media (max-width: 380px) {
+
+  .content-inner {
+    width: calc(100% - 24px);
+  }
+
+  .hero-actions {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 27px;
+  }
+
+}

@@ -110,3 +110,47 @@ const observer = new IntersectionObserver(
 );
 
 sections.forEach((section) => observer.observe(section));
+
+
+// ==========================================================
+// ZORIX-MOBILE-NAV-V2
+// ==========================================================
+
+const mobileBackdrop = document.createElement("div");
+
+mobileBackdrop.className = "mobile-nav-backdrop";
+
+document.body.appendChild(mobileBackdrop);
+
+
+function syncMobileSidebar() {
+  const visible = sidebar.classList.contains("open");
+
+  mobileBackdrop.classList.toggle("visible", visible);
+
+  document.body.classList.toggle(
+    "sidebar-visible",
+    visible
+  );
+}
+
+
+mobileMenu.addEventListener("click", () => {
+  requestAnimationFrame(syncMobileSidebar);
+});
+
+
+mobileBackdrop.addEventListener("click", () => {
+  sidebar.classList.remove("open");
+
+  syncMobileSidebar();
+});
+
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 850) {
+    sidebar.classList.remove("open");
+
+    syncMobileSidebar();
+  }
+});

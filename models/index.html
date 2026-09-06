@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width,initial-scale=1,viewport-fit=cover"
+  >
+
+  <meta
+    name="description"
+    content="Browse Zorix models and API availability."
+  >
+
+  <title>Models | Zorix Developers</title>
+
+  <link
+    rel="canonical"
+    href="https://developer.zorix.it/models/"
+  >
+
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/models/models.css">
+</head>
+
+<body class="models-page">
+
+<header class="models-topbar">
+  <div class="models-topbar-inner">
+
+    <a class="models-brand" href="/">
+      <span class="models-brand-mark">Z</span>
+      <span class="models-brand-text">Zorix Developers</span>
+    </a>
+
+    <nav class="models-nav">
+      <a href="/">API</a>
+      <a class="active" href="/models/">Models</a>
+
+      <a
+        href="https://doc.zorix.it/"
+        target="_blank"
+        rel="noopener"
+      >
+        Docs
+      </a>
+
+      <a
+        href="https://updates.zorix.it/"
+        target="_blank"
+        rel="noopener"
+      >
+        Updates
+      </a>
+    </nav>
+
+    <a
+      class="open-zorix"
+      href="https://zorix.it/"
+      target="_blank"
+      rel="noopener"
+    >
+      Open Zorix ↗
+    </a>
+
+  </div>
+</header>
+
+
+<main class="models-main">
+
+  <section class="models-hero">
+
+    <div class="models-breadcrumb">
+      <a href="/">Developers</a>
+      <span>/</span>
+      <span>Models</span>
+    </div>
+
+    <h1>Models</h1>
+
+    <p>
+      Explore the current Zorix model catalog and API availability.
+      Chat availability and API availability are separate.
+    </p>
+
+    <div class="api-summary">
+
+      <article>
+        <span class="api-status available">
+          API AVAILABLE
+        </span>
+
+        <h2>Nex Coder 3.8 Mercury</h2>
+
+        <p>
+          Fast-path coding model for responsive software engineering.
+        </p>
+
+        <div class="mini-price">
+          <div>
+            <strong>$6</strong>
+            <span>Input / 1M</span>
+          </div>
+
+          <div>
+            <strong>$8</strong>
+            <span>Output / 1M</span>
+          </div>
+        </div>
+
+        <a href="/models/nex-coder-38-mercury/">
+          View model →
+        </a>
+      </article>
+
+
+      <article>
+        <span class="api-status available">
+          API AVAILABLE
+        </span>
+
+        <h2>Nex Coder 3.8 Neptune</h2>
+
+        <p>
+          Deep frontier model for long-horizon repository engineering.
+        </p>
+
+        <div class="mini-price">
+          <div>
+            <strong>$12</strong>
+            <span>Input / 1M</span>
+          </div>
+
+          <div>
+            <strong>$47</strong>
+            <span>Output / 1M</span>
+          </div>
+        </div>
+
+        <a href="/">
+          View model →
+        </a>
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <section class="catalog-section">
+
+    <div class="catalog-heading">
+
+      <div>
+        <h2>Model catalog</h2>
+
+        <p>
+          Catalog based on the current Zorix Models directory.
+          Models without an API badge are not currently supported
+          through the public API.
+        </p>
+      </div>
+
+      <span class="model-count" id="modelCount"></span>
+
+    </div>
+
+
+    <div class="catalog-controls">
+
+      <label class="catalog-search">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="6"></circle>
+          <path d="m16 16 4 4"></path>
+        </svg>
+
+        <input
+          id="modelSearch"
+          type="search"
+          placeholder="Search models"
+          autocomplete="off"
+        >
+      </label>
+
+
+      <div class="catalog-filters">
+        <button class="active" data-filter="all">
+          All
+        </button>
+
+        <button data-filter="api">
+          API available
+        </button>
+
+        <button data-filter="preview">
+          Preview
+        </button>
+
+        <button data-filter="available">
+          Available
+        </button>
+
+        <button data-filter="retired">
+          Retired
+        </button>
+      </div>
+
+    </div>
+
+
+    <div class="model-grid" id="modelGrid"></div>
+
+    <div class="empty-results" id="emptyResults">
+      No models match this search.
+    </div>
+
+  </section>
+
+
+  <section class="api-note">
+
+    <div>
+      <span>API STATUS</span>
+
+      <h2>Public API availability</h2>
+
+      <p>
+        Nex Coder 3.8 Mercury and Nex Coder 3.8 Neptune
+        are currently the API-supported models listed on this
+        developer site.
+      </p>
+
+      <p>
+        Uranus and all other catalog models are currently marked
+        as API not available yet.
+      </p>
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer class="models-footer">
+
+  <span>
+    Zorix Developers
+  </span>
+
+  <a
+    href="https://models.zorix.it/"
+    target="_blank"
+    rel="noopener"
+  >
+    Zorix Models source ↗
+  </a>
+
+</footer>
+
+
+<script src="/models/models.js"></script>
+
+</body>
+</html>
