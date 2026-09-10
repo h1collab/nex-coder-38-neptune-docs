@@ -75,6 +75,16 @@ const MODELS = [
     api: false
   },
   {
+    name: "Zorix Virexa 3.5",
+    status: "Preview",
+    type: "Image",
+    family: "Virexa",
+    api: false,
+    href: "/models/zorix-virexa-3-5/",
+    description:
+      "Preview text-to-image model with a significant quality improvement. Currently available in Zorix Chat."
+  },
+  {
     name: "Zorix Virexa 3",
     status: "Available",
     type: "Image",
@@ -379,10 +389,10 @@ function render() {
         </div>
       `;
 
-    const action = model.api && model.href
+    const action = model.href
       ? `
         <a class="model-action" href="${escapeHTML(model.href)}">
-          View API docs →
+          ${model.api ? "View API docs →" : "View model →"}
         </a>
       `
       : `

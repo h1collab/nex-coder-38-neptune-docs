@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width,initial-scale=1,viewport-fit=cover"
+  >
+
+  <meta
+    name="description"
+    content="Zorix Virexa 3.5 Preview image generation model documentation."
+  >
+
+  <title>Zorix Virexa 3.5 | Zorix Developers</title>
+
+  <link
+    rel="canonical"
+    href="https://developer.zorix.it/models/zorix-virexa-3-5/"
+  >
+
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/models/models.css">
+
+  <style>
+    .model-detail {
+      width: min(850px, calc(100% - 40px));
+      margin: auto;
+      padding: 50px 0 90px;
+    }
+
+    .detail-back {
+      display: inline-flex;
+      margin-bottom: 34px;
+      color: #777;
+      font-size: 11px;
+    }
+
+    .detail-heading {
+      display: flex;
+      align-items: flex-start;
+      gap: 19px;
+    }
+
+    .virexa-icon {
+      width: 62px;
+      height: 62px;
+      flex: 0 0 auto;
+      display: grid;
+      place-items: center;
+      border-radius: 13px;
+      background: #111;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 650;
+    }
+
+    .detail-heading h1 {
+      margin: -5px 0 8px;
+      font-size: clamp(32px, 5vw, 45px);
+      letter-spacing: -.045em;
+    }
+
+    .detail-heading p {
+      margin: 0;
+      color: #707070;
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .preview-pill {
+      display: inline-flex;
+      margin-top: 12px;
+      padding: 4px 8px;
+      border: 1px solid #d9d9d9;
+      border-radius: 999px;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 38px;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .hero-stat {
+      padding: 21px 20px;
+      border-right: 1px solid #ddd;
+    }
+
+    .hero-stat:first-child {
+      padding-left: 0;
+    }
+
+    .hero-stat:last-child {
+      border-right: 0;
+    }
+
+    .hero-stat span {
+      display: block;
+      margin-bottom: 7px;
+      color: #888;
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+
+    .hero-stat strong {
+      font-size: 14px;
+      font-weight: 580;
+    }
+
+    .detail-section {
+      padding: 48px 0;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .detail-section h2 {
+      margin: 0 0 14px;
+      font-size: 25px;
+      letter-spacing: -.035em;
+    }
+
+    .detail-section > p {
+      max-width: 720px;
+      margin: 0 0 16px;
+      color: #666;
+      font-size: 13px;
+      line-height: 1.72;
+    }
+
+    .detail-table {
+      margin-top: 25px;
+      border-top: 1px solid #ddd;
+    }
+
+    .detail-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 25px;
+      padding: 15px 0;
+      border-bottom: 1px solid #e5e5e5;
+      font-size: 12px;
+    }
+
+    .detail-row span {
+      color: #777;
+    }
+
+    .detail-row strong {
+      text-align: right;
+      font-weight: 560;
+    }
+
+    .modality-flow {
+      display: flex;
+      align-items: center;
+      gap: 17px;
+      margin-top: 27px;
+      padding: 24px;
+      border: 1px solid #ddd;
+      border-radius: 9px;
+    }
+
+    .modality-box {
+      flex: 1;
+      padding: 18px;
+      border: 1px solid #e3e3e3;
+      border-radius: 7px;
+    }
+
+    .modality-box span {
+      display: block;
+      margin-bottom: 5px;
+      color: #888;
+      font-size: 9px;
+      text-transform: uppercase;
+    }
+
+    .modality-box strong {
+      font-size: 15px;
+    }
+
+    .flow-arrow {
+      color: #999;
+      font-size: 18px;
+    }
+
+    .provenance {
+      margin-top: 25px;
+      padding: 20px;
+      border: 1px solid #dcdcdc;
+      border-radius: 9px;
+      background: #fafafa;
+    }
+
+    .provenance-label {
+      display: block;
+      margin-bottom: 9px;
+      color: #777;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .provenance p {
+      margin: 0;
+      color: #444;
+      font-size: 12px;
+      line-height: 1.7;
+    }
+
+    .quality-card {
+      margin-top: 25px;
+      padding: 24px;
+      border: 1px solid #ddd;
+      border-radius: 9px;
+    }
+
+    .quality-card strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .quality-card p {
+      margin: 0;
+      color: #747474;
+      font-size: 12px;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 600px) {
+      .model-detail {
+        width: calc(100% - 30px);
+        padding-top: 34px;
+      }
+
+      .detail-heading {
+        gap: 13px;
+      }
+
+      .virexa-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 10px;
+        font-size: 16px;
+      }
+
+      .detail-heading h1 {
+        font-size: 29px;
+      }
+
+      .hero-stats {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-stat,
+      .hero-stat:first-child {
+        padding: 16px 0;
+        border-right: 0;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .hero-stat:last-child {
+        border-bottom: 0;
+      }
+
+      .detail-row {
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .detail-row strong {
+        text-align: left;
+      }
+
+      .modality-flow {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .flow-arrow {
+        transform: rotate(90deg);
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="models-topbar">
+  <div class="models-topbar-inner">
+
+    <a class="models-brand" href="/">
+      <span class="models-brand-mark">Z</span>
+      <span class="models-brand-text">Zorix Developers</span>
+    </a>
+
+    <nav class="models-nav">
+      <a href="/">API</a>
+      <a class="active" href="/models/">Models</a>
+
+      <a
+        href="https://doc.zorix.it/"
+        target="_blank"
+        rel="noopener"
+      >
+        Docs
+      </a>
+
+      <a
+        href="https://updates.zorix.it/"
+        target="_blank"
+        rel="noopener"
+      >
+        Updates
+      </a>
+    </nav>
+
+    <a
+      class="open-zorix"
+      href="https://zorix.it/"
+      target="_blank"
+      rel="noopener"
+    >
+      Open Zorix ↗
+    </a>
+
+  </div>
+</header>
+
+
+<main class="model-detail">
+
+  <a class="detail-back" href="/models/">
+    ← Models
+  </a>
+
+
+  <section>
+
+    <div class="detail-heading">
+
+      <div class="virexa-icon">
+        V
+      </div>
+
+      <div>
+        <h1>Zorix Virexa 3.5</h1>
+
+        <p>
+          Preview image generation model with significantly improved
+          generation quality.
+        </p>
+
+        <span class="preview-pill">
+          Preview
+        </span>
+      </div>
+
+    </div>
+
+
+    <div class="hero-stats">
+
+      <div class="hero-stat">
+        <span>Availability</span>
+        <strong>Zorix Chat</strong>
+      </div>
+
+      <div class="hero-stat">
+        <span>API</span>
+        <strong>Not available yet</strong>
+      </div>
+
+      <div class="hero-stat">
+        <span>Pricing</span>
+        <strong>To be announced</strong>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="detail-section">
+
+    <h2>Overview</h2>
+
+    <p>
+      Zorix Virexa 3.5 is a preview image-generation model focused
+      on substantially higher visual quality.
+    </p>
+
+    <p>
+      This preview improves image generation quality while retaining
+      a simple text-to-image workflow.
+    </p>
+
+    <div class="quality-card">
+      <strong>Higher generation quality</strong>
+
+      <p>
+        Virexa 3.5 introduces a significant improvement in overall
+        image quality compared with previous Virexa generations,
+        with greater emphasis on visual coherence, detail and
+        generation fidelity.
+      </p>
+    </div>
+
+  </section>
+
+
+  <section class="detail-section">
+
+    <h2>Modalities</h2>
+
+    <p>
+      The current Virexa 3.5 Preview supports text prompts as input
+      and generated images as output.
+    </p>
+
+    <div class="modality-flow">
+
+      <div class="modality-box">
+        <span>Input</span>
+        <strong>Text</strong>
+      </div>
+
+      <div class="flow-arrow">
+        →
+      </div>
+
+      <div class="modality-box">
+        <span>Output</span>
+        <strong>Image</strong>
+      </div>
+
+    </div>
+
+
+    <div class="detail-table">
+
+      <div class="detail-row">
+        <span>Text input</span>
+        <strong>Supported</strong>
+      </div>
+
+      <div class="detail-row">
+        <span>Image generation</span>
+        <strong>Supported</strong>
+      </div>
+
+      <div class="detail-row">
+        <span>Image input</span>
+        <strong>Not currently supported</strong>
+      </div>
+
+      <div class="detail-row">
+        <span>Audio input/output</span>
+        <strong>Not supported</strong>
+      </div>
+
+      <div class="detail-row">
+        <span>Video input/output</span>
+        <strong>Not supported</strong>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="detail-section">
+
+    <h2>Availability</h2>
+
+    <div class="detail-table">
+
+      <div class="detail-row">
+        <span>Status</span>
+        <strong>Preview</strong>
+      </div>
+
+      <div class="detail-row">
+        <span>Zorix Chat</span>
+        <strong>Available</strong>
+      </div>
+
+      <div class="detail-row">
+        <span>Public API</span>
+        <strong>Not available yet</strong>
+      </div>
+
+      <div class="detail-row">
+        <span>API model identifier</span>
+        <strong>Not available</strong>
+      </div>
+
+      <div class="detail-row">
+        <span>API pricing</span>
+        <strong>To be announced</strong>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="detail-section">
+
+    <h2>Generated image provenance</h2>
+
+    <p>
+      Images generated with Virexa may include provenance signals
+      intended to help identify AI-generated content.
+    </p>
+
+    <div class="provenance">
+
+      <span class="provenance-label">
+        Generated content notice
+      </span>
+
+      <p>
+        Generated by the Zorix Virexa model. Additional provenance
+        markers, including SynthID and a Zorix watermark, may be
+        present by design to help identify AI-generated content.
+        If a watermark is detected, this is expected.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <section class="detail-section">
+
+    <h2>API</h2>
+
+    <p>
+      Zorix Virexa 3.5 does not currently support public API access.
+      No API model identifier or API pricing has been announced.
+    </p>
+
+    <p>
+      The current Preview can be used through Zorix Chat.
+    </p>
+
+  </section>
+
+</main>
+
+</body>
+</html>
