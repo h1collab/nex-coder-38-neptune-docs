@@ -1,5 +1,15 @@
 const MODELS = [
   {
+    name: "Zorix NexHate 2",
+    status: "Preview",
+    type: "Translation",
+    family: "NexHate",
+    api: false,
+    href: "/models/zorix-nexhate-2/",
+    description:
+      "Preview translation model with strong multilingual translation capability. Public API pricing is not announced."
+  },
+  {
     name: "Nex Coder 3.8 Mercury",
     status: "Preview",
     type: "Coding",
