@@ -82,7 +82,7 @@ const MODELS = [
     api: false,
     href: "/models/zorix-virexa-3-5/",
     description:
-      "High-quality text-to-image Preview. Available in Zorix Chat; public API and pricing are not announced."
+      "High-quality text-to-image Preview. Available in Zorix Chat; image-to-image is in internal testing."
   },
   {
     name: "Zorix Virexa 3",

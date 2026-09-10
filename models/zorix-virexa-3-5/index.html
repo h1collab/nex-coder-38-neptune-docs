@@ -16,6 +16,7 @@
   --line:#e2e2e2;
   --paper:#fff;
   --soft:#f5f5f3;
+  --panel:#f7f6f3;
   --max:1180px;
   --nav:58px;
 }
@@ -46,36 +47,71 @@ a{color:inherit;text-decoration:none}
 .vx-fact:last-child{border-right:0}
 .vx-fact span{display:block;color:#888;font-size:9px;text-transform:uppercase;letter-spacing:.06em}
 .vx-fact strong{display:block;margin-top:5px;font-size:13px;font-weight:600}
-.vx-brief{display:grid;grid-template-columns:250px minmax(0,1fr);gap:62px;padding:58px 0;border-bottom:1px solid var(--line)}
+.vx-brief,.vx-provenance,.vx-availability{display:grid;grid-template-columns:250px minmax(0,1fr);gap:62px}
+.vx-brief{padding:58px 0;border-bottom:1px solid var(--line)}
 .vx-label{font-size:9px;font-weight:700;color:#8a8a8a;letter-spacing:.07em;text-transform:uppercase}
-.vx-brief h2,.vx-provenance h2{margin:0 0 15px;font-size:clamp(28px,4vw,43px);line-height:1.05;letter-spacing:-.045em;font-weight:580}
-.vx-brief p,.vx-provenance p{max-width:760px;margin:0 0 12px;color:#5f5f5f;font-size:14px;line-height:1.72}
+.vx-brief h2,.vx-provenance h2,.vx-availability h2{margin:0 0 15px;font-size:clamp(28px,4vw,43px);line-height:1.05;letter-spacing:-.045em;font-weight:580}
+.vx-brief p,.vx-provenance p,.vx-availability p{max-width:760px;margin:0 0 12px;color:#5f5f5f;font-size:14px;line-height:1.72}
 .vx-compare{margin:0 auto 70px;width:min(1450px,100%);background:#0b0b0b;border-top:1px solid #111;border-bottom:1px solid #111}
 .vx-compare-inner{min-height:min(78vh,820px);display:flex;align-items:center;justify-content:center;padding:clamp(14px,2.8vw,28px)}
 .vx-compare img{width:100%;height:100%;max-height:min(72vh,760px);object-fit:contain}
 .vx-examples-head{padding:70px 0 28px}
 .vx-examples-head h2{margin:10px 0 10px;font-size:clamp(32px,5vw,58px);line-height:1;letter-spacing:-.05em;font-weight:580}
 .vx-examples-head p{max-width:720px;margin:0;color:#686868;font-size:13px;line-height:1.7}
-.vx-scroll-story{position:relative;height:1320vh;background:#050505}
-.vx-story-sticky{position:sticky;top:var(--nav);height:calc(100vh - var(--nav));overflow:hidden;background:#050505}
-.vx-frame{position:absolute;inset:0;opacity:0;transform:scale(1.045) translateY(24px);transition:opacity .18s linear;will-change:opacity,transform}
+.vx-scroll-story{
+  position:relative;
+  height:1320vh;
+  background:linear-gradient(180deg,#fbfbfa 0%, #f4f2ee 100%);
+}
+.vx-story-sticky{
+  position:sticky;top:var(--nav);height:calc(100vh - var(--nav));
+  overflow:hidden;
+  background:linear-gradient(180deg,#fbfbfa 0%, #f4f2ee 100%);
+}
+.vx-frame{
+  position:absolute;inset:0;opacity:0;transform:scale(1.03) translateY(20px);
+  transition:opacity .18s linear;will-change:opacity,transform;
+}
 .vx-frame:first-child{opacity:1}
-.vx-stage{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:clamp(12px,2.6vw,28px)}
-.vx-stage img{width:100%;height:100%;object-fit:contain;object-position:center center;max-width:100%;max-height:100%;filter:drop-shadow(0 10px 40px rgba(0,0,0,.24))}
-.vx-frame::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at center, rgba(255,255,255,0) 0%, rgba(0,0,0,.06) 42%, rgba(0,0,0,.28) 100%),linear-gradient(to top,rgba(0,0,0,.72) 0%,rgba(0,0,0,.16) 36%,rgba(0,0,0,.06) 100%)}
+.vx-stage{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  padding:clamp(12px,2.6vw,28px);
+}
+.vx-stage::before{
+  content:"";
+  width:min(92vw,1340px);
+  height:min(82vh,820px);
+  border-radius:24px;
+  background:rgba(255,255,255,.92);
+  box-shadow:0 30px 80px rgba(0,0,0,.08), inset 0 0 0 1px rgba(0,0,0,.05);
+}
+.vx-stage img{
+  position:absolute;
+  inset:clamp(22px,4vw,38px);
+  width:calc(100% - (clamp(22px,4vw,38px) * 2));
+  height:calc(100% - (clamp(22px,4vw,38px) * 2));
+  object-fit:contain;object-position:center center;max-width:none;max-height:none;
+  filter:drop-shadow(0 10px 30px rgba(0,0,0,.08));
+}
+.vx-frame::after{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(circle at center, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 52%, rgba(0,0,0,.03) 100%),
+    linear-gradient(to top,rgba(244,242,238,.88) 0%,rgba(244,242,238,.16) 26%,rgba(255,255,255,.06) 100%);
+}
 .vx-story-ui{position:absolute;z-index:20;inset:0;pointer-events:none}
-.vx-story-count{position:absolute;top:24px;right:26px;color:#fff;font-size:10px;letter-spacing:.08em;text-shadow:0 1px 8px rgba(0,0,0,.5)}
-.vx-caption{position:absolute;left:clamp(18px,5vw,72px);bottom:clamp(24px,7vh,70px);width:min(660px,calc(100% - 40px));color:#fff}
-.vx-caption small{display:block;margin-bottom:9px;font-size:9px;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.66)}
+.vx-story-count{position:absolute;top:24px;right:26px;color:#222;font-size:10px;letter-spacing:.08em}
+.vx-caption{position:absolute;left:clamp(18px,5vw,72px);bottom:clamp(24px,7vh,70px);width:min(660px,calc(100% - 40px));color:#111}
+.vx-caption small{display:block;margin-bottom:9px;font-size:9px;letter-spacing:.09em;text-transform:uppercase;color:rgba(17,17,17,.58)}
 .vx-caption h3{margin:0 0 9px;font-size:clamp(28px,5vw,62px);line-height:.98;letter-spacing:-.05em;font-weight:560}
-.vx-caption p{margin:0;max-width:580px;font-size:12px;line-height:1.6;color:rgba(255,255,255,.82)}
+.vx-caption p{margin:0;max-width:580px;font-size:12px;line-height:1.6;color:rgba(17,17,17,.75)}
 .vx-progress{position:absolute;left:clamp(18px,5vw,72px);top:28px;display:flex;gap:5px;flex-wrap:wrap;max-width:min(50vw,420px)}
-.vx-progress i{display:block;width:20px;height:2px;background:rgba(255,255,255,.28);overflow:hidden}
-.vx-progress i::after{content:"";display:block;width:100%;height:100%;background:#fff;transform:scaleX(0);transform-origin:left center}
+.vx-progress i{display:block;width:20px;height:2px;background:rgba(17,17,17,.16);overflow:hidden}
+.vx-progress i::after{content:"";display:block;width:100%;height:100%;background:#111;transform:scaleX(0);transform-origin:left center}
 .vx-progress i.done::after{transform:scaleX(1)}
 .vx-progress i.active::after{transform:scaleX(var(--fill,0))}
-.vx-after{padding:70px 0}
-.vx-provenance{display:grid;grid-template-columns:250px minmax(0,1fr);gap:62px;padding:58px 0;border-top:1px solid var(--line)}
+.vx-after{padding:70px 0;background:#fff}
+.vx-provenance{padding:58px 0;border-top:1px solid var(--line)}
 .vx-notice{margin-top:22px;padding:18px;border:1px solid var(--line);border-radius:8px;background:var(--soft)}
 .vx-notice strong{display:block;margin-bottom:7px;font-size:10px;text-transform:uppercase;letter-spacing:.06em}
 .vx-notice p{margin:0;color:#414141;font-size:11px;line-height:1.65}
@@ -83,7 +119,7 @@ a{color:inherit;text-decoration:none}
 .vx-prov-img{overflow:hidden;border-radius:7px;border:1px solid var(--line);background:#111}
 .vx-prov-img img{aspect-ratio:16/9;object-fit:cover}
 .vx-prov-img span{display:block;padding:10px;color:#777;font-size:8px;background:#fafafa}
-.vx-availability{display:grid;grid-template-columns:250px minmax(0,1fr);gap:62px;padding:58px 0;border-top:1px solid var(--line)}
+.vx-availability{padding:58px 0;border-top:1px solid var(--line)}
 .vx-table{border-top:1px solid var(--line)}
 .vx-row{display:flex;justify-content:space-between;gap:20px;padding:14px 0;border-bottom:1px solid var(--line);font-size:11px}
 .vx-row span{color:#777}.vx-row strong{font-weight:600;text-align:right}
@@ -115,6 +151,8 @@ a{color:inherit;text-decoration:none}
   .vx-caption h3{font-size:32px}
   .vx-caption p{font-size:11px}
   .vx-stage{padding:8px 8px 96px}
+  .vx-stage::before{width:calc(100% - 16px);height:min(66vh,680px);border-radius:18px}
+  .vx-stage img{inset:16px 16px 100px 16px;width:calc(100% - 32px);height:calc(100% - 116px)}
   .vx-prov-grid{grid-template-columns:1fr}
   .vx-footer{flex-direction:column}
 }
@@ -197,6 +235,7 @@ a{color:inherit;text-decoration:none}
         <h2>A major quality upgrade for Virexa.</h2>
         <p>Virexa 3.5 is a Preview image-generation model focused on substantially higher visual quality, stronger composition, better text rendering, and more convincing people, objects, diagrams, products, food, and natural scenes.</p>
         <p>The current Preview supports text input and image output only. It is available in Zorix Chat; public API access and pricing have not been announced.</p>
+        <p>Image-to-image and related editing workflows are currently in internal testing.</p>
       </div>
     </section>
   </div>
@@ -269,14 +308,18 @@ a{color:inherit;text-decoration:none}
 
     <section class="vx-availability">
       <div class="vx-label">Availability</div>
-      <div class="vx-table">
-        <div class="vx-row"><span>Status</span><strong>Preview</strong></div>
-        <div class="vx-row"><span>Zorix Chat</span><strong>Available</strong></div>
-        <div class="vx-row"><span>Input</span><strong>Text</strong></div>
-        <div class="vx-row"><span>Output</span><strong>Image</strong></div>
-        <div class="vx-row"><span>Image input / editing</span><strong>Not supported yet</strong></div>
-        <div class="vx-row"><span>Public API</span><strong>Not available yet</strong></div>
-        <div class="vx-row"><span>Pricing</span><strong>To be announced</strong></div>
+      <div>
+        <h2>Available in Chat, with more workflows under test.</h2>
+        <p>Zorix Virexa 3.5 is currently available in Zorix Chat for text-to-image generation. Image-to-image is in internal testing and is not publicly available yet.</p>
+        <div class="vx-table">
+          <div class="vx-row"><span>Status</span><strong>Preview</strong></div>
+          <div class="vx-row"><span>Zorix Chat</span><strong>Available</strong></div>
+          <div class="vx-row"><span>Input</span><strong>Text</strong></div>
+          <div class="vx-row"><span>Output</span><strong>Image</strong></div>
+          <div class="vx-row"><span>Image-to-image</span><strong>Internal testing</strong></div>
+          <div class="vx-row"><span>Public API</span><strong>Not available yet</strong></div>
+          <div class="vx-row"><span>Pricing</span><strong>To be announced</strong></div>
+        </div>
       </div>
     </section>
 
@@ -318,17 +361,17 @@ a{color:inherit;text-decoration:none}
 
     frames.forEach((frame, i) => {
       let opacity = 0;
-      let scale = 1.045;
-      let y = 24;
+      let scale = 1.03;
+      let y = 20;
 
       if (i === index) {
         opacity = 1 - Math.max(0, (local - 0.72) / 0.28);
-        scale = 1.02 - local * 0.02;
-        y = 14 - local * 14;
+        scale = 1.01 - local * 0.01;
+        y = 10 - local * 10;
       } else if (i === index + 1) {
         opacity = Math.max(0, (local - 0.72) / 0.28);
-        scale = 1.045 - Math.max(0, (local - 0.72) / 0.28) * 0.025;
-        y = 24 - Math.max(0, (local - 0.72) / 0.28) * 10;
+        scale = 1.03 - Math.max(0, (local - 0.72) / 0.28) * 0.02;
+        y = 20 - Math.max(0, (local - 0.72) / 0.28) * 10;
       }
 
       if (reduced) {
