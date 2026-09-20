@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 520">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#F4F4F2"/></linearGradient></defs>
+<rect width="860" height="520" fill="url(#bg)"/>
+<rect x="30" y="30" width="800" height="460" rx="34" fill="#ffffff" stroke="#E5E7EB" stroke-width="2"/>
+<text x="72" y="88" font-size="18" font-family="Arial,sans-serif" fill="#666">Seconda media · Musica</text>
+<text x="72" y="138" font-size="32" font-family="Arial,sans-serif" fill="#111" font-weight="700"><tspan x="72" dy="0">Pratica d’insieme e</tspan><tspan x="72" dy="34">ascolto guidato</tspan></text>
+<text x="72" y="198" font-size="18" font-family="Arial,sans-serif" fill="#666">Zorix Education · visual summary</text>
+<path d="M330 160v135c0 22-18 40-40 40s-40-18-40-40 18-40 40-40c11 0 20 2 27 6V198l170-38v128c0 22-18 40-40 40s-40-18-40-40 18-40 40-40c11 0 20 2 27 6V180z" fill="#C2410C" opacity=".86"/><circle cx="630" cy="220" r="34" fill="#C2410C" opacity=".12" stroke="#C2410C" stroke-width="4"/>
+<rect x="72" y="404" rx="16" ry="16" width="96" height="34" fill="#C2410C" opacity=".10"/><text x="88" y="426" font-size="16" font-family="Arial,sans-serif" fill="#C2410C" font-weight="700">Ascolto</text><rect x="180" y="404" rx="16" ry="16" width="138" height="34" fill="#C2410C" opacity=".10"/><text x="196" y="426" font-size="16" font-family="Arial,sans-serif" fill="#C2410C" font-weight="700">Storia e generi</text><rect x="330" y="404" rx="16" ry="16" width="146" height="34" fill="#C2410C" opacity=".10"/><text x="346" y="426" font-size="16" font-family="Arial,sans-serif" fill="#C2410C" font-weight="700">Pratica musicale</text>
+<circle cx="770" cy="92" r="28" fill="#C2410C"/>
+<text x="770" y="99" text-anchor="middle" font-size="15" font-family="Arial,sans-serif" fill="#fff" font-weight="700">♫</text>
+</svg>

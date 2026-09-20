@@ -2,7 +2,7 @@
   "site": "Zorix Education",
   "scope": "Scuola secondaria di primo grado · seconda e terza media",
   "note": "Catalogo editoriale Zorix Education; non è un programma ministeriale ufficiale.",
-  "updatedAt": "2026-09-20T10:09:04+02:00",
+  "updatedAt": "2026-09-20T10:17:17+02:00",
   "total": 104,
   "subjects": [
     "Italiano",
@@ -37,7 +37,13 @@
         "Grammatica e lessico"
       ],
       "path": "/education/p/subject/2/il-testo-narrativo-e-i-suoi-elementi/",
-      "url": "https://developer.zorix.it/education/p/subject/2/il-testo-narrativo-e-i-suoi-elementi/"
+      "url": "https://developer.zorix.it/education/p/subject/2/il-testo-narrativo-e-i-suoi-elementi/",
+      "illustration": "/assets/education/2-italiano-il-testo-narrativo-e-i-suoi-elementi.svg",
+      "accent": "#7C3AED",
+      "subjectIcon": "IT",
+      "quickExample": "Trova le parole chiave e prova a riscrivere il nucleo con parole tue.",
+      "miniChallenge": "Mini sfida: riassumi in 20 parole.",
+      "whyItMatters": "Serve per capire e scrivere meglio."
     },
     {
       "id": "2-italiano-poesia-ritmo-e-figure-retoriche",
@@ -52,7 +58,13 @@
         "Grammatica e lessico"
       ],
       "path": "/education/p/subject/2/poesia-ritmo-e-figure-retoriche/",
-      "url": "https://developer.zorix.it/education/p/subject/2/poesia-ritmo-e-figure-retoriche/"
+      "url": "https://developer.zorix.it/education/p/subject/2/poesia-ritmo-e-figure-retoriche/",
+      "illustration": "/assets/education/2-italiano-poesia-ritmo-e-figure-retoriche.svg",
+      "accent": "#7C3AED",
+      "subjectIcon": "IT",
+      "quickExample": "Trova le parole chiave e prova a riscrivere il nucleo con parole tue.",
+      "miniChallenge": "Mini sfida: riassumi in 20 parole.",
+      "whyItMatters": "Serve per capire e scrivere meglio."
     },
     {
       "id": "2-italiano-frase-semplice-e-analisi-logica",
@@ -67,7 +79,13 @@
         "Grammatica e lessico"
       ],
       "path": "/education/p/subject/2/frase-semplice-e-analisi-logica/",
-      "url": "https://developer.zorix.it/education/p/subject/2/frase-semplice-e-analisi-logica/"
+      "url": "https://developer.zorix.it/education/p/subject/2/frase-semplice-e-analisi-logica/",
+      "illustration": "/assets/education/2-italiano-frase-semplice-e-analisi-logica.svg",
+      "accent": "#7C3AED",
+      "subjectIcon": "IT",
+      "quickExample": "Trova le parole chiave e prova a riscrivere il nucleo con parole tue.",
+      "miniChallenge": "Mini sfida: riassumi in 20 parole.",
+      "whyItMatters": "Serve per capire e scrivere meglio."
     },
     {
       "id": "2-italiano-riassunto-descrizione-e-argomentazione",
@@ -82,7 +100,13 @@
         "Grammatica e lessico"
       ],
       "path": "/education/p/subject/2/riassunto-descrizione-e-argomentazione/",
-      "url": "https://developer.zorix.it/education/p/subject/2/riassunto-descrizione-e-argomentazione/"
+      "url": "https://developer.zorix.it/education/p/subject/2/riassunto-descrizione-e-argomentazione/",
+      "illustration": "/assets/education/2-italiano-riassunto-descrizione-e-argomentazione.svg",
+      "accent": "#7C3AED",
+      "subjectIcon": "IT",
+      "quickExample": "Trova le parole chiave e prova a riscrivere il nucleo con parole tue.",
+      "miniChallenge": "Mini sfida: riassumi in 20 parole.",
+      "whyItMatters": "Serve per capire e scrivere meglio."
     },
     {
       "id": "2-storia-rinascimento-e-nuovi-equilibri-europei",
@@ -97,7 +121,13 @@
         "Fonti e lessico storico"
       ],
       "path": "/education/p/subject/2/rinascimento-e-nuovi-equilibri-europei/",
-      "url": "https://developer.zorix.it/education/p/subject/2/rinascimento-e-nuovi-equilibri-europei/"
+      "url": "https://developer.zorix.it/education/p/subject/2/rinascimento-e-nuovi-equilibri-europei/",
+      "illustration": "/assets/education/2-storia-rinascimento-e-nuovi-equilibri-europei.svg",
+      "accent": "#2563EB",
+      "subjectIcon": "ST",
+      "quickExample": "Metti 3 eventi in ordine e collega cause ed effetti.",
+      "miniChallenge": "Mini sfida: scrivi causa → evento → conseguenza.",
+      "whyItMatters": "Serve per collegare passato e presente."
     },
     {
       "id": "2-storia-riforma-e-controriforma",
@@ -112,7 +142,13 @@
         "Fonti e lessico storico"
       ],
       "path": "/education/p/subject/2/riforma-e-controriforma/",
-      "url": "https://developer.zorix.it/education/p/subject/2/riforma-e-controriforma/"
+      "url": "https://developer.zorix.it/education/p/subject/2/riforma-e-controriforma/",
+      "illustration": "/assets/education/2-storia-riforma-e-controriforma.svg",
+      "accent": "#2563EB",
+      "subjectIcon": "ST",
+      "quickExample": "Metti 3 eventi in ordine e collega cause ed effetti.",
+      "miniChallenge": "Mini sfida: scrivi causa → evento → conseguenza.",
+      "whyItMatters": "Serve per collegare passato e presente."
     },
     {
       "id": "2-storia-illuminismo-e-rivoluzioni",
@@ -127,7 +163,13 @@
         "Fonti e lessico storico"
       ],
       "path": "/education/p/subject/2/illuminismo-e-rivoluzioni/",
-      "url": "https://developer.zorix.it/education/p/subject/2/illuminismo-e-rivoluzioni/"
+      "url": "https://developer.zorix.it/education/p/subject/2/illuminismo-e-rivoluzioni/",
+      "illustration": "/assets/education/2-storia-illuminismo-e-rivoluzioni.svg",
+      "accent": "#2563EB",
+      "subjectIcon": "ST",
+      "quickExample": "Metti 3 eventi in ordine e collega cause ed effetti.",
+      "miniChallenge": "Mini sfida: scrivi causa → evento → conseguenza.",
+      "whyItMatters": "Serve per collegare passato e presente."
     },
     {
       "id": "2-storia-rivoluzione-industriale-e-societa",
@@ -142,7 +184,13 @@
         "Fonti e lessico storico"
       ],
       "path": "/education/p/subject/2/rivoluzione-industriale-e-societa/",
-      "url": "https://developer.zorix.it/education/p/subject/2/rivoluzione-industriale-e-societa/"
+      "url": "https://developer.zorix.it/education/p/subject/2/rivoluzione-industriale-e-societa/",
+      "illustration": "/assets/education/2-storia-rivoluzione-industriale-e-societa.svg",
+      "accent": "#2563EB",
+      "subjectIcon": "ST",
+      "quickExample": "Metti 3 eventi in ordine e collega cause ed effetti.",
+      "miniChallenge": "Mini sfida: scrivi causa → evento → conseguenza.",
+      "whyItMatters": "Serve per collegare passato e presente."
     },
     {
       "id": "2-geografia-europa-fisica-e-politica",
@@ -157,7 +205,13 @@
         "Relazioni tra aree geografiche"
       ],
       "path": "/education/p/subject/2/europa-fisica-e-politica/",
-      "url": "https://developer.zorix.it/education/p/subject/2/europa-fisica-e-politica/"
+      "url": "https://developer.zorix.it/education/p/subject/2/europa-fisica-e-politica/",
+      "illustration": "/assets/education/2-geografia-europa-fisica-e-politica.svg",
+      "accent": "#0891B2",
+      "subjectIcon": "GE",
+      "quickExample": "Parti da una mappa o da uno schema e collega luoghi, persone e risorse.",
+      "miniChallenge": "Mini sfida: spiega una carta con 2 dati.",
+      "whyItMatters": "Serve per leggere territori e relazioni."
     },
     {
       "id": "2-geografia-popolazione-e-citta-europee",
@@ -172,7 +226,13 @@
         "Relazioni tra aree geografiche"
       ],
       "path": "/education/p/subject/2/popolazione-e-citta-europee/",
-      "url": "https://developer.zorix.it/education/p/subject/2/popolazione-e-citta-europee/"
+      "url": "https://developer.zorix.it/education/p/subject/2/popolazione-e-citta-europee/",
+      "illustration": "/assets/education/2-geografia-popolazione-e-citta-europee.svg",
+      "accent": "#0891B2",
+      "subjectIcon": "GE",
+      "quickExample": "Parti da una mappa o da uno schema e collega luoghi, persone e risorse.",
+      "miniChallenge": "Mini sfida: spiega una carta con 2 dati.",
+      "whyItMatters": "Serve per leggere territori e relazioni."
     },
     {
       "id": "2-geografia-economia-e-reti-europee",
@@ -187,7 +247,13 @@
         "Relazioni tra aree geografiche"
       ],
       "path": "/education/p/subject/2/economia-e-reti-europee/",
-      "url": "https://developer.zorix.it/education/p/subject/2/economia-e-reti-europee/"
+      "url": "https://developer.zorix.it/education/p/subject/2/economia-e-reti-europee/",
+      "illustration": "/assets/education/2-geografia-economia-e-reti-europee.svg",
+      "accent": "#0891B2",
+      "subjectIcon": "GE",
+      "quickExample": "Parti da una mappa o da uno schema e collega luoghi, persone e risorse.",
+      "miniChallenge": "Mini sfida: spiega una carta con 2 dati.",
+      "whyItMatters": "Serve per leggere territori e relazioni."
     },
     {
       "id": "2-geografia-unione-europea-e-cittadinanza",
@@ -202,7 +268,13 @@
         "Relazioni tra aree geografiche"
       ],
       "path": "/education/p/subject/2/unione-europea-e-cittadinanza/",
-      "url": "https://developer.zorix.it/education/p/subject/2/unione-europea-e-cittadinanza/"
+      "url": "https://developer.zorix.it/education/p/subject/2/unione-europea-e-cittadinanza/",
+      "illustration": "/assets/education/2-geografia-unione-europea-e-cittadinanza.svg",
+      "accent": "#0891B2",
+      "subjectIcon": "GE",
+      "quickExample": "Parti da una mappa o da uno schema e collega luoghi, persone e risorse.",
+      "miniChallenge": "Mini sfida: spiega una carta con 2 dati.",
+      "whyItMatters": "Serve per leggere territori e relazioni."
     },
     {
       "id": "2-matematica-frazioni-numeri-razionali-e-proporzioni",
@@ -217,7 +289,13 @@
         "Geometria e dati"
       ],
       "path": "/education/p/subject/2/frazioni-numeri-razionali-e-proporzioni/",
-      "url": "https://developer.zorix.it/education/p/subject/2/frazioni-numeri-razionali-e-proporzioni/"
+      "url": "https://developer.zorix.it/education/p/subject/2/frazioni-numeri-razionali-e-proporzioni/",
+      "illustration": "/assets/education/2-matematica-frazioni-numeri-razionali-e-proporzioni.svg",
+      "accent": "#16A34A",
+      "subjectIcon": "∑",
+      "quickExample": "Parti da un esempio breve, segna i passaggi e controlla il risultato.",
+      "miniChallenge": "Mini sfida: spiega il procedimento in 3 righe.",
+      "whyItMatters": "Serve per ragionare con ordine e verificare i passaggi."
     },
     {
       "id": "2-matematica-percentuali-rapporti-e-problemi",
@@ -232,7 +310,13 @@
         "Geometria e dati"
       ],
       "path": "/education/p/subject/2/percentuali-rapporti-e-problemi/",
-      "url": "https://developer.zorix.it/education/p/subject/2/percentuali-rapporti-e-problemi/"
+      "url": "https://developer.zorix.it/education/p/subject/2/percentuali-rapporti-e-problemi/",
+      "illustration": "/assets/education/2-matematica-percentuali-rapporti-e-problemi.svg",
+      "accent": "#16A34A",
+      "subjectIcon": "∑",
+      "quickExample": "Parti da un esempio breve, segna i passaggi e controlla il risultato.",
+      "miniChallenge": "Mini sfida: spiega il procedimento in 3 righe.",
+      "whyItMatters": "Serve per ragionare con ordine e verificare i passaggi."
     },
     {
       "id": "2-matematica-pitagora-aree-e-geometria-piana",
@@ -247,7 +331,13 @@
         "Geometria e dati"
       ],
       "path": "/education/p/subject/2/pitagora-aree-e-geometria-piana/",
-      "url": "https://developer.zorix.it/education/p/subject/2/pitagora-aree-e-geometria-piana/"
+      "url": "https://developer.zorix.it/education/p/subject/2/pitagora-aree-e-geometria-piana/",
+      "illustration": "/assets/education/2-matematica-pitagora-aree-e-geometria-piana.svg",
+      "accent": "#16A34A",
+      "subjectIcon": "∑",
+      "quickExample": "Parti da un esempio breve, segna i passaggi e controlla il risultato.",
+      "miniChallenge": "Mini sfida: spiega il procedimento in 3 righe.",
+      "whyItMatters": "Serve per ragionare con ordine e verificare i passaggi."
     },
     {
       "id": "2-matematica-dati-grafici-e-probabilita",
@@ -262,7 +352,13 @@
         "Geometria e dati"
       ],
       "path": "/education/p/subject/2/dati-grafici-e-probabilita/",
-      "url": "https://developer.zorix.it/education/p/subject/2/dati-grafici-e-probabilita/"
+      "url": "https://developer.zorix.it/education/p/subject/2/dati-grafici-e-probabilita/",
+      "illustration": "/assets/education/2-matematica-dati-grafici-e-probabilita.svg",
+      "accent": "#16A34A",
+      "subjectIcon": "∑",
+      "quickExample": "Parti da un esempio breve, segna i passaggi e controlla il risultato.",
+      "miniChallenge": "Mini sfida: spiega il procedimento in 3 righe.",
+      "whyItMatters": "Serve per ragionare con ordine e verificare i passaggi."
     },
     {
       "id": "2-scienze-atomi-molecole-e-materia",
@@ -277,7 +373,13 @@
         "Dati, esperimenti e relazioni"
       ],
       "path": "/education/p/subject/2/atomi-molecole-e-materia/",
-      "url": "https://developer.zorix.it/education/p/subject/2/atomi-molecole-e-materia/"
+      "url": "https://developer.zorix.it/education/p/subject/2/atomi-molecole-e-materia/",
+      "illustration": "/assets/education/2-scienze-atomi-molecole-e-materia.svg",
+      "accent": "#DC2626",
+      "subjectIcon": "SC",
+      "quickExample": "Osserva un fenomeno, nomina le parti e chiediti cosa cambia e perché.",
+      "miniChallenge": "Mini sfida: disegna lo schema e aggiungi 3 etichette.",
+      "whyItMatters": "Serve per capire meglio il mondo naturale."
     },
     {
       "id": "2-scienze-forze-movimento-ed-equilibrio",
@@ -292,7 +394,13 @@
         "Dati, esperimenti e relazioni"
       ],
       "path": "/education/p/subject/2/forze-movimento-ed-equilibrio/",
-      "url": "https://developer.zorix.it/education/p/subject/2/forze-movimento-ed-equilibrio/"
+      "url": "https://developer.zorix.it/education/p/subject/2/forze-movimento-ed-equilibrio/",
+      "illustration": "/assets/education/2-scienze-forze-movimento-ed-equilibrio.svg",
+      "accent": "#DC2626",
+      "subjectIcon": "SC",
+      "quickExample": "Osserva un fenomeno, nomina le parti e chiediti cosa cambia e perché.",
+      "miniChallenge": "Mini sfida: disegna lo schema e aggiungi 3 etichette.",
+      "whyItMatters": "Serve per capire meglio il mondo naturale."
     },
     {
       "id": "2-scienze-corpo-umano-apparati-e-funzioni",
@@ -307,7 +415,13 @@
         "Dati, esperimenti e relazioni"
       ],
       "path": "/education/p/subject/2/corpo-umano-apparati-e-funzioni/",
-      "url": "https://developer.zorix.it/education/p/subject/2/corpo-umano-apparati-e-funzioni/"
+      "url": "https://developer.zorix.it/education/p/subject/2/corpo-umano-apparati-e-funzioni/",
+      "illustration": "/assets/education/2-scienze-corpo-umano-apparati-e-funzioni.svg",
+      "accent": "#DC2626",
+      "subjectIcon": "SC",
+      "quickExample": "Osserva un fenomeno, nomina le parti e chiediti cosa cambia e perché.",
+      "miniChallenge": "Mini sfida: disegna lo schema e aggiungi 3 etichette.",
+      "whyItMatters": "Serve per capire meglio il mondo naturale."
     },
     {
       "id": "2-scienze-ecosistemi-e-biodiversita",
@@ -322,7 +436,13 @@
         "Dati, esperimenti e relazioni"
       ],
       "path": "/education/p/subject/2/ecosistemi-e-biodiversita/",
-      "url": "https://developer.zorix.it/education/p/subject/2/ecosistemi-e-biodiversita/"
+      "url": "https://developer.zorix.it/education/p/subject/2/ecosistemi-e-biodiversita/",
+      "illustration": "/assets/education/2-scienze-ecosistemi-e-biodiversita.svg",
+      "accent": "#DC2626",
+      "subjectIcon": "SC",
+      "quickExample": "Osserva un fenomeno, nomina le parti e chiediti cosa cambia e perché.",
+      "miniChallenge": "Mini sfida: disegna lo schema e aggiungi 3 etichette.",
+      "whyItMatters": "Serve per capire meglio il mondo naturale."
     },
     {
       "id": "2-inglese-daily-life-and-past-experiences",
@@ -337,7 +457,13 @@
         "Grammar and vocabulary"
       ],
       "path": "/education/p/subject/2/daily-life-and-past-experiences/",
-      "url": "https://developer.zorix.it/education/p/subject/2/daily-life-and-past-experiences/"
+      "url": "https://developer.zorix.it/education/p/subject/2/daily-life-and-past-experiences/",
+      "illustration": "/assets/education/2-inglese-daily-life-and-past-experiences.svg",
+      "accent": "#EA580C",
+      "subjectIcon": "EN",
+      "quickExample": "Impara poche parole utili e usale in una frase reale.",
+      "miniChallenge": "Mini sfida: usa 5 parole nuove in un mini-dialogo.",
+      "whyItMatters": "Serve per comunicare con più sicurezza."
     },
     {
       "id": "2-inglese-past-simple-and-past-continuous",
@@ -352,7 +478,13 @@
         "Grammar and vocabulary"
       ],
       "path": "/education/p/subject/2/past-simple-and-past-continuous/",
-      "url": "https://developer.zorix.it/education/p/subject/2/past-simple-and-past-continuous/"
+      "url": "https://developer.zorix.it/education/p/subject/2/past-simple-and-past-continuous/",
+      "illustration": "/assets/education/2-inglese-past-simple-and-past-continuous.svg",
+      "accent": "#EA580C",
+      "subjectIcon": "EN",
+      "quickExample": "Impara poche parole utili e usale in una frase reale.",
+      "miniChallenge": "Mini sfida: usa 5 parole nuove in un mini-dialogo.",
+      "whyItMatters": "Serve per comunicare con più sicurezza."
     },
     {
       "id": "2-inglese-comparatives-and-describing-places",
@@ -367,7 +499,13 @@
         "Grammar and vocabulary"
       ],
       "path": "/education/p/subject/2/comparatives-and-describing-places/",
-      "url": "https://developer.zorix.it/education/p/subject/2/comparatives-and-describing-places/"
+      "url": "https://developer.zorix.it/education/p/subject/2/comparatives-and-describing-places/",
+      "illustration": "/assets/education/2-inglese-comparatives-and-describing-places.svg",
+      "accent": "#EA580C",
+      "subjectIcon": "EN",
+      "quickExample": "Impara poche parole utili e usale in una frase reale.",
+      "miniChallenge": "Mini sfida: usa 5 parole nuove in un mini-dialogo.",
+      "whyItMatters": "Serve per comunicare con più sicurezza."
     },
     {
       "id": "2-inglese-travel-food-and-everyday-communication",
@@ -382,7 +520,13 @@
         "Grammar and vocabulary"
       ],
       "path": "/education/p/subject/2/travel-food-and-everyday-communication/",
-      "url": "https://developer.zorix.it/education/p/subject/2/travel-food-and-everyday-communication/"
+      "url": "https://developer.zorix.it/education/p/subject/2/travel-food-and-everyday-communication/",
+      "illustration": "/assets/education/2-inglese-travel-food-and-everyday-communication.svg",
+      "accent": "#EA580C",
+      "subjectIcon": "EN",
+      "quickExample": "Impara poche parole utili e usale in una frase reale.",
+      "miniChallenge": "Mini sfida: usa 5 parole nuove in un mini-dialogo.",
+      "whyItMatters": "Serve per comunicare con più sicurezza."
     },
     {
       "id": "2-seconda-lingua-vita-quotidiana-e-tempo-libero",
@@ -397,7 +541,13 @@
         "Lessico e strutture di base"
       ],
       "path": "/education/p/subject/2/vita-quotidiana-e-tempo-libero/",
-      "url": "https://developer.zorix.it/education/p/subject/2/vita-quotidiana-e-tempo-libero/"
+      "url": "https://developer.zorix.it/education/p/subject/2/vita-quotidiana-e-tempo-libero/",
+      "illustration": "/assets/education/2-seconda-lingua-vita-quotidiana-e-tempo-libero.svg",
+      "accent": "#DB2777",
+      "subjectIcon": "L2",
+      "quickExample": "Usa espressioni semplici in contesti quotidiani.",
+      "miniChallenge": "Mini sfida: prova una conversazione in 4 battute.",
+      "whyItMatters": "Serve per aprirsi a un’altra lingua."
     },
     {
       "id": "2-seconda-lingua-raccontare-esperienze-passate",
@@ -412,7 +562,13 @@
         "Lessico e strutture di base"
       ],
       "path": "/education/p/subject/2/raccontare-esperienze-passate/",
-      "url": "https://developer.zorix.it/education/p/subject/2/raccontare-esperienze-passate/"
+      "url": "https://developer.zorix.it/education/p/subject/2/raccontare-esperienze-passate/",
+      "illustration": "/assets/education/2-seconda-lingua-raccontare-esperienze-passate.svg",
+      "accent": "#DB2777",
+      "subjectIcon": "L2",
+      "quickExample": "Usa espressioni semplici in contesti quotidiani.",
+      "miniChallenge": "Mini sfida: prova una conversazione in 4 battute.",
+      "whyItMatters": "Serve per aprirsi a un’altra lingua."
     },
     {
       "id": "2-seconda-lingua-citta-viaggi-e-indicazioni",
@@ -427,7 +583,13 @@
         "Lessico e strutture di base"
       ],
       "path": "/education/p/subject/2/citta-viaggi-e-indicazioni/",
-      "url": "https://developer.zorix.it/education/p/subject/2/citta-viaggi-e-indicazioni/"
+      "url": "https://developer.zorix.it/education/p/subject/2/citta-viaggi-e-indicazioni/",
+      "illustration": "/assets/education/2-seconda-lingua-citta-viaggi-e-indicazioni.svg",
+      "accent": "#DB2777",
+      "subjectIcon": "L2",
+      "quickExample": "Usa espressioni semplici in contesti quotidiani.",
+      "miniChallenge": "Mini sfida: prova una conversazione in 4 battute.",
+      "whyItMatters": "Serve per aprirsi a un’altra lingua."
     },
     {
       "id": "2-seconda-lingua-acquisti-e-comunicazione-pratica",
@@ -442,7 +604,13 @@
         "Lessico e strutture di base"
       ],
       "path": "/education/p/subject/2/acquisti-e-comunicazione-pratica/",
-      "url": "https://developer.zorix.it/education/p/subject/2/acquisti-e-comunicazione-pratica/"
+      "url": "https://developer.zorix.it/education/p/subject/2/acquisti-e-comunicazione-pratica/",
+      "illustration": "/assets/education/2-seconda-lingua-acquisti-e-comunicazione-pratica.svg",
+      "accent": "#DB2777",
+      "subjectIcon": "L2",
+      "quickExample": "Usa espressioni semplici in contesti quotidiani.",
+      "miniChallenge": "Mini sfida: prova una conversazione in 4 battute.",
+      "whyItMatters": "Serve per aprirsi a un’altra lingua."
     },
     {
       "id": "2-tecnologia-materiali-e-processi-produttivi",
@@ -457,7 +625,13 @@
         "Energia e sostenibilità"
       ],
       "path": "/education/p/subject/2/materiali-e-processi-produttivi/",
-      "url": "https://developer.zorix.it/education/p/subject/2/materiali-e-processi-produttivi/"
+      "url": "https://developer.zorix.it/education/p/subject/2/materiali-e-processi-produttivi/",
+      "illustration": "/assets/education/2-tecnologia-materiali-e-processi-produttivi.svg",
+      "accent": "#4F46E5",
+      "subjectIcon": "TX",
+      "quickExample": "Scomponi il sistema in materiale, funzione, energia e sicurezza.",
+      "miniChallenge": "Mini sfida: disegna il flusso di funzionamento.",
+      "whyItMatters": "Serve per capire oggetti e sistemi reali."
     },
     {
       "id": "2-tecnologia-disegno-tecnico-e-proiezioni",
@@ -472,7 +646,13 @@
         "Energia e sostenibilità"
       ],
       "path": "/education/p/subject/2/disegno-tecnico-e-proiezioni/",
-      "url": "https://developer.zorix.it/education/p/subject/2/disegno-tecnico-e-proiezioni/"
+      "url": "https://developer.zorix.it/education/p/subject/2/disegno-tecnico-e-proiezioni/",
+      "illustration": "/assets/education/2-tecnologia-disegno-tecnico-e-proiezioni.svg",
+      "accent": "#4F46E5",
+      "subjectIcon": "TX",
+      "quickExample": "Scomponi il sistema in materiale, funzione, energia e sicurezza.",
+      "miniChallenge": "Mini sfida: disegna il flusso di funzionamento.",
+      "whyItMatters": "Serve per capire oggetti e sistemi reali."
     },
     {
       "id": "2-tecnologia-abitazione-strutture-e-territorio",
@@ -487,7 +667,13 @@
         "Energia e sostenibilità"
       ],
       "path": "/education/p/subject/2/abitazione-strutture-e-territorio/",
-      "url": "https://developer.zorix.it/education/p/subject/2/abitazione-strutture-e-territorio/"
+      "url": "https://developer.zorix.it/education/p/subject/2/abitazione-strutture-e-territorio/",
+      "illustration": "/assets/education/2-tecnologia-abitazione-strutture-e-territorio.svg",
+      "accent": "#4F46E5",
+      "subjectIcon": "TX",
+      "quickExample": "Scomponi il sistema in materiale, funzione, energia e sicurezza.",
+      "miniChallenge": "Mini sfida: disegna il flusso di funzionamento.",
+      "whyItMatters": "Serve per capire oggetti e sistemi reali."
     },
     {
       "id": "2-tecnologia-alimentazione-e-conservazione",
@@ -502,7 +688,13 @@
         "Energia e sostenibilità"
       ],
       "path": "/education/p/subject/2/alimentazione-e-conservazione/",
-      "url": "https://developer.zorix.it/education/p/subject/2/alimentazione-e-conservazione/"
+      "url": "https://developer.zorix.it/education/p/subject/2/alimentazione-e-conservazione/",
+      "illustration": "/assets/education/2-tecnologia-alimentazione-e-conservazione.svg",
+      "accent": "#4F46E5",
+      "subjectIcon": "TX",
+      "quickExample": "Scomponi il sistema in materiale, funzione, energia e sicurezza.",
+      "miniChallenge": "Mini sfida: disegna il flusso di funzionamento.",
+      "whyItMatters": "Serve per capire oggetti e sistemi reali."
     },
     {
       "id": "2-informatica-file-dati-e-organizzazione-delle-informazioni",
@@ -517,7 +709,13 @@
         "Sicurezza e cittadinanza digitale"
       ],
       "path": "/education/p/subject/2/file-dati-e-organizzazione-delle-informazioni/",
-      "url": "https://developer.zorix.it/education/p/subject/2/file-dati-e-organizzazione-delle-informazioni/"
+      "url": "https://developer.zorix.it/education/p/subject/2/file-dati-e-organizzazione-delle-informazioni/",
+      "illustration": "/assets/education/2-informatica-file-dati-e-organizzazione-delle-informazioni.svg",
+      "accent": "#0F766E",
+      "subjectIcon": "</>",
+      "quickExample": "Pensa a input, logica e output prima di scrivere.",
+      "miniChallenge": "Mini sfida: descrivi l’algoritmo in 4 passi.",
+      "whyItMatters": "Serve per pensare in modo logico e usare bene il digitale."
     },
     {
       "id": "2-informatica-algoritmi-e-diagrammi-di-flusso",
@@ -532,7 +730,13 @@
         "Sicurezza e cittadinanza digitale"
       ],
       "path": "/education/p/subject/2/algoritmi-e-diagrammi-di-flusso/",
-      "url": "https://developer.zorix.it/education/p/subject/2/algoritmi-e-diagrammi-di-flusso/"
+      "url": "https://developer.zorix.it/education/p/subject/2/algoritmi-e-diagrammi-di-flusso/",
+      "illustration": "/assets/education/2-informatica-algoritmi-e-diagrammi-di-flusso.svg",
+      "accent": "#0F766E",
+      "subjectIcon": "</>",
+      "quickExample": "Pensa a input, logica e output prima di scrivere.",
+      "miniChallenge": "Mini sfida: descrivi l’algoritmo in 4 passi.",
+      "whyItMatters": "Serve per pensare in modo logico e usare bene il digitale."
     },
     {
       "id": "2-informatica-programmazione-visuale-e-logica",
@@ -547,7 +751,13 @@
         "Sicurezza e cittadinanza digitale"
       ],
       "path": "/education/p/subject/2/programmazione-visuale-e-logica/",
-      "url": "https://developer.zorix.it/education/p/subject/2/programmazione-visuale-e-logica/"
+      "url": "https://developer.zorix.it/education/p/subject/2/programmazione-visuale-e-logica/",
+      "illustration": "/assets/education/2-informatica-programmazione-visuale-e-logica.svg",
+      "accent": "#0F766E",
+      "subjectIcon": "</>",
+      "quickExample": "Pensa a input, logica e output prima di scrivere.",
+      "miniChallenge": "Mini sfida: descrivi l’algoritmo in 4 passi.",
+      "whyItMatters": "Serve per pensare in modo logico e usare bene il digitale."
     },
     {
       "id": "2-informatica-password-privacy-e-sicurezza-digitale",
@@ -562,7 +772,13 @@
         "Sicurezza e cittadinanza digitale"
       ],
       "path": "/education/p/subject/2/password-privacy-e-sicurezza-digitale/",
-      "url": "https://developer.zorix.it/education/p/subject/2/password-privacy-e-sicurezza-digitale/"
+      "url": "https://developer.zorix.it/education/p/subject/2/password-privacy-e-sicurezza-digitale/",
+      "illustration": "/assets/education/2-informatica-password-privacy-e-sicurezza-digitale.svg",
+      "accent": "#0F766E",
+      "subjectIcon": "</>",
+      "quickExample": "Pensa a input, logica e output prima di scrivere.",
+      "miniChallenge": "Mini sfida: descrivi l’algoritmo in 4 passi.",
+      "whyItMatters": "Serve per pensare in modo logico e usare bene il digitale."
     },
     {
       "id": "2-arte-e-immagine-rinascimento-e-prospettiva",
@@ -577,7 +793,13 @@
         "Arte e contesto storico"
       ],
       "path": "/education/p/subject/2/rinascimento-e-prospettiva/",
-      "url": "https://developer.zorix.it/education/p/subject/2/rinascimento-e-prospettiva/"
+      "url": "https://developer.zorix.it/education/p/subject/2/rinascimento-e-prospettiva/",
+      "illustration": "/assets/education/2-arte-e-immagine-rinascimento-e-prospettiva.svg",
+      "accent": "#9333EA",
+      "subjectIcon": "AR",
+      "quickExample": "Osserva luce, colore, forma e composizione.",
+      "miniChallenge": "Mini sfida: spiega come un dettaglio cambia il senso.",
+      "whyItMatters": "Serve per leggere immagini e opere."
     },
     {
       "id": "2-arte-e-immagine-barocco-luce-e-movimento",
@@ -592,7 +814,13 @@
         "Arte e contesto storico"
       ],
       "path": "/education/p/subject/2/barocco-luce-e-movimento/",
-      "url": "https://developer.zorix.it/education/p/subject/2/barocco-luce-e-movimento/"
+      "url": "https://developer.zorix.it/education/p/subject/2/barocco-luce-e-movimento/",
+      "illustration": "/assets/education/2-arte-e-immagine-barocco-luce-e-movimento.svg",
+      "accent": "#9333EA",
+      "subjectIcon": "AR",
+      "quickExample": "Osserva luce, colore, forma e composizione.",
+      "miniChallenge": "Mini sfida: spiega come un dettaglio cambia il senso.",
+      "whyItMatters": "Serve per leggere immagini e opere."
     },
     {
       "id": "2-arte-e-immagine-colore-composizione-e-tecniche-miste",
@@ -607,7 +835,13 @@
         "Arte e contesto storico"
       ],
       "path": "/education/p/subject/2/colore-composizione-e-tecniche-miste/",
-      "url": "https://developer.zorix.it/education/p/subject/2/colore-composizione-e-tecniche-miste/"
+      "url": "https://developer.zorix.it/education/p/subject/2/colore-composizione-e-tecniche-miste/",
+      "illustration": "/assets/education/2-arte-e-immagine-colore-composizione-e-tecniche-miste.svg",
+      "accent": "#9333EA",
+      "subjectIcon": "AR",
+      "quickExample": "Osserva luce, colore, forma e composizione.",
+      "miniChallenge": "Mini sfida: spiega come un dettaglio cambia il senso.",
+      "whyItMatters": "Serve per leggere immagini e opere."
     },
     {
       "id": "2-arte-e-immagine-come-leggere-un-opera-d-arte",
@@ -622,7 +856,13 @@
         "Arte e contesto storico"
       ],
       "path": "/education/p/subject/2/come-leggere-un-opera-d-arte/",
-      "url": "https://developer.zorix.it/education/p/subject/2/come-leggere-un-opera-d-arte/"
+      "url": "https://developer.zorix.it/education/p/subject/2/come-leggere-un-opera-d-arte/",
+      "illustration": "/assets/education/2-arte-e-immagine-come-leggere-un-opera-d-arte.svg",
+      "accent": "#9333EA",
+      "subjectIcon": "AR",
+      "quickExample": "Osserva luce, colore, forma e composizione.",
+      "miniChallenge": "Mini sfida: spiega come un dettaglio cambia il senso.",
+      "whyItMatters": "Serve per leggere immagini e opere."
     },
     {
       "id": "2-musica-ritmo-melodia-armonia-e-forma",
@@ -637,7 +877,13 @@
         "Pratica musicale"
       ],
       "path": "/education/p/subject/2/ritmo-melodia-armonia-e-forma/",
-      "url": "https://developer.zorix.it/education/p/subject/2/ritmo-melodia-armonia-e-forma/"
+      "url": "https://developer.zorix.it/education/p/subject/2/ritmo-melodia-armonia-e-forma/",
+      "illustration": "/assets/education/2-musica-ritmo-melodia-armonia-e-forma.svg",
+      "accent": "#C2410C",
+      "subjectIcon": "♫",
+      "quickExample": "Ascolta prima l’insieme, poi un solo elemento, come ritmo o timbro.",
+      "miniChallenge": "Mini sfida: individua il ritmo dominante.",
+      "whyItMatters": "Serve per ascoltare con più attenzione."
     },
     {
       "id": "2-musica-barocco-e-classicismo",
@@ -652,7 +898,13 @@
         "Pratica musicale"
       ],
       "path": "/education/p/subject/2/barocco-e-classicismo/",
-      "url": "https://developer.zorix.it/education/p/subject/2/barocco-e-classicismo/"
+      "url": "https://developer.zorix.it/education/p/subject/2/barocco-e-classicismo/",
+      "illustration": "/assets/education/2-musica-barocco-e-classicismo.svg",
+      "accent": "#C2410C",
+      "subjectIcon": "♫",
+      "quickExample": "Ascolta prima l’insieme, poi un solo elemento, come ritmo o timbro.",
+      "miniChallenge": "Mini sfida: individua il ritmo dominante.",
+      "whyItMatters": "Serve per ascoltare con più attenzione."
     },
     {
       "id": "2-musica-strumenti-e-orchestra",
@@ -667,7 +919,13 @@
         "Pratica musicale"
       ],
       "path": "/education/p/subject/2/strumenti-e-orchestra/",
-      "url": "https://developer.zorix.it/education/p/subject/2/strumenti-e-orchestra/"
+      "url": "https://developer.zorix.it/education/p/subject/2/strumenti-e-orchestra/",
+      "illustration": "/assets/education/2-musica-strumenti-e-orchestra.svg",
+      "accent": "#C2410C",
+      "subjectIcon": "♫",
+      "quickExample": "Ascolta prima l’insieme, poi un solo elemento, come ritmo o timbro.",
+      "miniChallenge": "Mini sfida: individua il ritmo dominante.",
+      "whyItMatters": "Serve per ascoltare con più attenzione."
     },
     {
       "id": "2-musica-pratica-d-insieme-e-ascolto-guidato",
@@ -682,7 +940,13 @@
         "Pratica musicale"
       ],
       "path": "/education/p/subject/2/pratica-d-insieme-e-ascolto-guidato/",
-      "url": "https://developer.zorix.it/education/p/subject/2/pratica-d-insieme-e-ascolto-guidato/"
+      "url": "https://developer.zorix.it/education/p/subject/2/pratica-d-insieme-e-ascolto-guidato/",
+      "illustration": "/assets/education/2-musica-pratica-d-insieme-e-ascolto-guidato.svg",
+      "accent": "#C2410C",
+      "subjectIcon": "♫",
+      "quickExample": "Ascolta prima l’insieme, poi un solo elemento, come ritmo o timbro.",
+      "miniChallenge": "Mini sfida: individua il ritmo dominante.",
+      "whyItMatters": "Serve per ascoltare con più attenzione."
     },
     {
       "id": "2-educazione-civica-regole-diritti-e-responsabilita",
@@ -697,7 +961,13 @@
         "Costituzione e sostenibilità"
       ],
       "path": "/education/p/subject/2/regole-diritti-e-responsabilita/",
-      "url": "https://developer.zorix.it/education/p/subject/2/regole-diritti-e-responsabilita/"
+      "url": "https://developer.zorix.it/education/p/subject/2/regole-diritti-e-responsabilita/",
+      "illustration": "/assets/education/2-educazione-civica-regole-diritti-e-responsabilita.svg",
+      "accent": "#1D4ED8",
+      "subjectIcon": "EC",
+      "quickExample": "Collega il tema a una situazione reale di scuola o comunità.",
+      "miniChallenge": "Mini sfida: scrivi una scelta responsabile concreta.",
+      "whyItMatters": "Serve per vivere la cittadinanza con più consapevolezza."
     },
     {
       "id": "2-educazione-civica-principi-fondamentali-della-costituzione",
@@ -712,7 +982,13 @@
         "Costituzione e sostenibilità"
       ],
       "path": "/education/p/subject/2/principi-fondamentali-della-costituzione/",
-      "url": "https://developer.zorix.it/education/p/subject/2/principi-fondamentali-della-costituzione/"
+      "url": "https://developer.zorix.it/education/p/subject/2/principi-fondamentali-della-costituzione/",
+      "illustration": "/assets/education/2-educazione-civica-principi-fondamentali-della-costituzione.svg",
+      "accent": "#1D4ED8",
+      "subjectIcon": "EC",
+      "quickExample": "Collega il tema a una situazione reale di scuola o comunità.",
+      "miniChallenge": "Mini sfida: scrivi una scelta responsabile concreta.",
+      "whyItMatters": "Serve per vivere la cittadinanza con più consapevolezza."
     },
     {
       "id": "2-educazione-civica-cittadinanza-digitale",
@@ -727,7 +1003,13 @@
         "Costituzione e sostenibilità"
       ],
       "path": "/education/p/subject/2/cittadinanza-digitale/",
-      "url": "https://developer.zorix.it/education/p/subject/2/cittadinanza-digitale/"
+      "url": "https://developer.zorix.it/education/p/subject/2/cittadinanza-digitale/",
+      "illustration": "/assets/education/2-educazione-civica-cittadinanza-digitale.svg",
+      "accent": "#1D4ED8",
+      "subjectIcon": "EC",
+      "quickExample": "Collega il tema a una situazione reale di scuola o comunità.",
+      "miniChallenge": "Mini sfida: scrivi una scelta responsabile concreta.",
+      "whyItMatters": "Serve per vivere la cittadinanza con più consapevolezza."
     },
     {
       "id": "2-educazione-civica-ambiente-e-consumo-consapevole",
@@ -742,7 +1024,13 @@
         "Costituzione e sostenibilità"
       ],
       "path": "/education/p/subject/2/ambiente-e-consumo-consapevole/",
-      "url": "https://developer.zorix.it/education/p/subject/2/ambiente-e-consumo-consapevole/"
+      "url": "https://developer.zorix.it/education/p/subject/2/ambiente-e-consumo-consapevole/",
+      "illustration": "/assets/education/2-educazione-civica-ambiente-e-consumo-consapevole.svg",
+      "accent": "#1D4ED8",
+      "subjectIcon": "EC",
+      "quickExample": "Collega il tema a una situazione reale di scuola o comunità.",
+      "miniChallenge": "Mini sfida: scrivi una scelta responsabile concreta.",
+      "whyItMatters": "Serve per vivere la cittadinanza con più consapevolezza."
     },
     {
       "id": "2-scienze-motorie-coordinazione-ed-equilibrio",
@@ -757,7 +1045,13 @@
         "Salute e sicurezza"
       ],
       "path": "/education/p/subject/2/coordinazione-ed-equilibrio/",
-      "url": "https://developer.zorix.it/education/p/subject/2/coordinazione-ed-equilibrio/"
+      "url": "https://developer.zorix.it/education/p/subject/2/coordinazione-ed-equilibrio/",
+      "illustration": "/assets/education/2-scienze-motorie-coordinazione-ed-equilibrio.svg",
+      "accent": "#059669",
+      "subjectIcon": "SM",
+      "quickExample": "Pensa a gesto, controllo e sicurezza.",
+      "miniChallenge": "Mini sfida: progetta una mini routine in 4 step.",
+      "whyItMatters": "Serve per muoversi meglio e in sicurezza."
     },
     {
       "id": "2-scienze-motorie-sport-di-squadra-e-regole",
@@ -772,7 +1066,13 @@
         "Salute e sicurezza"
       ],
       "path": "/education/p/subject/2/sport-di-squadra-e-regole/",
-      "url": "https://developer.zorix.it/education/p/subject/2/sport-di-squadra-e-regole/"
+      "url": "https://developer.zorix.it/education/p/subject/2/sport-di-squadra-e-regole/",
+      "illustration": "/assets/education/2-scienze-motorie-sport-di-squadra-e-regole.svg",
+      "accent": "#059669",
+      "subjectIcon": "SM",
+      "quickExample": "Pensa a gesto, controllo e sicurezza.",
+      "miniChallenge": "Mini sfida: progetta una mini routine in 4 step.",
+      "whyItMatters": "Serve per muoversi meglio e in sicurezza."
     },
     {
       "id": "2-scienze-motorie-resistenza-e-mobilita",
@@ -787,7 +1087,13 @@
         "Salute e sicurezza"
       ],
       "path": "/education/p/subject/2/resistenza-e-mobilita/",
-      "url": "https://developer.zorix.it/education/p/subject/2/resistenza-e-mobilita/"
+      "url": "https://developer.zorix.it/education/p/subject/2/resistenza-e-mobilita/",
+      "illustration": "/assets/education/2-scienze-motorie-resistenza-e-mobilita.svg",
+      "accent": "#059669",
+      "subjectIcon": "SM",
+      "quickExample": "Pensa a gesto, controllo e sicurezza.",
+      "miniChallenge": "Mini sfida: progetta una mini routine in 4 step.",
+      "whyItMatters": "Serve per muoversi meglio e in sicurezza."
     },
     {
       "id": "2-scienze-motorie-sicurezza-e-fair-play",
@@ -802,7 +1108,13 @@
         "Salute e sicurezza"
       ],
       "path": "/education/p/subject/2/sicurezza-e-fair-play/",
-      "url": "https://developer.zorix.it/education/p/subject/2/sicurezza-e-fair-play/"
+      "url": "https://developer.zorix.it/education/p/subject/2/sicurezza-e-fair-play/",
+      "illustration": "/assets/education/2-scienze-motorie-sicurezza-e-fair-play.svg",
+      "accent": "#059669",
+      "subjectIcon": "SM",
+      "quickExample": "Pensa a gesto, controllo e sicurezza.",
+      "miniChallenge": "Mini sfida: progetta una mini routine in 4 step.",
+      "whyItMatters": "Serve per muoversi meglio e in sicurezza."
     },
     {
       "id": "3-italiano-il-testo-argomentativo",
@@ -817,7 +1129,13 @@
         "Grammatica e lessico"
       ],
       "path": "/education/p/subject/3/il-testo-argomentativo/",
-      "url": "https://developer.zorix.it/education/p/subject/3/il-testo-argomentativo/"
+      "url": "https://developer.zorix.it/education/p/subject/3/il-testo-argomentativo/",
+      "illustration": "/assets/education/3-italiano-il-testo-argomentativo.svg",
+      "accent": "#7C3AED",
+      "subjectIcon": "IT",
+      "quickExample": "Trova le parole chiave e prova a riscrivere il nucleo con parole tue.",
+      "miniChallenge": "Mini sfida: riassumi in 20 parole.",
+      "whyItMatters": "Serve per capire e scrivere meglio."
     },
     {
       "id": "3-italiano-letteratura-tra-ottocento-e-novecento",
@@ -832,7 +1150,13 @@
         "Grammatica e lessico"
       ],
       "path": "/education/p/subject/3/letteratura-tra-ottocento-e-novecento/",
-      "url": "https://developer.zorix.it/education/p/subject/3/letteratura-tra-ottocento-e-novecento/"
+      "url": "https://developer.zorix.it/education/p/subject/3/letteratura-tra-ottocento-e-novecento/",
+      "illustration": "/assets/education/3-italiano-letteratura-tra-ottocento-e-novecento.svg",
+      "accent": "#7C3AED",
+      "subjectIcon": "IT",
+      "quickExample": "Trova le parole chiave e prova a riscrivere il nucleo con parole tue.",
+      "miniChallenge": "Mini sfida: riassumi in 20 parole.",
+      "whyItMatters": "Serve per capire e scrivere meglio."
     },
     {
       "id": "3-italiano-periodo-e-analisi-del-periodo",
@@ -847,7 +1171,13 @@
         "Grammatica e lessico"
       ],
       "path": "/education/p/subject/3/periodo-e-analisi-del-periodo/",
-      "url": "https://developer.zorix.it/education/p/subject/3/periodo-e-analisi-del-periodo/"
+      "url": "https://developer.zorix.it/education/p/subject/3/periodo-e-analisi-del-periodo/",
+      "illustration": "/assets/education/3-italiano-periodo-e-analisi-del-periodo.svg",
+      "accent": "#7C3AED",
+      "subjectIcon": "IT",
+      "quickExample": "Trova le parole chiave e prova a riscrivere il nucleo con parole tue.",
+      "miniChallenge": "Mini sfida: riassumi in 20 parole.",
+      "whyItMatters": "Serve per capire e scrivere meglio."
     },
     {
       "id": "3-italiano-preparazione-alla-prova-scritta-e-orale",
@@ -862,7 +1192,13 @@
         "Grammatica e lessico"
       ],
       "path": "/education/p/subject/3/preparazione-alla-prova-scritta-e-orale/",
-      "url": "https://developer.zorix.it/education/p/subject/3/preparazione-alla-prova-scritta-e-orale/"
+      "url": "https://developer.zorix.it/education/p/subject/3/preparazione-alla-prova-scritta-e-orale/",
+      "illustration": "/assets/education/3-italiano-preparazione-alla-prova-scritta-e-orale.svg",
+      "accent": "#7C3AED",
+      "subjectIcon": "IT",
+      "quickExample": "Trova le parole chiave e prova a riscrivere il nucleo con parole tue.",
+      "miniChallenge": "Mini sfida: riassumi in 20 parole.",
+      "whyItMatters": "Serve per capire e scrivere meglio."
     },
     {
       "id": "3-storia-risorgimento-e-italia-unita",
@@ -877,7 +1213,13 @@
         "Fonti e lessico storico"
       ],
       "path": "/education/p/subject/3/risorgimento-e-italia-unita/",
-      "url": "https://developer.zorix.it/education/p/subject/3/risorgimento-e-italia-unita/"
+      "url": "https://developer.zorix.it/education/p/subject/3/risorgimento-e-italia-unita/",
+      "illustration": "/assets/education/3-storia-risorgimento-e-italia-unita.svg",
+      "accent": "#2563EB",
+      "subjectIcon": "ST",
+      "quickExample": "Metti 3 eventi in ordine e collega cause ed effetti.",
+      "miniChallenge": "Mini sfida: scrivi causa → evento → conseguenza.",
+      "whyItMatters": "Serve per collegare passato e presente."
     },
     {
       "id": "3-storia-prima-guerra-mondiale",
@@ -892,7 +1234,13 @@
         "Fonti e lessico storico"
       ],
       "path": "/education/p/subject/3/prima-guerra-mondiale/",
-      "url": "https://developer.zorix.it/education/p/subject/3/prima-guerra-mondiale/"
+      "url": "https://developer.zorix.it/education/p/subject/3/prima-guerra-mondiale/",
+      "illustration": "/assets/education/3-storia-prima-guerra-mondiale.svg",
+      "accent": "#2563EB",
+      "subjectIcon": "ST",
+      "quickExample": "Metti 3 eventi in ordine e collega cause ed effetti.",
+      "miniChallenge": "Mini sfida: scrivi causa → evento → conseguenza.",
+      "whyItMatters": "Serve per collegare passato e presente."
     },
     {
       "id": "3-storia-totalitarismi-e-seconda-guerra-mondiale",
@@ -907,7 +1255,13 @@
         "Fonti e lessico storico"
       ],
       "path": "/education/p/subject/3/totalitarismi-e-seconda-guerra-mondiale/",
-      "url": "https://developer.zorix.it/education/p/subject/3/totalitarismi-e-seconda-guerra-mondiale/"
+      "url": "https://developer.zorix.it/education/p/subject/3/totalitarismi-e-seconda-guerra-mondiale/",
+      "illustration": "/assets/education/3-storia-totalitarismi-e-seconda-guerra-mondiale.svg",
+      "accent": "#2563EB",
+      "subjectIcon": "ST",
+      "quickExample": "Metti 3 eventi in ordine e collega cause ed effetti.",
+      "miniChallenge": "Mini sfida: scrivi causa → evento → conseguenza.",
+      "whyItMatters": "Serve per collegare passato e presente."
     },
     {
       "id": "3-storia-guerra-fredda-ed-europa-contemporanea",
@@ -922,7 +1276,13 @@
         "Fonti e lessico storico"
       ],
       "path": "/education/p/subject/3/guerra-fredda-ed-europa-contemporanea/",
-      "url": "https://developer.zorix.it/education/p/subject/3/guerra-fredda-ed-europa-contemporanea/"
+      "url": "https://developer.zorix.it/education/p/subject/3/guerra-fredda-ed-europa-contemporanea/",
+      "illustration": "/assets/education/3-storia-guerra-fredda-ed-europa-contemporanea.svg",
+      "accent": "#2563EB",
+      "subjectIcon": "ST",
+      "quickExample": "Metti 3 eventi in ordine e collega cause ed effetti.",
+      "miniChallenge": "Mini sfida: scrivi causa → evento → conseguenza.",
+      "whyItMatters": "Serve per collegare passato e presente."
     },
     {
       "id": "3-geografia-continenti-e-grandi-regioni-del-mondo",
@@ -937,7 +1297,13 @@
         "Relazioni tra aree geografiche"
       ],
       "path": "/education/p/subject/3/continenti-e-grandi-regioni-del-mondo/",
-      "url": "https://developer.zorix.it/education/p/subject/3/continenti-e-grandi-regioni-del-mondo/"
+      "url": "https://developer.zorix.it/education/p/subject/3/continenti-e-grandi-regioni-del-mondo/",
+      "illustration": "/assets/education/3-geografia-continenti-e-grandi-regioni-del-mondo.svg",
+      "accent": "#0891B2",
+      "subjectIcon": "GE",
+      "quickExample": "Parti da una mappa o da uno schema e collega luoghi, persone e risorse.",
+      "miniChallenge": "Mini sfida: spiega una carta con 2 dati.",
+      "whyItMatters": "Serve per leggere territori e relazioni."
     },
     {
       "id": "3-geografia-globalizzazione-e-migrazioni",
@@ -952,7 +1318,13 @@
         "Relazioni tra aree geografiche"
       ],
       "path": "/education/p/subject/3/globalizzazione-e-migrazioni/",
-      "url": "https://developer.zorix.it/education/p/subject/3/globalizzazione-e-migrazioni/"
+      "url": "https://developer.zorix.it/education/p/subject/3/globalizzazione-e-migrazioni/",
+      "illustration": "/assets/education/3-geografia-globalizzazione-e-migrazioni.svg",
+      "accent": "#0891B2",
+      "subjectIcon": "GE",
+      "quickExample": "Parti da una mappa o da uno schema e collega luoghi, persone e risorse.",
+      "miniChallenge": "Mini sfida: spiega una carta con 2 dati.",
+      "whyItMatters": "Serve per leggere territori e relazioni."
     },
     {
       "id": "3-geografia-risorse-energia-e-sostenibilita",
@@ -967,7 +1339,13 @@
         "Relazioni tra aree geografiche"
       ],
       "path": "/education/p/subject/3/risorse-energia-e-sostenibilita/",
-      "url": "https://developer.zorix.it/education/p/subject/3/risorse-energia-e-sostenibilita/"
+      "url": "https://developer.zorix.it/education/p/subject/3/risorse-energia-e-sostenibilita/",
+      "illustration": "/assets/education/3-geografia-risorse-energia-e-sostenibilita.svg",
+      "accent": "#0891B2",
+      "subjectIcon": "GE",
+      "quickExample": "Parti da una mappa o da uno schema e collega luoghi, persone e risorse.",
+      "miniChallenge": "Mini sfida: spiega una carta con 2 dati.",
+      "whyItMatters": "Serve per leggere territori e relazioni."
     },
     {
       "id": "3-geografia-geopolitica-e-interdipendenze",
@@ -982,7 +1360,13 @@
         "Relazioni tra aree geografiche"
       ],
       "path": "/education/p/subject/3/geopolitica-e-interdipendenze/",
-      "url": "https://developer.zorix.it/education/p/subject/3/geopolitica-e-interdipendenze/"
+      "url": "https://developer.zorix.it/education/p/subject/3/geopolitica-e-interdipendenze/",
+      "illustration": "/assets/education/3-geografia-geopolitica-e-interdipendenze.svg",
+      "accent": "#0891B2",
+      "subjectIcon": "GE",
+      "quickExample": "Parti da una mappa o da uno schema e collega luoghi, persone e risorse.",
+      "miniChallenge": "Mini sfida: spiega una carta con 2 dati.",
+      "whyItMatters": "Serve per leggere territori e relazioni."
     },
     {
       "id": "3-matematica-numeri-relativi-ed-espressioni-algebriche",
@@ -997,7 +1381,13 @@
         "Geometria e dati"
       ],
       "path": "/education/p/subject/3/numeri-relativi-ed-espressioni-algebriche/",
-      "url": "https://developer.zorix.it/education/p/subject/3/numeri-relativi-ed-espressioni-algebriche/"
+      "url": "https://developer.zorix.it/education/p/subject/3/numeri-relativi-ed-espressioni-algebriche/",
+      "illustration": "/assets/education/3-matematica-numeri-relativi-ed-espressioni-algebriche.svg",
+      "accent": "#16A34A",
+      "subjectIcon": "∑",
+      "quickExample": "Parti da un esempio breve, segna i passaggi e controlla il risultato.",
+      "miniChallenge": "Mini sfida: spiega il procedimento in 3 righe.",
+      "whyItMatters": "Serve per ragionare con ordine e verificare i passaggi."
     },
     {
       "id": "3-matematica-equazioni-di-primo-grado",
@@ -1012,7 +1402,13 @@
         "Geometria e dati"
       ],
       "path": "/education/p/subject/3/equazioni-di-primo-grado/",
-      "url": "https://developer.zorix.it/education/p/subject/3/equazioni-di-primo-grado/"
+      "url": "https://developer.zorix.it/education/p/subject/3/equazioni-di-primo-grado/",
+      "illustration": "/assets/education/3-matematica-equazioni-di-primo-grado.svg",
+      "accent": "#16A34A",
+      "subjectIcon": "∑",
+      "quickExample": "Parti da un esempio breve, segna i passaggi e controlla il risultato.",
+      "miniChallenge": "Mini sfida: spiega il procedimento in 3 righe.",
+      "whyItMatters": "Serve per ragionare con ordine e verificare i passaggi."
     },
     {
       "id": "3-matematica-geometria-solida-superfici-e-volumi",
@@ -1027,7 +1423,13 @@
         "Geometria e dati"
       ],
       "path": "/education/p/subject/3/geometria-solida-superfici-e-volumi/",
-      "url": "https://developer.zorix.it/education/p/subject/3/geometria-solida-superfici-e-volumi/"
+      "url": "https://developer.zorix.it/education/p/subject/3/geometria-solida-superfici-e-volumi/",
+      "illustration": "/assets/education/3-matematica-geometria-solida-superfici-e-volumi.svg",
+      "accent": "#16A34A",
+      "subjectIcon": "∑",
+      "quickExample": "Parti da un esempio breve, segna i passaggi e controlla il risultato.",
+      "miniChallenge": "Mini sfida: spiega il procedimento in 3 righe.",
+      "whyItMatters": "Serve per ragionare con ordine e verificare i passaggi."
     },
     {
       "id": "3-matematica-funzioni-piano-cartesiano-e-probabilita",
@@ -1042,7 +1444,13 @@
         "Geometria e dati"
       ],
       "path": "/education/p/subject/3/funzioni-piano-cartesiano-e-probabilita/",
-      "url": "https://developer.zorix.it/education/p/subject/3/funzioni-piano-cartesiano-e-probabilita/"
+      "url": "https://developer.zorix.it/education/p/subject/3/funzioni-piano-cartesiano-e-probabilita/",
+      "illustration": "/assets/education/3-matematica-funzioni-piano-cartesiano-e-probabilita.svg",
+      "accent": "#16A34A",
+      "subjectIcon": "∑",
+      "quickExample": "Parti da un esempio breve, segna i passaggi e controlla il risultato.",
+      "miniChallenge": "Mini sfida: spiega il procedimento in 3 righe.",
+      "whyItMatters": "Serve per ragionare con ordine e verificare i passaggi."
     },
     {
       "id": "3-scienze-genetica-dna-ed-ereditarieta",
@@ -1057,7 +1465,13 @@
         "Dati, esperimenti e relazioni"
       ],
       "path": "/education/p/subject/3/genetica-dna-ed-ereditarieta/",
-      "url": "https://developer.zorix.it/education/p/subject/3/genetica-dna-ed-ereditarieta/"
+      "url": "https://developer.zorix.it/education/p/subject/3/genetica-dna-ed-ereditarieta/",
+      "illustration": "/assets/education/3-scienze-genetica-dna-ed-ereditarieta.svg",
+      "accent": "#DC2626",
+      "subjectIcon": "SC",
+      "quickExample": "Osserva un fenomeno, nomina le parti e chiediti cosa cambia e perché.",
+      "miniChallenge": "Mini sfida: disegna lo schema e aggiungi 3 etichette.",
+      "whyItMatters": "Serve per capire meglio il mondo naturale."
     },
     {
       "id": "3-scienze-evoluzione-e-selezione-naturale",
@@ -1072,7 +1486,13 @@
         "Dati, esperimenti e relazioni"
       ],
       "path": "/education/p/subject/3/evoluzione-e-selezione-naturale/",
-      "url": "https://developer.zorix.it/education/p/subject/3/evoluzione-e-selezione-naturale/"
+      "url": "https://developer.zorix.it/education/p/subject/3/evoluzione-e-selezione-naturale/",
+      "illustration": "/assets/education/3-scienze-evoluzione-e-selezione-naturale.svg",
+      "accent": "#DC2626",
+      "subjectIcon": "SC",
+      "quickExample": "Osserva un fenomeno, nomina le parti e chiediti cosa cambia e perché.",
+      "miniChallenge": "Mini sfida: disegna lo schema e aggiungi 3 etichette.",
+      "whyItMatters": "Serve per capire meglio il mondo naturale."
     },
     {
       "id": "3-scienze-terra-tettonica-e-fenomeni-geologici",
@@ -1087,7 +1507,13 @@
         "Dati, esperimenti e relazioni"
       ],
       "path": "/education/p/subject/3/terra-tettonica-e-fenomeni-geologici/",
-      "url": "https://developer.zorix.it/education/p/subject/3/terra-tettonica-e-fenomeni-geologici/"
+      "url": "https://developer.zorix.it/education/p/subject/3/terra-tettonica-e-fenomeni-geologici/",
+      "illustration": "/assets/education/3-scienze-terra-tettonica-e-fenomeni-geologici.svg",
+      "accent": "#DC2626",
+      "subjectIcon": "SC",
+      "quickExample": "Osserva un fenomeno, nomina le parti e chiediti cosa cambia e perché.",
+      "miniChallenge": "Mini sfida: disegna lo schema e aggiungi 3 etichette.",
+      "whyItMatters": "Serve per capire meglio il mondo naturale."
     },
     {
       "id": "3-scienze-energia-elettricita-e-sostenibilita",
@@ -1102,7 +1528,13 @@
         "Dati, esperimenti e relazioni"
       ],
       "path": "/education/p/subject/3/energia-elettricita-e-sostenibilita/",
-      "url": "https://developer.zorix.it/education/p/subject/3/energia-elettricita-e-sostenibilita/"
+      "url": "https://developer.zorix.it/education/p/subject/3/energia-elettricita-e-sostenibilita/",
+      "illustration": "/assets/education/3-scienze-energia-elettricita-e-sostenibilita.svg",
+      "accent": "#DC2626",
+      "subjectIcon": "SC",
+      "quickExample": "Osserva un fenomeno, nomina le parti e chiediti cosa cambia e perché.",
+      "miniChallenge": "Mini sfida: disegna lo schema e aggiungi 3 etichette.",
+      "whyItMatters": "Serve per capire meglio il mondo naturale."
     },
     {
       "id": "3-inglese-future-plans-and-predictions",
@@ -1117,7 +1549,13 @@
         "Grammar and vocabulary"
       ],
       "path": "/education/p/subject/3/future-plans-and-predictions/",
-      "url": "https://developer.zorix.it/education/p/subject/3/future-plans-and-predictions/"
+      "url": "https://developer.zorix.it/education/p/subject/3/future-plans-and-predictions/",
+      "illustration": "/assets/education/3-inglese-future-plans-and-predictions.svg",
+      "accent": "#EA580C",
+      "subjectIcon": "EN",
+      "quickExample": "Impara poche parole utili e usale in una frase reale.",
+      "miniChallenge": "Mini sfida: usa 5 parole nuove in un mini-dialogo.",
+      "whyItMatters": "Serve per comunicare con più sicurezza."
     },
     {
       "id": "3-inglese-present-perfect-and-experiences",
@@ -1132,7 +1570,13 @@
         "Grammar and vocabulary"
       ],
       "path": "/education/p/subject/3/present-perfect-and-experiences/",
-      "url": "https://developer.zorix.it/education/p/subject/3/present-perfect-and-experiences/"
+      "url": "https://developer.zorix.it/education/p/subject/3/present-perfect-and-experiences/",
+      "illustration": "/assets/education/3-inglese-present-perfect-and-experiences.svg",
+      "accent": "#EA580C",
+      "subjectIcon": "EN",
+      "quickExample": "Impara poche parole utili e usale in una frase reale.",
+      "miniChallenge": "Mini sfida: usa 5 parole nuove in un mini-dialogo.",
+      "whyItMatters": "Serve per comunicare con più sicurezza."
     },
     {
       "id": "3-inglese-conditionals-and-expressing-opinions",
@@ -1147,7 +1591,13 @@
         "Grammar and vocabulary"
       ],
       "path": "/education/p/subject/3/conditionals-and-expressing-opinions/",
-      "url": "https://developer.zorix.it/education/p/subject/3/conditionals-and-expressing-opinions/"
+      "url": "https://developer.zorix.it/education/p/subject/3/conditionals-and-expressing-opinions/",
+      "illustration": "/assets/education/3-inglese-conditionals-and-expressing-opinions.svg",
+      "accent": "#EA580C",
+      "subjectIcon": "EN",
+      "quickExample": "Impara poche parole utili e usale in una frase reale.",
+      "miniChallenge": "Mini sfida: usa 5 parole nuove in un mini-dialogo.",
+      "whyItMatters": "Serve per comunicare con più sicurezza."
     },
     {
       "id": "3-inglese-culture-society-and-final-oral-presentation",
@@ -1162,7 +1612,13 @@
         "Grammar and vocabulary"
       ],
       "path": "/education/p/subject/3/culture-society-and-final-oral-presentation/",
-      "url": "https://developer.zorix.it/education/p/subject/3/culture-society-and-final-oral-presentation/"
+      "url": "https://developer.zorix.it/education/p/subject/3/culture-society-and-final-oral-presentation/",
+      "illustration": "/assets/education/3-inglese-culture-society-and-final-oral-presentation.svg",
+      "accent": "#EA580C",
+      "subjectIcon": "EN",
+      "quickExample": "Impara poche parole utili e usale in una frase reale.",
+      "miniChallenge": "Mini sfida: usa 5 parole nuove in un mini-dialogo.",
+      "whyItMatters": "Serve per comunicare con più sicurezza."
     },
     {
       "id": "3-seconda-lingua-futuro-progetti-e-decisioni",
@@ -1177,7 +1633,13 @@
         "Lessico e strutture di base"
       ],
       "path": "/education/p/subject/3/futuro-progetti-e-decisioni/",
-      "url": "https://developer.zorix.it/education/p/subject/3/futuro-progetti-e-decisioni/"
+      "url": "https://developer.zorix.it/education/p/subject/3/futuro-progetti-e-decisioni/",
+      "illustration": "/assets/education/3-seconda-lingua-futuro-progetti-e-decisioni.svg",
+      "accent": "#DB2777",
+      "subjectIcon": "L2",
+      "quickExample": "Usa espressioni semplici in contesti quotidiani.",
+      "miniChallenge": "Mini sfida: prova una conversazione in 4 battute.",
+      "whyItMatters": "Serve per aprirsi a un’altra lingua."
     },
     {
       "id": "3-seconda-lingua-esprimere-opinioni-e-motivarle",
@@ -1192,7 +1654,13 @@
         "Lessico e strutture di base"
       ],
       "path": "/education/p/subject/3/esprimere-opinioni-e-motivarle/",
-      "url": "https://developer.zorix.it/education/p/subject/3/esprimere-opinioni-e-motivarle/"
+      "url": "https://developer.zorix.it/education/p/subject/3/esprimere-opinioni-e-motivarle/",
+      "illustration": "/assets/education/3-seconda-lingua-esprimere-opinioni-e-motivarle.svg",
+      "accent": "#DB2777",
+      "subjectIcon": "L2",
+      "quickExample": "Usa espressioni semplici in contesti quotidiani.",
+      "miniChallenge": "Mini sfida: prova una conversazione in 4 battute.",
+      "whyItMatters": "Serve per aprirsi a un’altra lingua."
     },
     {
       "id": "3-seconda-lingua-societa-cultura-e-ambiente",
@@ -1207,7 +1675,13 @@
         "Lessico e strutture di base"
       ],
       "path": "/education/p/subject/3/societa-cultura-e-ambiente/",
-      "url": "https://developer.zorix.it/education/p/subject/3/societa-cultura-e-ambiente/"
+      "url": "https://developer.zorix.it/education/p/subject/3/societa-cultura-e-ambiente/",
+      "illustration": "/assets/education/3-seconda-lingua-societa-cultura-e-ambiente.svg",
+      "accent": "#DB2777",
+      "subjectIcon": "L2",
+      "quickExample": "Usa espressioni semplici in contesti quotidiani.",
+      "miniChallenge": "Mini sfida: prova una conversazione in 4 battute.",
+      "whyItMatters": "Serve per aprirsi a un’altra lingua."
     },
     {
       "id": "3-seconda-lingua-preparazione-alla-presentazione-orale",
@@ -1222,7 +1696,13 @@
         "Lessico e strutture di base"
       ],
       "path": "/education/p/subject/3/preparazione-alla-presentazione-orale/",
-      "url": "https://developer.zorix.it/education/p/subject/3/preparazione-alla-presentazione-orale/"
+      "url": "https://developer.zorix.it/education/p/subject/3/preparazione-alla-presentazione-orale/",
+      "illustration": "/assets/education/3-seconda-lingua-preparazione-alla-presentazione-orale.svg",
+      "accent": "#DB2777",
+      "subjectIcon": "L2",
+      "quickExample": "Usa espressioni semplici in contesti quotidiani.",
+      "miniChallenge": "Mini sfida: prova una conversazione in 4 battute.",
+      "whyItMatters": "Serve per aprirsi a un’altra lingua."
     },
     {
       "id": "3-tecnologia-fonti-e-trasformazioni-dell-energia",
@@ -1237,7 +1717,13 @@
         "Energia e sostenibilità"
       ],
       "path": "/education/p/subject/3/fonti-e-trasformazioni-dell-energia/",
-      "url": "https://developer.zorix.it/education/p/subject/3/fonti-e-trasformazioni-dell-energia/"
+      "url": "https://developer.zorix.it/education/p/subject/3/fonti-e-trasformazioni-dell-energia/",
+      "illustration": "/assets/education/3-tecnologia-fonti-e-trasformazioni-dell-energia.svg",
+      "accent": "#4F46E5",
+      "subjectIcon": "TX",
+      "quickExample": "Scomponi il sistema in materiale, funzione, energia e sicurezza.",
+      "miniChallenge": "Mini sfida: disegna il flusso di funzionamento.",
+      "whyItMatters": "Serve per capire oggetti e sistemi reali."
     },
     {
       "id": "3-tecnologia-elettricita-e-circuiti",
@@ -1252,7 +1738,13 @@
         "Energia e sostenibilità"
       ],
       "path": "/education/p/subject/3/elettricita-e-circuiti/",
-      "url": "https://developer.zorix.it/education/p/subject/3/elettricita-e-circuiti/"
+      "url": "https://developer.zorix.it/education/p/subject/3/elettricita-e-circuiti/",
+      "illustration": "/assets/education/3-tecnologia-elettricita-e-circuiti.svg",
+      "accent": "#4F46E5",
+      "subjectIcon": "TX",
+      "quickExample": "Scomponi il sistema in materiale, funzione, energia e sicurezza.",
+      "miniChallenge": "Mini sfida: disegna il flusso di funzionamento.",
+      "whyItMatters": "Serve per capire oggetti e sistemi reali."
     },
     {
       "id": "3-tecnologia-automazione-e-sistemi-tecnologici",
@@ -1267,7 +1759,13 @@
         "Energia e sostenibilità"
       ],
       "path": "/education/p/subject/3/automazione-e-sistemi-tecnologici/",
-      "url": "https://developer.zorix.it/education/p/subject/3/automazione-e-sistemi-tecnologici/"
+      "url": "https://developer.zorix.it/education/p/subject/3/automazione-e-sistemi-tecnologici/",
+      "illustration": "/assets/education/3-tecnologia-automazione-e-sistemi-tecnologici.svg",
+      "accent": "#4F46E5",
+      "subjectIcon": "TX",
+      "quickExample": "Scomponi il sistema in materiale, funzione, energia e sicurezza.",
+      "miniChallenge": "Mini sfida: disegna il flusso di funzionamento.",
+      "whyItMatters": "Serve per capire oggetti e sistemi reali."
     },
     {
       "id": "3-tecnologia-progettazione-e-sostenibilita",
@@ -1282,7 +1780,13 @@
         "Energia e sostenibilità"
       ],
       "path": "/education/p/subject/3/progettazione-e-sostenibilita/",
-      "url": "https://developer.zorix.it/education/p/subject/3/progettazione-e-sostenibilita/"
+      "url": "https://developer.zorix.it/education/p/subject/3/progettazione-e-sostenibilita/",
+      "illustration": "/assets/education/3-tecnologia-progettazione-e-sostenibilita.svg",
+      "accent": "#4F46E5",
+      "subjectIcon": "TX",
+      "quickExample": "Scomponi il sistema in materiale, funzione, energia e sicurezza.",
+      "miniChallenge": "Mini sfida: disegna il flusso di funzionamento.",
+      "whyItMatters": "Serve per capire oggetti e sistemi reali."
     },
     {
       "id": "3-informatica-variabili-condizioni-e-cicli",
@@ -1297,7 +1801,13 @@
         "Sicurezza e cittadinanza digitale"
       ],
       "path": "/education/p/subject/3/variabili-condizioni-e-cicli/",
-      "url": "https://developer.zorix.it/education/p/subject/3/variabili-condizioni-e-cicli/"
+      "url": "https://developer.zorix.it/education/p/subject/3/variabili-condizioni-e-cicli/",
+      "illustration": "/assets/education/3-informatica-variabili-condizioni-e-cicli.svg",
+      "accent": "#0F766E",
+      "subjectIcon": "</>",
+      "quickExample": "Pensa a input, logica e output prima di scrivere.",
+      "miniChallenge": "Mini sfida: descrivi l’algoritmo in 4 passi.",
+      "whyItMatters": "Serve per pensare in modo logico e usare bene il digitale."
     },
     {
       "id": "3-informatica-reti-internet-e-servizi-digitali",
@@ -1312,7 +1822,13 @@
         "Sicurezza e cittadinanza digitale"
       ],
       "path": "/education/p/subject/3/reti-internet-e-servizi-digitali/",
-      "url": "https://developer.zorix.it/education/p/subject/3/reti-internet-e-servizi-digitali/"
+      "url": "https://developer.zorix.it/education/p/subject/3/reti-internet-e-servizi-digitali/",
+      "illustration": "/assets/education/3-informatica-reti-internet-e-servizi-digitali.svg",
+      "accent": "#0F766E",
+      "subjectIcon": "</>",
+      "quickExample": "Pensa a input, logica e output prima di scrivere.",
+      "miniChallenge": "Mini sfida: descrivi l’algoritmo in 4 passi.",
+      "whyItMatters": "Serve per pensare in modo logico e usare bene il digitale."
     },
     {
       "id": "3-informatica-fogli-di-calcolo-e-visualizzazione-dei-dati",
@@ -1327,7 +1843,13 @@
         "Sicurezza e cittadinanza digitale"
       ],
       "path": "/education/p/subject/3/fogli-di-calcolo-e-visualizzazione-dei-dati/",
-      "url": "https://developer.zorix.it/education/p/subject/3/fogli-di-calcolo-e-visualizzazione-dei-dati/"
+      "url": "https://developer.zorix.it/education/p/subject/3/fogli-di-calcolo-e-visualizzazione-dei-dati/",
+      "illustration": "/assets/education/3-informatica-fogli-di-calcolo-e-visualizzazione-dei-dati.svg",
+      "accent": "#0F766E",
+      "subjectIcon": "</>",
+      "quickExample": "Pensa a input, logica e output prima di scrivere.",
+      "miniChallenge": "Mini sfida: descrivi l’algoritmo in 4 passi.",
+      "whyItMatters": "Serve per pensare in modo logico e usare bene il digitale."
     },
     {
       "id": "3-informatica-intelligenza-artificiale-e-uso-responsabile",
@@ -1342,7 +1864,13 @@
         "Sicurezza e cittadinanza digitale"
       ],
       "path": "/education/p/subject/3/intelligenza-artificiale-e-uso-responsabile/",
-      "url": "https://developer.zorix.it/education/p/subject/3/intelligenza-artificiale-e-uso-responsabile/"
+      "url": "https://developer.zorix.it/education/p/subject/3/intelligenza-artificiale-e-uso-responsabile/",
+      "illustration": "/assets/education/3-informatica-intelligenza-artificiale-e-uso-responsabile.svg",
+      "accent": "#0F766E",
+      "subjectIcon": "</>",
+      "quickExample": "Pensa a input, logica e output prima di scrivere.",
+      "miniChallenge": "Mini sfida: descrivi l’algoritmo in 4 passi.",
+      "whyItMatters": "Serve per pensare in modo logico e usare bene il digitale."
     },
     {
       "id": "3-arte-e-immagine-neoclassicismo-e-romanticismo",
@@ -1357,7 +1885,13 @@
         "Arte e contesto storico"
       ],
       "path": "/education/p/subject/3/neoclassicismo-e-romanticismo/",
-      "url": "https://developer.zorix.it/education/p/subject/3/neoclassicismo-e-romanticismo/"
+      "url": "https://developer.zorix.it/education/p/subject/3/neoclassicismo-e-romanticismo/",
+      "illustration": "/assets/education/3-arte-e-immagine-neoclassicismo-e-romanticismo.svg",
+      "accent": "#9333EA",
+      "subjectIcon": "AR",
+      "quickExample": "Osserva luce, colore, forma e composizione.",
+      "miniChallenge": "Mini sfida: spiega come un dettaglio cambia il senso.",
+      "whyItMatters": "Serve per leggere immagini e opere."
     },
     {
       "id": "3-arte-e-immagine-impressionismo-e-arte-moderna",
@@ -1372,7 +1906,13 @@
         "Arte e contesto storico"
       ],
       "path": "/education/p/subject/3/impressionismo-e-arte-moderna/",
-      "url": "https://developer.zorix.it/education/p/subject/3/impressionismo-e-arte-moderna/"
+      "url": "https://developer.zorix.it/education/p/subject/3/impressionismo-e-arte-moderna/",
+      "illustration": "/assets/education/3-arte-e-immagine-impressionismo-e-arte-moderna.svg",
+      "accent": "#9333EA",
+      "subjectIcon": "AR",
+      "quickExample": "Osserva luce, colore, forma e composizione.",
+      "miniChallenge": "Mini sfida: spiega come un dettaglio cambia il senso.",
+      "whyItMatters": "Serve per leggere immagini e opere."
     },
     {
       "id": "3-arte-e-immagine-avanguardie-del-novecento",
@@ -1387,7 +1927,13 @@
         "Arte e contesto storico"
       ],
       "path": "/education/p/subject/3/avanguardie-del-novecento/",
-      "url": "https://developer.zorix.it/education/p/subject/3/avanguardie-del-novecento/"
+      "url": "https://developer.zorix.it/education/p/subject/3/avanguardie-del-novecento/",
+      "illustration": "/assets/education/3-arte-e-immagine-avanguardie-del-novecento.svg",
+      "accent": "#9333EA",
+      "subjectIcon": "AR",
+      "quickExample": "Osserva luce, colore, forma e composizione.",
+      "miniChallenge": "Mini sfida: spiega come un dettaglio cambia il senso.",
+      "whyItMatters": "Serve per leggere immagini e opere."
     },
     {
       "id": "3-arte-e-immagine-fotografia-grafica-e-comunicazione-visiva",
@@ -1402,7 +1948,13 @@
         "Arte e contesto storico"
       ],
       "path": "/education/p/subject/3/fotografia-grafica-e-comunicazione-visiva/",
-      "url": "https://developer.zorix.it/education/p/subject/3/fotografia-grafica-e-comunicazione-visiva/"
+      "url": "https://developer.zorix.it/education/p/subject/3/fotografia-grafica-e-comunicazione-visiva/",
+      "illustration": "/assets/education/3-arte-e-immagine-fotografia-grafica-e-comunicazione-visiva.svg",
+      "accent": "#9333EA",
+      "subjectIcon": "AR",
+      "quickExample": "Osserva luce, colore, forma e composizione.",
+      "miniChallenge": "Mini sfida: spiega come un dettaglio cambia il senso.",
+      "whyItMatters": "Serve per leggere immagini e opere."
     },
     {
       "id": "3-musica-romanticismo-e-novecento",
@@ -1417,7 +1969,13 @@
         "Pratica musicale"
       ],
       "path": "/education/p/subject/3/romanticismo-e-novecento/",
-      "url": "https://developer.zorix.it/education/p/subject/3/romanticismo-e-novecento/"
+      "url": "https://developer.zorix.it/education/p/subject/3/romanticismo-e-novecento/",
+      "illustration": "/assets/education/3-musica-romanticismo-e-novecento.svg",
+      "accent": "#C2410C",
+      "subjectIcon": "♫",
+      "quickExample": "Ascolta prima l’insieme, poi un solo elemento, come ritmo o timbro.",
+      "miniChallenge": "Mini sfida: individua il ritmo dominante.",
+      "whyItMatters": "Serve per ascoltare con più attenzione."
     },
     {
       "id": "3-musica-jazz-blues-e-popular-music",
@@ -1432,7 +1990,13 @@
         "Pratica musicale"
       ],
       "path": "/education/p/subject/3/jazz-blues-e-popular-music/",
-      "url": "https://developer.zorix.it/education/p/subject/3/jazz-blues-e-popular-music/"
+      "url": "https://developer.zorix.it/education/p/subject/3/jazz-blues-e-popular-music/",
+      "illustration": "/assets/education/3-musica-jazz-blues-e-popular-music.svg",
+      "accent": "#C2410C",
+      "subjectIcon": "♫",
+      "quickExample": "Ascolta prima l’insieme, poi un solo elemento, come ritmo o timbro.",
+      "miniChallenge": "Mini sfida: individua il ritmo dominante.",
+      "whyItMatters": "Serve per ascoltare con più attenzione."
     },
     {
       "id": "3-musica-musica-e-produzione-digitale",
@@ -1447,7 +2011,13 @@
         "Pratica musicale"
       ],
       "path": "/education/p/subject/3/musica-e-produzione-digitale/",
-      "url": "https://developer.zorix.it/education/p/subject/3/musica-e-produzione-digitale/"
+      "url": "https://developer.zorix.it/education/p/subject/3/musica-e-produzione-digitale/",
+      "illustration": "/assets/education/3-musica-musica-e-produzione-digitale.svg",
+      "accent": "#C2410C",
+      "subjectIcon": "♫",
+      "quickExample": "Ascolta prima l’insieme, poi un solo elemento, come ritmo o timbro.",
+      "miniChallenge": "Mini sfida: individua il ritmo dominante.",
+      "whyItMatters": "Serve per ascoltare con più attenzione."
     },
     {
       "id": "3-musica-ascolto-critico-e-percorso-orale",
@@ -1462,7 +2032,13 @@
         "Pratica musicale"
       ],
       "path": "/education/p/subject/3/ascolto-critico-e-percorso-orale/",
-      "url": "https://developer.zorix.it/education/p/subject/3/ascolto-critico-e-percorso-orale/"
+      "url": "https://developer.zorix.it/education/p/subject/3/ascolto-critico-e-percorso-orale/",
+      "illustration": "/assets/education/3-musica-ascolto-critico-e-percorso-orale.svg",
+      "accent": "#C2410C",
+      "subjectIcon": "♫",
+      "quickExample": "Ascolta prima l’insieme, poi un solo elemento, come ritmo o timbro.",
+      "miniChallenge": "Mini sfida: individua il ritmo dominante.",
+      "whyItMatters": "Serve per ascoltare con più attenzione."
     },
     {
       "id": "3-educazione-civica-istituzioni-della-repubblica",
@@ -1477,7 +2053,13 @@
         "Costituzione e sostenibilità"
       ],
       "path": "/education/p/subject/3/istituzioni-della-repubblica/",
-      "url": "https://developer.zorix.it/education/p/subject/3/istituzioni-della-repubblica/"
+      "url": "https://developer.zorix.it/education/p/subject/3/istituzioni-della-repubblica/",
+      "illustration": "/assets/education/3-educazione-civica-istituzioni-della-repubblica.svg",
+      "accent": "#1D4ED8",
+      "subjectIcon": "EC",
+      "quickExample": "Collega il tema a una situazione reale di scuola o comunità.",
+      "miniChallenge": "Mini sfida: scrivi una scelta responsabile concreta.",
+      "whyItMatters": "Serve per vivere la cittadinanza con più consapevolezza."
     },
     {
       "id": "3-educazione-civica-unione-europea-e-cittadinanza-europea",
@@ -1492,7 +2074,13 @@
         "Costituzione e sostenibilità"
       ],
       "path": "/education/p/subject/3/unione-europea-e-cittadinanza-europea/",
-      "url": "https://developer.zorix.it/education/p/subject/3/unione-europea-e-cittadinanza-europea/"
+      "url": "https://developer.zorix.it/education/p/subject/3/unione-europea-e-cittadinanza-europea/",
+      "illustration": "/assets/education/3-educazione-civica-unione-europea-e-cittadinanza-europea.svg",
+      "accent": "#1D4ED8",
+      "subjectIcon": "EC",
+      "quickExample": "Collega il tema a una situazione reale di scuola o comunità.",
+      "miniChallenge": "Mini sfida: scrivi una scelta responsabile concreta.",
+      "whyItMatters": "Serve per vivere la cittadinanza con più consapevolezza."
     },
     {
       "id": "3-educazione-civica-diritti-umani-e-legalita",
@@ -1507,7 +2095,13 @@
         "Costituzione e sostenibilità"
       ],
       "path": "/education/p/subject/3/diritti-umani-e-legalita/",
-      "url": "https://developer.zorix.it/education/p/subject/3/diritti-umani-e-legalita/"
+      "url": "https://developer.zorix.it/education/p/subject/3/diritti-umani-e-legalita/",
+      "illustration": "/assets/education/3-educazione-civica-diritti-umani-e-legalita.svg",
+      "accent": "#1D4ED8",
+      "subjectIcon": "EC",
+      "quickExample": "Collega il tema a una situazione reale di scuola o comunità.",
+      "miniChallenge": "Mini sfida: scrivi una scelta responsabile concreta.",
+      "whyItMatters": "Serve per vivere la cittadinanza con più consapevolezza."
     },
     {
       "id": "3-educazione-civica-informazione-media-e-pensiero-critico",
@@ -1522,7 +2116,13 @@
         "Costituzione e sostenibilità"
       ],
       "path": "/education/p/subject/3/informazione-media-e-pensiero-critico/",
-      "url": "https://developer.zorix.it/education/p/subject/3/informazione-media-e-pensiero-critico/"
+      "url": "https://developer.zorix.it/education/p/subject/3/informazione-media-e-pensiero-critico/",
+      "illustration": "/assets/education/3-educazione-civica-informazione-media-e-pensiero-critico.svg",
+      "accent": "#1D4ED8",
+      "subjectIcon": "EC",
+      "quickExample": "Collega il tema a una situazione reale di scuola o comunità.",
+      "miniChallenge": "Mini sfida: scrivi una scelta responsabile concreta.",
+      "whyItMatters": "Serve per vivere la cittadinanza con più consapevolezza."
     },
     {
       "id": "3-scienze-motorie-allenamento-e-adattamento",
@@ -1537,7 +2137,13 @@
         "Salute e sicurezza"
       ],
       "path": "/education/p/subject/3/allenamento-e-adattamento/",
-      "url": "https://developer.zorix.it/education/p/subject/3/allenamento-e-adattamento/"
+      "url": "https://developer.zorix.it/education/p/subject/3/allenamento-e-adattamento/",
+      "illustration": "/assets/education/3-scienze-motorie-allenamento-e-adattamento.svg",
+      "accent": "#059669",
+      "subjectIcon": "SM",
+      "quickExample": "Pensa a gesto, controllo e sicurezza.",
+      "miniChallenge": "Mini sfida: progetta una mini routine in 4 step.",
+      "whyItMatters": "Serve per muoversi meglio e in sicurezza."
     },
     {
       "id": "3-scienze-motorie-sport-individuali-e-di-squadra",
@@ -1552,7 +2158,13 @@
         "Salute e sicurezza"
       ],
       "path": "/education/p/subject/3/sport-individuali-e-di-squadra/",
-      "url": "https://developer.zorix.it/education/p/subject/3/sport-individuali-e-di-squadra/"
+      "url": "https://developer.zorix.it/education/p/subject/3/sport-individuali-e-di-squadra/",
+      "illustration": "/assets/education/3-scienze-motorie-sport-individuali-e-di-squadra.svg",
+      "accent": "#059669",
+      "subjectIcon": "SM",
+      "quickExample": "Pensa a gesto, controllo e sicurezza.",
+      "miniChallenge": "Mini sfida: progetta una mini routine in 4 step.",
+      "whyItMatters": "Serve per muoversi meglio e in sicurezza."
     },
     {
       "id": "3-scienze-motorie-salute-e-stili-di-vita-attivi",
@@ -1567,7 +2179,13 @@
         "Salute e sicurezza"
       ],
       "path": "/education/p/subject/3/salute-e-stili-di-vita-attivi/",
-      "url": "https://developer.zorix.it/education/p/subject/3/salute-e-stili-di-vita-attivi/"
+      "url": "https://developer.zorix.it/education/p/subject/3/salute-e-stili-di-vita-attivi/",
+      "illustration": "/assets/education/3-scienze-motorie-salute-e-stili-di-vita-attivi.svg",
+      "accent": "#059669",
+      "subjectIcon": "SM",
+      "quickExample": "Pensa a gesto, controllo e sicurezza.",
+      "miniChallenge": "Mini sfida: progetta una mini routine in 4 step.",
+      "whyItMatters": "Serve per muoversi meglio e in sicurezza."
     },
     {
       "id": "3-scienze-motorie-progettare-una-routine-motoria",
@@ -1582,7 +2200,13 @@
         "Salute e sicurezza"
       ],
       "path": "/education/p/subject/3/progettare-una-routine-motoria/",
-      "url": "https://developer.zorix.it/education/p/subject/3/progettare-una-routine-motoria/"
+      "url": "https://developer.zorix.it/education/p/subject/3/progettare-una-routine-motoria/",
+      "illustration": "/assets/education/3-scienze-motorie-progettare-una-routine-motoria.svg",
+      "accent": "#059669",
+      "subjectIcon": "SM",
+      "quickExample": "Pensa a gesto, controllo e sicurezza.",
+      "miniChallenge": "Mini sfida: progetta una mini routine in 4 step.",
+      "whyItMatters": "Serve per muoversi meglio e in sicurezza."
     }
   ]
 }

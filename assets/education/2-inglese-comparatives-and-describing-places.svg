@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 520">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#F4F4F2"/></linearGradient></defs>
+<rect width="860" height="520" fill="url(#bg)"/>
+<rect x="30" y="30" width="800" height="460" rx="34" fill="#ffffff" stroke="#E5E7EB" stroke-width="2"/>
+<text x="72" y="88" font-size="18" font-family="Arial,sans-serif" fill="#666">Seconda media · Inglese</text>
+<text x="72" y="138" font-size="32" font-family="Arial,sans-serif" fill="#111" font-weight="700"><tspan x="72" dy="0">Comparatives and</tspan><tspan x="72" dy="34">describing places</tspan></text>
+<text x="72" y="198" font-size="18" font-family="Arial,sans-serif" fill="#666">Zorix Education · visual summary</text>
+<rect x="135" y="170" width="210" height="92" rx="24" fill="#EA580C" opacity=".13" stroke="#EA580C" stroke-width="3"/><rect x="420" y="150" width="230" height="96" rx="24" fill="#EA580C" opacity=".10" stroke="#EA580C" stroke-width="3"/><rect x="250" y="285" width="270" height="100" rx="26" fill="#EA580C" opacity=".08" stroke="#EA580C" stroke-width="3"/><path d="M235 262l-24 34 42-20" fill="#EA580C" opacity=".18"/><path d="M560 246l26 30-42-18" fill="#EA580C" opacity=".18"/>
+<rect x="72" y="404" rx="16" ry="16" width="186" height="34" fill="#EA580C" opacity=".10"/><text x="88" y="426" font-size="16" font-family="Arial,sans-serif" fill="#EA580C" font-weight="700">Reading and listening</text><rect x="270" y="404" rx="16" ry="16" width="178" height="34" fill="#EA580C" opacity=".10"/><text x="286" y="426" font-size="16" font-family="Arial,sans-serif" fill="#EA580C" font-weight="700">Speaking and writing</text><rect x="460" y="404" rx="16" ry="16" width="194" height="34" fill="#EA580C" opacity=".10"/><text x="476" y="426" font-size="16" font-family="Arial,sans-serif" fill="#EA580C" font-weight="700">Grammar and vocabulary</text>
+<circle cx="770" cy="92" r="28" fill="#EA580C"/>
+<text x="770" y="99" text-anchor="middle" font-size="15" font-family="Arial,sans-serif" fill="#fff" font-weight="700">EN</text>
+</svg>

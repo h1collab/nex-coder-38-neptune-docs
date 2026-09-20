@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 520">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#F4F4F2"/></linearGradient></defs>
+<rect width="860" height="520" fill="url(#bg)"/>
+<rect x="30" y="30" width="800" height="460" rx="34" fill="#ffffff" stroke="#E5E7EB" stroke-width="2"/>
+<text x="72" y="88" font-size="18" font-family="Arial,sans-serif" fill="#666">Seconda media · Tecnologia</text>
+<text x="72" y="138" font-size="32" font-family="Arial,sans-serif" fill="#111" font-weight="700"><tspan x="72" dy="0">Alimentazione e</tspan><tspan x="72" dy="34">conservazione</tspan></text>
+<text x="72" y="198" font-size="18" font-family="Arial,sans-serif" fill="#666">Zorix Education · visual summary</text>
+<rect x="120" y="205" width="150" height="88" rx="20" fill="#4F46E5" opacity=".11" stroke="#4F46E5" stroke-width="3"/><rect x="345" y="205" width="150" height="88" rx="20" fill="#4F46E5" opacity=".11" stroke="#4F46E5" stroke-width="3"/><rect x="570" y="205" width="150" height="88" rx="20" fill="#4F46E5" opacity=".11" stroke="#4F46E5" stroke-width="3"/><path d="M273 249h58M498 249h58" stroke="#4F46E5" stroke-width="8" stroke-linecap="round"/><path d="M315 233l18 16-18 16M540 233l18 16-18 16" fill="none" stroke="#4F46E5" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="72" y="404" rx="16" ry="16" width="178" height="34" fill="#4F46E5" opacity=".10"/><text x="88" y="426" font-size="16" font-family="Arial,sans-serif" fill="#4F46E5" font-weight="700">Materiali e processi</text><rect x="262" y="404" rx="16" ry="16" width="226" height="34" fill="#4F46E5" opacity=".10"/><text x="278" y="426" font-size="16" font-family="Arial,sans-serif" fill="#4F46E5" font-weight="700">Disegno e rappresentazione</text><rect x="500" y="404" rx="16" ry="16" width="202" height="34" fill="#4F46E5" opacity=".10"/><text x="516" y="426" font-size="16" font-family="Arial,sans-serif" fill="#4F46E5" font-weight="700">Energia e sostenibilità</text>
+<circle cx="770" cy="92" r="28" fill="#4F46E5"/>
+<text x="770" y="99" text-anchor="middle" font-size="15" font-family="Arial,sans-serif" fill="#fff" font-weight="700">TX</text>
+</svg>

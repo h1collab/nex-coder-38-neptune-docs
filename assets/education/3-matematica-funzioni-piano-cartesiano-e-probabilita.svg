@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 520">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#F4F4F2"/></linearGradient></defs>
+<rect width="860" height="520" fill="url(#bg)"/>
+<rect x="30" y="30" width="800" height="460" rx="34" fill="#ffffff" stroke="#E5E7EB" stroke-width="2"/>
+<text x="72" y="88" font-size="18" font-family="Arial,sans-serif" fill="#666">Terza media · Matematica</text>
+<text x="72" y="138" font-size="32" font-family="Arial,sans-serif" fill="#111" font-weight="700"><tspan x="72" dy="0">Funzioni, piano</tspan><tspan x="72" dy="34">cartesiano e probabilità</tspan></text>
+<text x="72" y="198" font-size="18" font-family="Arial,sans-serif" fill="#666">Zorix Education · visual summary</text>
+<line x1="150" y1="350" x2="760" y2="350" stroke="#16A34A" stroke-width="8" stroke-linecap="round"/><line x1="420" y1="150" x2="420" y2="400" stroke="#16A34A" stroke-width="8" stroke-linecap="round"/><circle cx="250" cy="280" r="12" fill="#16A34A"/><circle cx="510" cy="235" r="12" fill="#16A34A" opacity=".8"/><circle cx="640" cy="185" r="12" fill="#16A34A" opacity=".65"/><text x="180" y="220" font-size="44" font-family="Arial,sans-serif" fill="#16A34A" font-weight="700">x + 3 = 7</text>
+<rect x="72" y="404" rx="16" ry="16" width="138" height="34" fill="#16A34A" opacity=".10"/><text x="88" y="426" font-size="16" font-family="Arial,sans-serif" fill="#16A34A" font-weight="700">Problem solving</text><rect x="222" y="404" rx="16" ry="16" width="162" height="34" fill="#16A34A" opacity=".10"/><text x="238" y="426" font-size="16" font-family="Arial,sans-serif" fill="#16A34A" font-weight="700">Numeri e relazioni</text><rect x="396" y="404" rx="16" ry="16" width="146" height="34" fill="#16A34A" opacity=".10"/><text x="412" y="426" font-size="16" font-family="Arial,sans-serif" fill="#16A34A" font-weight="700">Geometria e dati</text>
+<circle cx="770" cy="92" r="28" fill="#16A34A"/>
+<text x="770" y="99" text-anchor="middle" font-size="15" font-family="Arial,sans-serif" fill="#fff" font-weight="700">∑</text>
+</svg>

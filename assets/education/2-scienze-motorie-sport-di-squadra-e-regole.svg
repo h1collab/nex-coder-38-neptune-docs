@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 520">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#F4F4F2"/></linearGradient></defs>
+<rect width="860" height="520" fill="url(#bg)"/>
+<rect x="30" y="30" width="800" height="460" rx="34" fill="#ffffff" stroke="#E5E7EB" stroke-width="2"/>
+<text x="72" y="88" font-size="18" font-family="Arial,sans-serif" fill="#666">Seconda media · Scienze motorie</text>
+<text x="72" y="138" font-size="32" font-family="Arial,sans-serif" fill="#111" font-weight="700"><tspan x="72" dy="0">Sport di squadra e</tspan><tspan x="72" dy="34">regole</tspan></text>
+<text x="72" y="198" font-size="18" font-family="Arial,sans-serif" fill="#666">Zorix Education · visual summary</text>
+<rect x="180" y="315" width="110" height="44" rx="12" fill="#059669" opacity=".18"/><rect x="305" y="275" width="110" height="84" rx="12" fill="#059669" opacity=".25"/><rect x="430" y="230" width="110" height="129" rx="12" fill="#059669" opacity=".33"/><rect x="555" y="180" width="110" height="179" rx="12" fill="#059669" opacity=".42"/>
+<rect x="72" y="404" rx="16" ry="16" width="154" height="34" fill="#059669" opacity=".10"/><text x="88" y="426" font-size="16" font-family="Arial,sans-serif" fill="#059669" font-weight="700">Corpo e movimento</text><rect x="238" y="404" rx="16" ry="16" width="96" height="34" fill="#059669" opacity=".10"/><text x="254" y="426" font-size="16" font-family="Arial,sans-serif" fill="#059669" font-weight="700">Fair play</text><rect x="346" y="404" rx="16" ry="16" width="162" height="34" fill="#059669" opacity=".10"/><text x="362" y="426" font-size="16" font-family="Arial,sans-serif" fill="#059669" font-weight="700">Salute e sicurezza</text>
+<circle cx="770" cy="92" r="28" fill="#059669"/>
+<text x="770" y="99" text-anchor="middle" font-size="15" font-family="Arial,sans-serif" fill="#fff" font-weight="700">SM</text>
+</svg>
