@@ -1,0 +1,22 @@
+{
+  "site": "Zorix Books",
+  "updatedAt": "2026-09-20T09:57:58+02:00",
+  "books": [
+    {
+      "id": "modelli-strumenti-e-idee-per-costruire-il-futuro-con-l-intelligenza-artificiale",
+      "slug": "modelli-strumenti-e-idee-per-costruire-il-futuro-con-l-intelligenza-artificiale",
+      "title": "Modelli, strumenti e idee per costruire il futuro con l’intelligenza artificiale",
+      "subtitle": "La storia, la visione e la famiglia di modelli AI di Zorix",
+      "tagline": "Dalla risposta all’azione.",
+      "publisher": "Zorix",
+      "type": "Digital book",
+      "language": "it",
+      "edition": "Edizione digitale 2026",
+      "pages": 46,
+      "cover": "/assets/books/modelli-strumenti-e-idee-per-costruire-il-futuro-con-l-intelligenza-artificiale/cover.jpg",
+      "path": "/book/list/p/modelli-strumenti-e-idee-per-costruire-il-futuro-con-l-intelligenza-artificiale/",
+      "url": "https://developer.zorix.it/book/list/p/modelli-strumenti-e-idee-per-costruire-il-futuro-con-l-intelligenza-artificiale/",
+      "featured": true
+    }
+  ]
+}
