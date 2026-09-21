@@ -1,5 +1,35 @@
 const MODELS = [
   {
+    name: "Zorix Timeal 1.1",
+    status: "Beta",
+    type: "Realtime",
+    family: "Timeal",
+    variant: "Mini",
+    api: false,
+    href: "/models/zorix-timeal-1-1-mini/",
+    modelId: "zorix-timeal-1-1-mini",
+    inputPrice: "Not announced",
+    outputPrice: "Not announced",
+    description:
+      "Mini variant of the Zorix Timeal real-time conversation model, currently in Beta."
+  },
+
+  {
+    name: "Zorix Timeal 1",
+    status: "Beta",
+    type: "Realtime",
+    family: "Timeal",
+    variant: "High",
+    api: false,
+    href: "/models/zorix-timeal-1/",
+    modelId: "zorix-timeal-1-high",
+    inputPrice: "Not announced",
+    outputPrice: "Not announced",
+    description:
+      "High variant of the Zorix Timeal real-time conversation model, currently in Beta."
+  },
+
+  {
     name: "Zorix Thrym 3",
     status: "Preview",
     type: "Internal",
