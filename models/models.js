@@ -1,5 +1,20 @@
 const MODELS = [
   {
+    name: "Zorix Thrym 3",
+    status: "Preview",
+    type: "Internal",
+    family: "Thrym",
+    api: false,
+    internal: true,
+    href: "/models/zorix-thrym-3-preview/",
+    modelId: "zorix-thrym-3-preview",
+    inputPrice: "Not announced",
+    outputPrice: "Not announced",
+    description:
+      "Very high-capability internal Preview model. Designed for Zorix internal testing, evaluation, and advanced internal workloads."
+  },
+
+  {
     name: "Zorix NexHate 2",
     status: "Preview",
     type: "Translation",
