@@ -6,7 +6,8 @@
 <meta name="theme-color" content="#ffffff">
 <title>GPT-6.1 SOL Playground | Zorix Developers</title>
 <meta name="description" content="Use GPT-6.1 SOL through the current API in the Zorix Developers playground.">
-<link rel="canonical" href="https://developer.zorix.it/playground/openai-vs-zorix/">
+<link rel="canonical" href="https://developer.zorix.it/playground/gpt-6-1-sol/">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <link rel="stylesheet" href="/assets/css/zorix-compare-playground.css">
 </head>
 <body>
@@ -33,11 +34,16 @@
       <div class="cp-kicker">OpenAI model playground</div>
       <h1>GPT-6.1 SOL.</h1>
     </div>
-    <p>Use GPT-6.1 SOL through the current API endpoint at <strong>chat.zorix.it</strong>. The page now contains a single model experience — no separate Zorix comparison panel.</p>
+    <p>Use GPT-6.1 SOL through the OpenAI-compatible API at <strong>chat.zorix.it</strong>. Chat Completions supports standard OpenAI-style JSON and SSE, and the playground can also send requests through the Responses endpoint.</p>
   </section>
 
   <div class="cp-notice">
-    <strong>Model:</strong> GPT-6.1 SOL · API label <code>Gpt6.1sol</code> · Endpoint <code>https://chat.zorix.it/v1/chat/completions</code>.
+    <strong>Model:</strong> GPT-6.1 SOL · API label <code>Gpt6.1sol</code> · Status <code>experimental</code>.
+    <div class="cp-api-badges">
+      <span class="cp-api-badge">/v1/models</span>
+      <span class="cp-api-badge">/v1/chat/completions</span>
+      <span class="cp-api-badge">/v1/responses</span>
+    </div>
   </div>
 
   <div class="cp-layout">
@@ -61,13 +67,22 @@
         </div>
 
         <div class="cp-field">
+          <div class="cp-label"><span>API mode</span><span class="cp-small">OpenAI compatible</span></div>
+          <select class="cp-input cp-select" id="apiMode">
+            <option value="chat">Chat Completions</option>
+            <option value="responses">Responses</option>
+          </select>
+          <div class="cp-endpoint-hint" id="endpointHint">POST https://chat.zorix.it/v1/chat/completions</div>
+        </div>
+
+        <div class="cp-field">
           <div class="cp-label"><span>Model</span><span class="cp-small">fixed</span></div>
           <input class="cp-input" type="text" value="GPT-6.1 SOL" readonly aria-label="GPT-6.1 SOL">
           <div class="cp-helper">Request field: <code>model: "Gpt6.1sol"</code>.</div>
         </div>
 
         <div class="cp-field">
-          <label class="cp-switch"><input id="streamMode" type="checkbox" checked> Stream response</label>
+          <label class="cp-switch"><input id="streamMode" type="checkbox" checked> Stream response</label><div class="cp-helper" id="streamHint">Standard OpenAI SSE: <code>data: {...}</code> then <code>data: [DONE]</code>.</div>
           <div class="cp-health">
             <div class="cp-health-text" id="healthText">API: <strong>not checked</strong></div>
             <button class="cp-mini-btn" id="checkHealth" type="button">Health</button>
@@ -102,7 +117,7 @@
 
           <div class="cp-result-body">
             <div class="cp-result-actions"><button class="cp-mini-btn" id="copyOutput" type="button">Copy</button></div>
-            <pre class="cp-output cp-placeholder" id="modelOutput">Waiting to run...</pre>
+            <div class="cp-output cp-markdown cp-placeholder" id="modelOutput">Waiting to run...</div>
           </div>
 
           <div class="cp-metrics">
@@ -117,23 +132,38 @@
       </div>
 
       <div class="cp-footnote">
-        Streaming uses the current custom SSE format from the endpoint: <code>event: delta</code> with <code>{"text":"..."}</code>. The page also keeps <code>previous_response_id</code> during the current session for multi-turn continuity.
+        Chat Completions streaming now uses standard OpenAI-style SSE chunks: <code>data: {"object":"chat.completion.chunk", ...}</code> followed by <code>data: [DONE]</code>. Markdown, fenced code blocks, inline/display LaTeX, tables, lists, and links are rendered in the response area. The page also keeps <code>previous_response_id</code> when the API returns it.
       </div>
     </section>
   </div>
 
   <section class="cp-section">
-    <h2>Request</h2>
+    <h2>Chat Completions</h2>
     <div class="cp-section-copy">
       <pre class="cp-code">POST https://chat.zorix.it/v1/chat/completions
 
 {
   "model": "Gpt6.1sol",
   "messages": [
-    {"role":"user","content":"..."}
+    {"role":"system","content":"Answer briefly."},
+    {"role":"user","content":"What is Linux?"}
   ],
   "stream": true
 }</pre>
+    </div>
+  </section>
+
+  <section class="cp-section">
+    <h2>Responses</h2>
+    <div class="cp-section-copy">
+      <pre class="cp-code">POST https://chat.zorix.it/v1/responses
+
+{
+  "model": "Gpt6.1sol",
+  "instructions": "Answer concisely.",
+  "input": "Explain quantum computing."
+}</pre>
+      <p>The current playground uses Responses in non-streaming mode because only the non-streaming Responses contract has been specified here.</p>
     </div>
   </section>
 </main>
@@ -143,6 +173,10 @@
   <span>support@zorix.it</span>
 </footer>
 
+<script defer src="https://cdn.jsdelivr.net/npm/marked@14.1.2/marked.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
 <script defer src="/assets/js/gpt-6-1-sol-playground.js"></script>
 </body>
 </html>
