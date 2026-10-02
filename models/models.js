@@ -77,7 +77,7 @@ const MODELS = [
     input: 6,
     output: 8,
     href: "/models/nex-coder-38-mercury/",
-    description: "Fast-path Nex Coder 3.8 profile for daily coding and rapid iteration. Retired from availability on October 2, 2026."
+    description: "Fast-path Nex Coder 3.8 profile for daily coding and rapid iteration. Retired on October 2, 2026. Some users may retain temporary access during the transition; final shutdown is after October 3, 2026."
   },
   {
     name: "Nex Coder 3.8 Uranus",
@@ -85,7 +85,7 @@ const MODELS = [
     type: "Coding",
     family: "Nex Coder 3.8",
     api: false,
-    description: "Balanced 3.8 profile for sustained software-engineering workflows. Retired from availability on October 2, 2026."
+    description: "Balanced 3.8 profile for sustained software-engineering workflows. Retired on October 2, 2026. Some users may retain temporary access during the transition; final shutdown is after October 3, 2026."
   },
   {
     name: "Nex Coder 3.8 Preview — Neptune",
@@ -96,7 +96,7 @@ const MODELS = [
     input: 12,
     output: 47,
     href: "/",
-    description: "Deep frontier profile for long-horizon repository engineering. Retired from availability on October 2, 2026."
+    description: "Deep frontier profile for long-horizon repository engineering. Retired on October 2, 2026. Some users may retain temporary access during the transition; final shutdown is after October 3, 2026."
   },
   {
     name: "Zorix Nex Coder 3.7 Pro",
