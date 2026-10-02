@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>OpenAI vs Zorix Playground | Zorix Developers</title>
+<meta name="description" content="Compare an OpenAI model and the Zorix Gpt6.1sol model side by side with the same prompt.">
+<link rel="canonical" href="https://developer.zorix.it/playground/openai-vs-zorix/">
+<link rel="stylesheet" href="/assets/css/zorix-compare-playground.css">
+</head>
+<body>
+<header class="cp-header">
+  <div class="cp-header-in">
+    <a class="cp-brand" href="/"><svg viewBox="0 0 160 160" aria-hidden="true"><defs><linearGradient id="cpg" x1="32" y1="24" x2="130" y2="136" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#2563EB"/><stop offset="45%" stop-color="#06B6D4"/><stop offset="100%" stop-color="#22C55E"/></linearGradient></defs><rect x="20" y="20" width="120" height="120" rx="34" fill="url(#cpg)"/><path d="M48 50H112L92 73H108L55 112L76 86H52L72 63H48Z" fill="#fff"/></svg><span>Zorix Developers</span></a>
+    <nav class="cp-nav">
+      <a href="/">Home</a>
+      <a href="/models/">Models</a>
+      <a class="active" href="/playground/openai-vs-zorix/">Playground</a>
+      <a href="/book/">Books</a>
+      <a href="/education/list/total/">Education</a>
+      <a href="/letter/">Letters</a>
+    </nav>
+    <a class="cp-open" href="https://zorix.it/" target="_blank" rel="noopener">Open Zorix</a>
+  </div>
+</header>
+
+<main class="cp-main">
+  <div class="cp-breadcrumb"><a href="/">Developers</a> / Playground / OpenAI vs Zorix</div>
+
+  <section class="cp-hero">
+    <div>
+      <div class="cp-kicker">Side-by-side model testing</div>
+      <h1>OpenAI vs<br>Zorix.</h1>
+    </div>
+    <p>Send the same prompt to an OpenAI model and to <strong>Gpt6.1sol</strong>, then compare response quality, latency, first-token time, raw payloads, and streaming behavior.</p>
+  </section>
+
+  <div class="cp-notice">
+    <strong>OpenAI key handling:</strong> this static playground uses your OpenAI API key directly in the browser and does not save it to localStorage. Do not use a long-lived production key on a public/shared device. For production use, route OpenAI requests through your own server-side proxy.
+  </div>
+
+  <div class="cp-layout">
+    <aside class="cp-controls">
+      <div class="cp-panel">
+        <div class="cp-panel-head"><h2>Compare request</h2><span class="cp-small">Ctrl/Cmd + Enter</span></div>
+
+        <div class="cp-field">
+          <div class="cp-label"><span>Prompt</span><span class="cp-small">same prompt to both</span></div>
+          <textarea class="cp-textarea" id="prompt" placeholder="Ask both models the same question..."></textarea>
+          <div class="cp-presets">
+            <button class="cp-preset" type="button" data-prompt="Explain Linux namespaces to a junior developer in 5 concise bullets.">Linux</button>
+            <button class="cp-preset" type="button" data-prompt="Write a robust JavaScript function that retries a fetch request with exponential backoff.">Coding</button>
+            <button class="cp-preset" type="button" data-prompt="Translate 'The next generation is here' into Italian and explain two natural alternatives.">Translation</button>
+          </div>
+        </div>
+
+        <div class="cp-field">
+          <div class="cp-label"><span>System prompt</span><span class="cp-small">optional</span></div>
+          <textarea class="cp-textarea" id="systemPrompt" style="min-height:92px" placeholder="You are a concise technical assistant."></textarea>
+        </div>
+
+        <div class="cp-field">
+          <div class="cp-label"><span>OpenAI model ID</span><span class="cp-small">you choose</span></div>
+          <input class="cp-input" id="openaiModel" type="text" placeholder="Enter an OpenAI model ID" autocomplete="off">
+          <div class="cp-helper">Use the exact model ID available to your OpenAI API project.</div>
+        </div>
+
+        <div class="cp-field">
+          <div class="cp-label"><span>OpenAI API key</span><span class="cp-small">session only</span></div>
+          <div class="cp-secret-wrap">
+            <input class="cp-input" id="openaiKey" type="password" placeholder="sk-..." autocomplete="off" spellcheck="false">
+            <button class="cp-secret-toggle" id="toggleKey" type="button">Show</button>
+          </div>
+          <div class="cp-helper">The key stays only in this page's memory unless your browser/extensions do something else.</div>
+        </div>
+
+        <div class="cp-field">
+          <div class="cp-row">
+            <label class="cp-switch"><input id="streamMode" type="checkbox" checked> Stream both responses</label>
+          </div>
+          <div class="cp-health">
+            <div class="cp-health-text" id="healthText">Zorix API: <strong>not checked</strong></div>
+            <button class="cp-mini-btn" id="checkHealth" type="button">Health</button>
+          </div>
+        </div>
+
+        <div class="cp-actions">
+          <button class="cp-btn primary" id="runCompare" type="button">Run comparison</button>
+          <button class="cp-btn danger" id="stopCompare" type="button" disabled>Stop</button>
+          <button class="cp-btn" id="clearCompare" type="button" style="grid-column:1/-1">Clear results / reset Zorix conversation</button>
+        </div>
+      </div>
+    </aside>
+
+    <section class="cp-results">
+      <div class="cp-results-head">
+        <div><h2>Responses</h2><p>Both requests start together so latency is easier to compare.</p></div>
+      </div>
+
+      <div class="cp-compare-grid">
+        
+<article class="cp-result">
+  <div class="cp-result-top">
+    <div class="cp-provider">
+      <div class="cp-provider-mark ">O</div>
+      <div style="min-width:0">
+        <div class="cp-provider-name">OpenAI</div>
+        <div class="cp-provider-model" id="openaiModelShown">-</div>
+      </div>
+    </div>
+    <div class="cp-status" id="openaiStatus"><span class="cp-dot"></span><span>Idle</span></div>
+  </div>
+  <div class="cp-result-body">
+    <div class="cp-result-actions"><button class="cp-mini-btn" id="copyOpenAI" type="button">Copy</button></div>
+    <pre class="cp-output cp-placeholder" id="openaiOutput">Waiting to run...</pre>
+  </div>
+  <div class="cp-metrics">
+    <div class="cp-metric"><span>Total</span><strong id="openaiLatency">-</strong></div>
+    <div class="cp-metric"><span>First token</span><strong id="openaiFirst">-</strong></div>
+    <div class="cp-metric"><span>Chars</span><strong id="openaiChars">-</strong></div>
+    <div class="cp-metric"><span>Finish</span><strong id="openaiFinish">-</strong></div>
+  </div>
+  <details class="cp-raw"><summary>Raw response</summary><pre id="openaiRaw">{}</pre></details>
+</article>
+        
+<article class="cp-result">
+  <div class="cp-result-top">
+    <div class="cp-provider">
+      <div class="cp-provider-mark zorix">Z</div>
+      <div style="min-width:0">
+        <div class="cp-provider-name">Zorix</div>
+        <div class="cp-provider-model" id="zorixModelShown">-</div>
+      </div>
+    </div>
+    <div class="cp-status" id="zorixStatus"><span class="cp-dot"></span><span>Idle</span></div>
+  </div>
+  <div class="cp-result-body">
+    <div class="cp-result-actions"><button class="cp-mini-btn" id="copyZorix" type="button">Copy</button></div>
+    <pre class="cp-output cp-placeholder" id="zorixOutput">Waiting to run...</pre>
+  </div>
+  <div class="cp-metrics">
+    <div class="cp-metric"><span>Total</span><strong id="zorixLatency">-</strong></div>
+    <div class="cp-metric"><span>First token</span><strong id="zorixFirst">-</strong></div>
+    <div class="cp-metric"><span>Chars</span><strong id="zorixChars">-</strong></div>
+    <div class="cp-metric"><span>Finish</span><strong id="zorixFinish">-</strong></div>
+  </div>
+  <details class="cp-raw"><summary>Raw response</summary><pre id="zorixRaw">{}</pre></details>
+</article>
+      </div>
+
+      <div class="cp-footnote">
+        Zorix uses <code>https://chat.zorix.it/v1/chat/completions</code> and the public label <code>Gpt6.1sol</code>. In the current Zorix API, streaming uses custom SSE events such as <code>event: delta</code> with <code>{"text":"..."}</code>. The playground parses that format separately from OpenAI's standard chat-completion chunks.
+      </div>
+    </section>
+  </div>
+
+  <section class="cp-section">
+    <h2>What is being compared</h2>
+    <div class="cp-section-copy">
+      <p>The playground sends the same user message and optional system prompt to both providers. Zorix receives <code>model: "Gpt6.1sol"</code>. OpenAI receives the model ID you enter.</p>
+      <p>For Zorix, this page also tracks <code>previous_response_id</code> during the current page session. Use “Clear results / reset Zorix conversation” to remove that continuity before another independent test.</p>
+    </div>
+  </section>
+
+  <section class="cp-section">
+    <h2>Zorix request</h2>
+    <div class="cp-section-copy">
+      <pre class="cp-code">POST https://chat.zorix.it/v1/chat/completions
+
+{
+  "model": "Gpt6.1sol",
+  "messages": [
+    {"role":"user","content":"..."}
+  ],
+  "stream": true
+}</pre>
+    </div>
+  </section>
+
+  <section class="cp-section">
+    <h2>Important limitation</h2>
+    <div class="cp-section-copy">
+      <p>This is a browser-based comparison tool, not a benchmark. Network path, provider load, browser scheduling, account settings, model configuration, and streaming format can all affect the timings shown here.</p>
+      <p>If the browser blocks direct OpenAI requests, use a server-side OpenAI proxy and update the playground endpoint rather than exposing a production API key in frontend code.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="cp-footer">
+  <span>Zorix Developers</span>
+  <span>support@zorix.it</span>
+</footer>
+
+<script defer src="/assets/js/zorix-compare-playground.js"></script>
+</body>
+</html>
