@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#ffffff">
-<title>OpenAI vs Zorix Playground | Zorix Developers</title>
-<meta name="description" content="Compare an OpenAI model and the Zorix Gpt6.1sol model side by side with the same prompt.">
+<title>OpenAI vs Zorix Platform Playground | Zorix Developers</title>
+<meta name="description" content="Compare an OpenAI model with GPT 6.1SOL, currently the only model exposed through Zorix Platform.">
 <link rel="canonical" href="https://developer.zorix.it/playground/openai-vs-zorix/">
 <link rel="stylesheet" href="/assets/css/zorix-compare-playground.css">
 </head>
@@ -31,9 +31,9 @@
   <section class="cp-hero">
     <div>
       <div class="cp-kicker">Side-by-side model testing</div>
-      <h1>OpenAI vs<br>Zorix.</h1>
+      <h1>OpenAI vs<br>Zorix Platform.</h1>
     </div>
-    <p>Send the same prompt to an OpenAI model and to <strong>Gpt6.1sol</strong>, then compare response quality, latency, first-token time, raw payloads, and streaming behavior.</p>
+    <p>Send the same prompt to an OpenAI model and to <strong>GPT 6.1SOL</strong>, currently the only model exposed through Zorix Platform, then compare response quality, latency, first-token time, raw payloads, and streaming behavior.</p>
   </section>
 
   <div class="cp-notice">
@@ -129,7 +129,7 @@
     <div class="cp-provider">
       <div class="cp-provider-mark zorix">Z</div>
       <div style="min-width:0">
-        <div class="cp-provider-name">Zorix</div>
+        <div class="cp-provider-name">Zorix Platform</div>
         <div class="cp-provider-model" id="zorixModelShown">-</div>
       </div>
     </div>
@@ -150,7 +150,7 @@
       </div>
 
       <div class="cp-footnote">
-        Zorix uses <code>https://chat.zorix.it/v1/chat/completions</code> and the public label <code>Gpt6.1sol</code>. In the current Zorix API, streaming uses custom SSE events such as <code>event: delta</code> with <code>{"text":"..."}</code>. The playground parses that format separately from OpenAI's standard chat-completion chunks.
+        Zorix Platform currently exposes only <strong>GPT 6.1SOL</strong>. The API model label is <code>Gpt6.1sol</code>, served through <code>https://chat.zorix.it/v1/chat/completions</code>. In the current Zorix API, streaming uses custom SSE events such as <code>event: delta</code> with <code>{"text":"..."}</code>. The playground parses that format separately from OpenAI's standard chat-completion chunks.
       </div>
     </section>
   </div>
@@ -158,13 +158,13 @@
   <section class="cp-section">
     <h2>What is being compared</h2>
     <div class="cp-section-copy">
-      <p>The playground sends the same user message and optional system prompt to both providers. Zorix receives <code>model: "Gpt6.1sol"</code>. OpenAI receives the model ID you enter.</p>
+      <p>The playground sends the same user message and optional system prompt to both sides. Zorix Platform currently has no model selector because only GPT 6.1SOL is exposed. The request uses <code>model: "Gpt6.1sol"</code>. OpenAI receives the model ID you enter.</p>
       <p>For Zorix, this page also tracks <code>previous_response_id</code> during the current page session. Use “Clear results / reset Zorix conversation” to remove that continuity before another independent test.</p>
     </div>
   </section>
 
   <section class="cp-section">
-    <h2>Zorix request</h2>
+    <h2>Zorix Platform request</h2>
     <div class="cp-section-copy">
       <pre class="cp-code">POST https://chat.zorix.it/v1/chat/completions
 
