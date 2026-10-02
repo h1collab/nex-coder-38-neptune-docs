@@ -1,5 +1,19 @@
 const MODELS = [
   {
+    name: "Zorix Nex Coder 4 Plutos",
+    status: "Available",
+    type: "Coding",
+    family: "Nex Coder",
+    api: false,
+    href: "/models/nex-coder-4-plutos/",
+    modelId: "nex-coder-4-plutos",
+    inputPrice: "Not announced",
+    outputPrice: "Not announced",
+    description:
+      "Nex Coder 4 Plutos was officially released on October 2, 2026. It is currently available in Zorix Chat to Sovreign and Apex users, with broader staged gray testing planned."
+  },
+
+  {
     name: "Zorix Timeal 1.1",
     status: "Beta",
     type: "Realtime",
@@ -56,36 +70,33 @@ const MODELS = [
   },
   {
     name: "Nex Coder 3.8 Mercury",
-    status: "Preview",
-    type: "Coding",
-    family: "Nex Coder 3.8",
-    api: true,
-    input: 6,
-    output: 8,
-    href: "/models/nex-coder-38-mercury/",
-    description:
-      "Fast-path Nex Coder 3.8 profile for daily coding and rapid iteration."
-  },
-  {
-    name: "Nex Coder 3.8 Uranus",
-    status: "Preview",
+    status: "Retired",
     type: "Coding",
     family: "Nex Coder 3.8",
     api: false,
-    description:
-      "Balanced 3.8 profile for sustained software-engineering workflows."
+    input: 6,
+    output: 8,
+    href: "/models/nex-coder-38-mercury/",
+    description: "Fast-path Nex Coder 3.8 profile for daily coding and rapid iteration. Retired from availability on October 2, 2026."
+  },
+  {
+    name: "Nex Coder 3.8 Uranus",
+    status: "Retired",
+    type: "Coding",
+    family: "Nex Coder 3.8",
+    api: false,
+    description: "Balanced 3.8 profile for sustained software-engineering workflows. Retired from availability on October 2, 2026."
   },
   {
     name: "Nex Coder 3.8 Preview — Neptune",
-    status: "Preview",
+    status: "Retired",
     type: "Coding",
     family: "Nex Coder 3.8",
-    api: true,
+    api: false,
     input: 12,
     output: 47,
     href: "/",
-    description:
-      "Deep frontier profile for long-horizon repository engineering."
+    description: "Deep frontier profile for long-horizon repository engineering. Retired from availability on October 2, 2026."
   },
   {
     name: "Zorix Nex Coder 3.7 Pro",
