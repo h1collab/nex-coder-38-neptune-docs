@@ -157,7 +157,66 @@
     el.finish.textContent = finish || "-";
   }
 
+  function normalizeTextPart(value) {
+    if (typeof value === "string") return value;
+    if (typeof value === "number" || typeof value === "boolean") return String(value);
+    if (Array.isArray(value)) return value.map(normalizeTextPart).join("");
+    if (!value || typeof value !== "object") return "";
+
+    if (typeof value.text === "string") return value.text;
+    if (typeof value.value === "string") return value.value;
+    if (typeof value.content === "string") return value.content;
+    if (Array.isArray(value.content)) return value.content.map(normalizeTextPart).join("");
+    if (value.text && typeof value.text === "object") return normalizeTextPart(value.text);
+
+    return "";
+  }
+
+  function extractChatText(data) {
+    const choice = data?.choices?.[0];
+
+    const candidates = [
+      choice?.message?.content,
+      choice?.delta?.content,
+      data?.message?.content,
+      data?.content,
+      data?.output_text,
+      data?.text
+    ];
+
+    for (const candidate of candidates) {
+      const text = normalizeTextPart(candidate);
+      if (text) return text;
+    }
+
+    return "";
+  }
+
+  function extractStreamDelta(data) {
+    const choice = data?.choices?.[0];
+
+    const candidates = [
+      choice?.delta?.content,
+      choice?.message?.content,
+      data?.delta,
+      data?.text,
+      data?.output_text
+    ];
+
+    for (const candidate of candidates) {
+      const text = normalizeTextPart(candidate);
+      if (text) return text;
+    }
+
+    if (data?.type === "response.output_text.delta") {
+      return normalizeTextPart(data?.delta);
+    }
+
+    return "";
+  }
+
   function append(text) {
+    text = normalizeTextPart(text);
     if (!text) return;
     if (!state.firstTokenAt) state.firstTokenAt = now();
     state.text += text;
@@ -174,7 +233,7 @@
     const events = [];
     let finish = "done";
 
-    async function handleData(data) {
+    function handleData(data) {
       if (!data) return;
       events.push(data);
       if (data === "[DONE]") return;
@@ -187,12 +246,15 @@
       }
 
       const choice = json?.choices?.[0];
-      const delta = choice?.delta?.content;
+      const delta = extractStreamDelta(json);
 
-      if (typeof delta === "string") append(delta);
+      if (delta) append(delta);
       if (choice?.finish_reason) finish = choice.finish_reason;
 
-      const prev = json?.zorix?.previous_response_id;
+      const prev =
+        json?.zorix?.previous_response_id ||
+        json?.previous_response_id;
+
       if (prev) state.previousResponseId = prev;
     }
 
@@ -203,40 +265,78 @@
       buffer += decoder.decode(value, { stream: true });
 
       while (true) {
-        const i = buffer.indexOf("\n");
-        if (i < 0) break;
+        const newline = buffer.indexOf("\n");
+        if (newline < 0) break;
 
-        let line = buffer.slice(0, i);
-        buffer = buffer.slice(i + 1);
+        let line = buffer.slice(0, newline);
+        buffer = buffer.slice(newline + 1);
+
         if (line.endsWith("\r")) line = line.slice(0, -1);
+        line = line.trim();
+
+        if (!line || line.startsWith(":") || line.startsWith("event:")) continue;
 
         if (line.startsWith("data:")) {
-          await handleData(line.slice(5).trim());
+          handleData(line.slice(5).trim());
+          continue;
+        }
+
+        // Fallback for OpenAI-compatible servers that send one JSON object per line.
+        if (line.startsWith("{")) {
+          handleData(line);
         }
       }
     }
 
+    buffer += decoder.decode();
     const tail = buffer.trim();
-    if (tail.startsWith("data:")) {
-      await handleData(tail.slice(5).trim());
+
+    if (tail) {
+      if (tail.startsWith("data:")) handleData(tail.slice(5).trim());
+      else if (tail.startsWith("{")) handleData(tail);
+    }
+
+    // Last-resort recovery: some compatible gateways return a final full
+    // completion object instead of text deltas.
+    if (!state.text) {
+      for (const event of events) {
+        if (!event || event === "[DONE]") continue;
+        try {
+          const json = JSON.parse(event);
+          const recovered = extractChatText(json) || extractStreamDelta(json);
+          if (recovered) {
+            append(recovered);
+            break;
+          }
+        } catch {}
+      }
     }
 
     return { events, finish };
   }
-
   function extractResponseText(data) {
-    if (typeof data?.output_text === "string") return data.output_text;
+    const direct = normalizeTextPart(data?.output_text);
+    if (direct) return direct;
 
     const parts = [];
+
     for (const item of data?.output || []) {
+      const itemText = normalizeTextPart(item?.content);
+      if (itemText) {
+        parts.push(itemText);
+        continue;
+      }
+
       for (const content of item?.content || []) {
-        if (typeof content?.text === "string") parts.push(content.text);
-        else if (typeof content?.text?.value === "string") parts.push(content.text.value);
+        const text = normalizeTextPart(content);
+        if (text) parts.push(text);
       }
     }
-    return parts.join("\n");
-  }
 
+    if (parts.length) return parts.join("\n");
+
+    return extractChatText(data);
+  }
   function syncMode() {
     const responses = el.apiMode.value === "responses";
     el.endpointHint.textContent = "POST " + (responses ? RESPONSES_URL : CHAT_URL);
@@ -275,7 +375,7 @@
     if (!stream) {
       const data = await response.json();
       state.raw = data;
-      state.text = data?.choices?.[0]?.message?.content ?? "";
+      state.text = extractChatText(data);
       state.firstTokenAt = now();
       state.endedAt = now();
       state.previousResponseId =
@@ -283,7 +383,7 @@
         data?.id ||
         state.previousResponseId;
 
-      renderMarkdownNow(state.text || "(empty response)");
+      renderMarkdownNow(state.text || "No text content was found in the API response. Open Raw response below.");
       setRaw(data);
       return data?.choices?.[0]?.finish_reason || "stop";
     }
@@ -291,7 +391,7 @@
     const result = await readOpenAISSE(response);
     state.raw = result.events;
     state.endedAt = now();
-    renderMarkdownNow(state.text || "(empty response)");
+    renderMarkdownNow(state.text || "No text content was found in the API response. Open Raw response below.");
     setRaw(result.events.join("\n"));
     return result.finish;
   }
@@ -328,7 +428,7 @@
       data?.id ||
       state.previousResponseId;
 
-    renderMarkdownNow(state.text || "(empty response)");
+    renderMarkdownNow(state.text || "No text content was found in the API response. Open Raw response below.");
     setRaw(data);
     return data?.status || "completed";
   }
