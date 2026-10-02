@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#ffffff">
-<title>GPT-6.1 SOL · OpenAI vs Zorix | Zorix Developers</title>
-<meta name="description" content="Compare GPT-6.1 SOL through the OpenAI provider and the Zorix provider side by side.">
+<title>GPT-6.1 SOL Playground | Zorix Developers</title>
+<meta name="description" content="Use GPT-6.1 SOL through the current API in the Zorix Developers playground.">
 <link rel="canonical" href="https://developer.zorix.it/playground/openai-vs-zorix/">
 <link rel="stylesheet" href="/assets/css/zorix-compare-playground.css">
 </head>
@@ -16,7 +16,7 @@
     <nav class="cp-nav">
       <a href="/">Home</a>
       <a href="/models/">Models</a>
-      <a class="active" href="/playground/openai-vs-zorix/">Playground</a>
+      <a class="active" href="/playground/gpt-6-1-sol/">Playground</a>
       <a href="/book/">Books</a>
       <a href="/education/list/total/">Education</a>
       <a href="/letter/">Letters</a>
@@ -26,28 +26,28 @@
 </header>
 
 <main class="cp-main">
-  <div class="cp-breadcrumb"><a href="/">Developers</a> / Playground / OpenAI vs Zorix</div>
+  <div class="cp-breadcrumb"><a href="/">Developers</a> / Playground / GPT-6.1 SOL</div>
 
   <section class="cp-hero">
     <div>
-      <div class="cp-kicker">Side-by-side model testing</div>
-      <h1>GPT-6.1 SOL.<br>Two providers.</h1>
+      <div class="cp-kicker">OpenAI model playground</div>
+      <h1>GPT-6.1 SOL.</h1>
     </div>
-    <p>Run the same <strong>GPT-6.1 SOL</strong> task through two providers — OpenAI and Zorix — then compare response quality, latency, first-token time, raw payloads, and streaming behavior.</p>
+    <p>Use GPT-6.1 SOL through the current API endpoint at <strong>chat.zorix.it</strong>. The page now contains a single model experience — no separate Zorix comparison panel.</p>
   </section>
 
   <div class="cp-notice">
-    <strong>OpenAI key handling:</strong> this static playground uses your OpenAI API key directly in the browser and does not save it to localStorage. Do not use a long-lived production key on a public/shared device. For production use, route OpenAI requests through your own server-side proxy.
+    <strong>Model:</strong> GPT-6.1 SOL · API label <code>Gpt6.1sol</code> · Endpoint <code>https://chat.zorix.it/v1/chat/completions</code>.
   </div>
 
   <div class="cp-layout">
     <aside class="cp-controls">
       <div class="cp-panel">
-        <div class="cp-panel-head"><h2>Compare request</h2><span class="cp-small">Ctrl/Cmd + Enter</span></div>
+        <div class="cp-panel-head"><h2>Request</h2><span class="cp-small">Ctrl/Cmd + Enter</span></div>
 
         <div class="cp-field">
-          <div class="cp-label"><span>Prompt</span><span class="cp-small">same prompt to both</span></div>
-          <textarea class="cp-textarea" id="prompt" placeholder="Ask both models the same question..."></textarea>
+          <div class="cp-label"><span>Prompt</span><span class="cp-small">GPT-6.1 SOL</span></div>
+          <textarea class="cp-textarea" id="prompt" placeholder="Ask GPT-6.1 SOL..."></textarea>
           <div class="cp-presets">
             <button class="cp-preset" type="button" data-prompt="Explain Linux namespaces to a junior developer in 5 concise bullets.">Linux</button>
             <button class="cp-preset" type="button" data-prompt="Write a robust JavaScript function that retries a fetch request with exponential backoff.">Coding</button>
@@ -61,110 +61,69 @@
         </div>
 
         <div class="cp-field">
-          <div class="cp-label"><span>Model</span><span class="cp-small">fixed for both providers</span></div>
+          <div class="cp-label"><span>Model</span><span class="cp-small">fixed</span></div>
           <input class="cp-input" type="text" value="GPT-6.1 SOL" readonly aria-label="GPT-6.1 SOL">
-          <div class="cp-helper">OpenAI model ID: <code>gpt-6.1-sol</code> · Zorix API label: <code>Gpt6.1sol</code>.</div>
+          <div class="cp-helper">Request field: <code>model: "Gpt6.1sol"</code>.</div>
         </div>
 
         <div class="cp-field">
-          <div class="cp-label"><span>OpenAI API key</span><span class="cp-small">session only</span></div>
-          <div class="cp-secret-wrap">
-            <input class="cp-input" id="openaiKey" type="password" placeholder="sk-..." autocomplete="off" spellcheck="false">
-            <button class="cp-secret-toggle" id="toggleKey" type="button">Show</button>
-          </div>
-          <div class="cp-helper">The key stays only in this page's memory unless your browser/extensions do something else.</div>
-        </div>
-
-        <div class="cp-field">
-          <div class="cp-row">
-            <label class="cp-switch"><input id="streamMode" type="checkbox" checked> Stream both responses</label>
-          </div>
+          <label class="cp-switch"><input id="streamMode" type="checkbox" checked> Stream response</label>
           <div class="cp-health">
-            <div class="cp-health-text" id="healthText">Zorix API: <strong>not checked</strong></div>
+            <div class="cp-health-text" id="healthText">API: <strong>not checked</strong></div>
             <button class="cp-mini-btn" id="checkHealth" type="button">Health</button>
           </div>
         </div>
 
         <div class="cp-actions">
-          <button class="cp-btn primary" id="runCompare" type="button">Run comparison</button>
-          <button class="cp-btn danger" id="stopCompare" type="button" disabled>Stop</button>
-          <button class="cp-btn" id="clearCompare" type="button" style="grid-column:1/-1">Clear results / reset Zorix conversation</button>
+          <button class="cp-btn primary" id="runPrompt" type="button">Run GPT-6.1 SOL</button>
+          <button class="cp-btn danger" id="stopPrompt" type="button" disabled>Stop</button>
+          <button class="cp-btn" id="clearPrompt" type="button" style="grid-column:1/-1">Clear / reset conversation</button>
         </div>
       </div>
     </aside>
 
     <section class="cp-results">
       <div class="cp-results-head">
-        <div><h2>Responses</h2><p>Both requests start together so latency is easier to compare.</p></div>
+        <div><h2>Response</h2><p>Single GPT-6.1 SOL result through the current API.</p></div>
       </div>
 
-      <div class="cp-compare-grid">
-        
-<article class="cp-result">
-  <div class="cp-result-top">
-    <div class="cp-provider">
-      <div class="cp-provider-mark ">O</div>
-      <div style="min-width:0">
-        <div class="cp-provider-name">OpenAI</div>
-        <div class="cp-provider-model" id="openaiModelShown">-</div>
-      </div>
-    </div>
-    <div class="cp-status" id="openaiStatus"><span class="cp-dot"></span><span>Idle</span></div>
-  </div>
-  <div class="cp-result-body">
-    <div class="cp-result-actions"><button class="cp-mini-btn" id="copyOpenAI" type="button">Copy</button></div>
-    <pre class="cp-output cp-placeholder" id="openaiOutput">Waiting to run...</pre>
-  </div>
-  <div class="cp-metrics">
-    <div class="cp-metric"><span>Total</span><strong id="openaiLatency">-</strong></div>
-    <div class="cp-metric"><span>First token</span><strong id="openaiFirst">-</strong></div>
-    <div class="cp-metric"><span>Chars</span><strong id="openaiChars">-</strong></div>
-    <div class="cp-metric"><span>Finish</span><strong id="openaiFinish">-</strong></div>
-  </div>
-  <details class="cp-raw"><summary>Raw response</summary><pre id="openaiRaw">{}</pre></details>
-</article>
-        
-<article class="cp-result">
-  <div class="cp-result-top">
-    <div class="cp-provider">
-      <div class="cp-provider-mark zorix">Z</div>
-      <div style="min-width:0">
-        <div class="cp-provider-name">Zorix</div>
-        <div class="cp-provider-model" id="zorixModelShown">-</div>
-      </div>
-    </div>
-    <div class="cp-status" id="zorixStatus"><span class="cp-dot"></span><span>Idle</span></div>
-  </div>
-  <div class="cp-result-body">
-    <div class="cp-result-actions"><button class="cp-mini-btn" id="copyZorix" type="button">Copy</button></div>
-    <pre class="cp-output cp-placeholder" id="zorixOutput">Waiting to run...</pre>
-  </div>
-  <div class="cp-metrics">
-    <div class="cp-metric"><span>Total</span><strong id="zorixLatency">-</strong></div>
-    <div class="cp-metric"><span>First token</span><strong id="zorixFirst">-</strong></div>
-    <div class="cp-metric"><span>Chars</span><strong id="zorixChars">-</strong></div>
-    <div class="cp-metric"><span>Finish</span><strong id="zorixFinish">-</strong></div>
-  </div>
-  <details class="cp-raw"><summary>Raw response</summary><pre id="zorixRaw">{}</pre></details>
-</article>
+      <div class="cp-compare-grid" style="grid-template-columns:1fr">
+        <article class="cp-result">
+          <div class="cp-result-top">
+            <div class="cp-provider">
+              <div class="cp-provider-mark">O</div>
+              <div style="min-width:0">
+                <div class="cp-provider-name">OpenAI · GPT-6.1 SOL</div>
+                <div class="cp-provider-model" id="modelShown">GPT-6.1 SOL</div>
+              </div>
+            </div>
+            <div class="cp-status" id="modelStatus"><span class="cp-dot"></span><span>Idle</span></div>
+          </div>
+
+          <div class="cp-result-body">
+            <div class="cp-result-actions"><button class="cp-mini-btn" id="copyOutput" type="button">Copy</button></div>
+            <pre class="cp-output cp-placeholder" id="modelOutput">Waiting to run...</pre>
+          </div>
+
+          <div class="cp-metrics">
+            <div class="cp-metric"><span>Total</span><strong id="modelLatency">-</strong></div>
+            <div class="cp-metric"><span>First token</span><strong id="modelFirst">-</strong></div>
+            <div class="cp-metric"><span>Chars</span><strong id="modelChars">0</strong></div>
+            <div class="cp-metric"><span>Finish</span><strong id="modelFinish">-</strong></div>
+          </div>
+
+          <details class="cp-raw"><summary>Raw response</summary><pre id="modelRaw">{}</pre></details>
+        </article>
       </div>
 
       <div class="cp-footnote">
-        Both sides use <strong>GPT-6.1 SOL</strong>. OpenAI uses the model ID <code>gpt-6.1-sol</code>; Zorix is the alternate provider and exposes the label <code>Gpt6.1sol</code> through <code>https://chat.zorix.it/v1/chat/completions</code>. Zorix streaming currently uses custom SSE events such as <code>event: delta</code> with <code>{"text":"..."}</code>, which this playground parses separately from OpenAI chat-completion chunks.
+        Streaming uses the current custom SSE format from the endpoint: <code>event: delta</code> with <code>{"text":"..."}</code>. The page also keeps <code>previous_response_id</code> during the current session for multi-turn continuity.
       </div>
     </section>
   </div>
 
   <section class="cp-section">
-    <h2>What is being compared</h2>
-    <div class="cp-section-copy">
-      <p>The playground sends the same user message and optional system prompt to the same model through two providers. OpenAI receives <code>model: "gpt-6.1-sol"</code>. Zorix receives <code>model: "Gpt6.1sol"</code>.</p>
-      <p>For Zorix, this page also tracks <code>previous_response_id</code> during the current page session. Use “Clear results / reset Zorix conversation” to remove that continuity before another independent test.</p>
-    </div>
-  </section>
-
-  <section class="cp-section">
-    <h2>Zorix provider request</h2>
+    <h2>Request</h2>
     <div class="cp-section-copy">
       <pre class="cp-code">POST https://chat.zorix.it/v1/chat/completions
 
@@ -177,14 +136,6 @@
 }</pre>
     </div>
   </section>
-
-  <section class="cp-section">
-    <h2>Important limitation</h2>
-    <div class="cp-section-copy">
-      <p>This is a browser-based comparison tool, not a benchmark. Network path, provider load, browser scheduling, account settings, model configuration, and streaming format can all affect the timings shown here.</p>
-      <p>If the browser blocks direct OpenAI requests, use a server-side OpenAI proxy and update the playground endpoint rather than exposing a production API key in frontend code.</p>
-    </div>
-  </section>
 </main>
 
 <footer class="cp-footer">
@@ -192,6 +143,6 @@
   <span>support@zorix.it</span>
 </footer>
 
-<script defer src="/assets/js/zorix-compare-playground.js"></script>
+<script defer src="/assets/js/gpt-6-1-sol-playground.js"></script>
 </body>
 </html>
