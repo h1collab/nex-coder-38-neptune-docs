@@ -13,7 +13,7 @@
 <body>
 <header class="cp-header">
   <div class="cp-header-in">
-    <a class="cp-brand" href="/"><svg viewBox="0 0 160 160" aria-hidden="true"><defs><linearGradient id="ztg" x1="32" y1="24" x2="130" y2="136" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#2563EB"/><stop offset="45%" stop-color="#06B6D4"/><stop offset="100%" stop-color="#22C55E"/></linearGradient></defs><rect x="20" y="20" width="120" height="120" rx="34" fill="url(#ztg)"/><path d="M48 50H112L92 73H108L55 112L76 86H52L72 63H48Z" fill="#fff"/></svg><span>Zorix Developers</span></a>
+    <a class="cp-brand" href="/"><img src="/assets/zorix-logo.svg" alt="Zorix"><span>Zorix Developers</span></a>
     <nav class="cp-nav">
       <a href="/">Home</a>
       <a href="/models/">Models</a>
@@ -38,7 +38,7 @@
   </section>
 
   <div class="cp-notice">
-    <strong>Model:</strong> Zorix Transcribe 2.1 · API request field <code>model=Gpt6.1sol</code> · Endpoint <code>https://chat.zorix.it/v1/audio/transcriptions</code>.
+    <strong>Model:</strong> Zorix Transcribe 2.1 · Endpoint <code>https://chat.zorix.it/v1/audio/transcriptions</code>.
     <div class="cp-api-badges">
       <span class="cp-api-badge">multipart/form-data</span>
       <span class="cp-api-badge">json</span>
@@ -90,7 +90,7 @@
         <div class="cp-field">
           <div class="cp-label"><span>Model</span><span class="cp-small">fixed</span></div>
           <input class="cp-input" type="text" value="Zorix Transcribe 2.1" readonly>
-          <div class="cp-helper">Current API form field: <code>model=Gpt6.1sol</code>.</div>
+          <div class="cp-helper">The API model identifier is handled internally by this playground.</div>
         </div>
 
         <div class="cp-actions">
@@ -150,8 +150,7 @@
     <div class="cp-section-copy">
       <pre class="cp-code">curl -sS \
   'https://chat.zorix.it/v1/audio/transcriptions' \
-  -F 'file=@record.webm' \
-  -F 'model=Gpt6.1sol'</pre>
+  -F 'file=@record.webm' \</pre>
     </div>
   </section>
 
@@ -160,8 +159,7 @@
     <div class="cp-section-copy">
       <pre class="cp-code">curl -sS \
   'https://chat.zorix.it/v1/audio/transcriptions' \
-  -F 'file=@record.webm' \
-  -F 'model=Gpt6.1sol' \
+  -F 'file=@record.webm' \ \
   -F 'response_format=verbose_json' \
   | jq</pre>
     </div>
