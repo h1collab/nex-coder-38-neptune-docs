@@ -16,7 +16,7 @@
 <body>
 <header class="cp-header">
   <div class="cp-header-in">
-    <a class="cp-brand" href="/"><svg viewBox="0 0 160 160" aria-hidden="true"><defs><linearGradient id="cpg" x1="32" y1="24" x2="130" y2="136" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#2563EB"/><stop offset="45%" stop-color="#06B6D4"/><stop offset="100%" stop-color="#22C55E"/></linearGradient></defs><rect x="20" y="20" width="120" height="120" rx="34" fill="url(#cpg)"/><path d="M48 50H112L92 73H108L55 112L76 86H52L72 63H48Z" fill="#fff"/></svg><span>Zorix Developers</span></a>
+    <a class="cp-brand" href="/"><img src="/assets/zorix-logo.svg" alt="Zorix"><span>Zorix Developers</span></a>
     <nav class="cp-nav">
       <a href="/">Home</a>
       <a href="/models/">Models</a>
@@ -41,7 +41,7 @@
   </section>
 
   <div class="cp-notice">
-    <strong>Model:</strong> GPT-6.1 SOL · API label <code>Gpt6.1sol</code> · Status <code>experimental</code>.
+    <strong>Model:</strong> GPT-6.1 SOL · Status <code>experimental</code>.
     <div class="cp-api-badges">
       <span class="cp-api-badge">/v1/models</span>
       <span class="cp-api-badge">/v1/chat/completions</span>
@@ -81,7 +81,7 @@
         <div class="cp-field">
           <div class="cp-label"><span>Model</span><span class="cp-small">fixed</span></div>
           <input class="cp-input" type="text" value="GPT-6.1 SOL" readonly aria-label="GPT-6.1 SOL">
-          <div class="cp-helper">Request field: <code>model: "Gpt6.1sol"</code>.</div>
+          <div class="cp-helper">The API model identifier is handled internally by this playground.</div>
         </div>
 
         <div class="cp-field">
@@ -146,7 +146,6 @@
       <pre class="cp-code">POST https://chat.zorix.it/v1/chat/completions
 
 {
-  "model": "Gpt6.1sol",
   "messages": [
     {"role":"system","content":"Answer briefly."},
     {"role":"user","content":"What is Linux?"}
@@ -162,7 +161,6 @@
       <pre class="cp-code">POST https://chat.zorix.it/v1/responses
 
 {
-  "model": "Gpt6.1sol",
   "instructions": "Answer concisely.",
   "input": "Explain quantum computing."
 }</pre>
