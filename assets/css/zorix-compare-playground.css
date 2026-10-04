@@ -37,7 +37,7 @@ a{color:inherit;text-decoration:none}
 }
 .cp-brand{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:650;white-space:nowrap}
 .cp-brand svg{width:31px;height:31px}
-.cp-brand img{width:31px;height:31px;display:block}
+.cp-brand img{width:24px;height:24px;display:block;flex:0 0 24px}
 .cp-nav{display:flex;align-items:center;gap:4px}
 .cp-nav a{
   padding:8px 10px;border-radius:8px;color:var(--muted);font-size:14px
@@ -444,4 +444,15 @@ a{color:inherit;text-decoration:none}
 @media(max-width:700px){
   .cp-format-grid,.cp-playground-cards{grid-template-columns:1fr}
   .cp-record-time{margin-left:0}
+}
+
+.cp-provider-mark.logo{
+  padding:0;
+  overflow:hidden;
+  background:transparent;
+}
+.cp-provider-mark.logo img{
+  width:100%;
+  height:100%;
+  display:block;
 }
