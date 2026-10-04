@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<title>Zorix Transcribe 2.1 Playground | Zorix Developers</title>
+<meta name="description" content="Upload or record audio and transcribe it with Zorix Transcribe 2.1 through the OpenAI-compatible transcription endpoint.">
+<link rel="canonical" href="https://developer.zorix.it/playground/zorix-transcribe-2-1/">
+<link rel="stylesheet" href="/assets/css/zorix-compare-playground.css">
+</head>
+<body>
+<header class="cp-header">
+  <div class="cp-header-in">
+    <a class="cp-brand" href="/"><svg viewBox="0 0 160 160" aria-hidden="true"><defs><linearGradient id="ztg" x1="32" y1="24" x2="130" y2="136" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#2563EB"/><stop offset="45%" stop-color="#06B6D4"/><stop offset="100%" stop-color="#22C55E"/></linearGradient></defs><rect x="20" y="20" width="120" height="120" rx="34" fill="url(#ztg)"/><path d="M48 50H112L92 73H108L55 112L76 86H52L72 63H48Z" fill="#fff"/></svg><span>Zorix Developers</span></a>
+    <nav class="cp-nav">
+      <a href="/">Home</a>
+      <a href="/models/">Models</a>
+      <a class="active" href="/playground/">Playground</a>
+      <a href="/book/">Books</a>
+      <a href="/education/list/total/">Education</a>
+      <a href="/letter/">Letters</a>
+    </nav>
+    <a class="cp-open" href="https://zorix.it/" target="_blank" rel="noopener">Open Zorix</a>
+  </div>
+</header>
+
+<main class="cp-main">
+  <div class="cp-breadcrumb"><a href="/">Developers</a> / <a href="/playground/">Playground</a> / Zorix Transcribe 2.1</div>
+
+  <section class="cp-hero">
+    <div>
+      <div class="cp-kicker">Speech to text playground</div>
+      <h1>Zorix<br>Transcribe 2.1.</h1>
+    </div>
+    <p>Upload an audio file or record directly in the browser, then transcribe it through the OpenAI-compatible <strong>/v1/audio/transcriptions</strong> endpoint.</p>
+  </section>
+
+  <div class="cp-notice">
+    <strong>Model:</strong> Zorix Transcribe 2.1 · API request field <code>model=Gpt6.1sol</code> · Endpoint <code>https://chat.zorix.it/v1/audio/transcriptions</code>.
+    <div class="cp-api-badges">
+      <span class="cp-api-badge">multipart/form-data</span>
+      <span class="cp-api-badge">json</span>
+      <span class="cp-api-badge">text</span>
+      <span class="cp-api-badge">verbose_json</span>
+    </div>
+  </div>
+
+  <div class="cp-layout">
+    <aside class="cp-controls">
+      <div class="cp-panel">
+        <div class="cp-panel-head"><h2>Audio input</h2><span class="cp-small">upload or record</span></div>
+
+        <div class="cp-field">
+          <input id="audioFile" type="file" accept="audio/*,.webm,.wav,.mp3,.m4a,.ogg,.mp4" hidden>
+          <div class="cp-audio-drop" id="audioDrop" tabindex="0" role="button" aria-label="Choose audio file">
+            <div class="cp-audio-icon">♪</div>
+            <div class="cp-audio-title" id="fileName">Drop an audio file here</div>
+            <div class="cp-audio-meta" id="fileMeta">or tap to choose a file</div>
+          </div>
+          <audio class="cp-audio-preview" id="audioPreview" controls hidden></audio>
+        </div>
+
+        <div class="cp-field">
+          <div class="cp-label"><span>Microphone</span><span class="cp-small">optional</span></div>
+          <div class="cp-record-row">
+            <button class="cp-btn" id="recordAudio" type="button">Record</button>
+            <button class="cp-btn danger" id="stopRecord" type="button" disabled>Stop recording</button>
+            <span class="cp-record-time" id="recordTimer">00:00</span>
+          </div>
+          <div class="cp-helper" id="recordStatus">Microphone recording is optional.</div>
+        </div>
+
+        <div class="cp-field">
+          <div class="cp-label"><span>Response format</span><span class="cp-small">OpenAI compatible</span></div>
+          <select class="cp-input cp-select" id="responseFormat">
+            <option value="json">json</option>
+            <option value="text">text</option>
+            <option value="verbose_json">verbose_json</option>
+          </select>
+
+          <div class="cp-format-grid">
+            <div class="cp-format-card"><strong>json</strong><span>{"text":"..."}</span></div>
+            <div class="cp-format-card"><strong>text</strong><span>plain transcription text</span></div>
+            <div class="cp-format-card"><strong>verbose_json</strong><span>task, language, duration, text</span></div>
+          </div>
+        </div>
+
+        <div class="cp-field">
+          <div class="cp-label"><span>Model</span><span class="cp-small">fixed</span></div>
+          <input class="cp-input" type="text" value="Zorix Transcribe 2.1" readonly>
+          <div class="cp-helper">Current API form field: <code>model=Gpt6.1sol</code>.</div>
+        </div>
+
+        <div class="cp-actions">
+          <button class="cp-btn primary" id="transcribeAudio" type="button" disabled>Transcribe audio</button>
+          <button class="cp-btn danger" id="cancelTranscription" type="button" disabled>Cancel</button>
+          <button class="cp-btn" id="clearTranscription" type="button" style="grid-column:1/-1">Clear</button>
+        </div>
+      </div>
+    </aside>
+
+    <section class="cp-results">
+      <div class="cp-results-head">
+        <div>
+          <h2>Transcript</h2>
+          <p>Zorix Transcribe 2.1 speech-to-text output.</p>
+        </div>
+      </div>
+
+      <article class="cp-result">
+        <div class="cp-result-top">
+          <div class="cp-provider">
+            <div class="cp-provider-mark zorix">T</div>
+            <div style="min-width:0">
+              <div class="cp-provider-name">Zorix Transcribe 2.1</div>
+              <div class="cp-provider-model">/v1/audio/transcriptions</div>
+            </div>
+          </div>
+          <div class="cp-status" id="transcriptStatus"><span class="cp-dot"></span><span>Idle</span></div>
+        </div>
+
+        <div class="cp-result-body" style="min-height:300px">
+          <div class="cp-result-actions"><button class="cp-mini-btn" id="copyTranscript" type="button">Copy</button></div>
+          <div class="cp-transcript cp-placeholder" id="transcriptOutput">Upload or record audio to begin.</div>
+        </div>
+
+        <div class="cp-metrics">
+          <div class="cp-metric"><span>Total</span><strong id="transcriptLatency">-</strong></div>
+          <div class="cp-metric"><span>Chars</span><strong id="transcriptChars">0</strong></div>
+          <div class="cp-metric"><span>Format</span><strong id="transcriptFormat">json</strong></div>
+          <div class="cp-metric"><span>Model</span><strong>Zorix Transcribe 2.1</strong></div>
+        </div>
+
+        <details class="cp-raw">
+          <summary>Raw response</summary>
+          <pre id="transcriptRaw">{}</pre>
+        </details>
+      </article>
+
+      <div class="cp-footnote">
+        The browser sends the selected or recorded audio as <code>multipart/form-data</code>. For <code>verbose_json</code>, the current documented response shape is <code>{"task":"transcribe","language":null,"duration":null,"text":"..."}</code>.
+      </div>
+    </section>
+  </div>
+
+  <section class="cp-section">
+    <h2>Basic request</h2>
+    <div class="cp-section-copy">
+      <pre class="cp-code">curl -sS \
+  'https://chat.zorix.it/v1/audio/transcriptions' \
+  -F 'file=@record.webm' \
+  -F 'model=Gpt6.1sol'</pre>
+    </div>
+  </section>
+
+  <section class="cp-section">
+    <h2>Verbose JSON</h2>
+    <div class="cp-section-copy">
+      <pre class="cp-code">curl -sS \
+  'https://chat.zorix.it/v1/audio/transcriptions' \
+  -F 'file=@record.webm' \
+  -F 'model=Gpt6.1sol' \
+  -F 'response_format=verbose_json' \
+  | jq</pre>
+    </div>
+  </section>
+</main>
+
+<footer class="cp-footer">
+  <span>Zorix Developers</span>
+  <span>support@zorix.it</span>
+</footer>
+
+<script defer src="/assets/js/zorix-transcribe-2-1-playground.js?v=20261004-1"></script>
+</body>
+</html>
