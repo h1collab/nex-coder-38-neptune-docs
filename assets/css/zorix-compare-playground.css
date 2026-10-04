@@ -365,3 +365,82 @@ a{color:inherit;text-decoration:none}
   font-size:12px;
   line-height:1.5
 }
+
+
+/* Zorix Transcribe 2.1 playground */
+.cp-audio-drop{
+  border:1px dashed var(--border-strong);
+  border-radius:12px;
+  background:var(--soft);
+  padding:24px 18px;
+  text-align:center;
+  transition:border-color .18s,background .18s,transform .18s;
+  outline:0
+}
+.cp-audio-drop:hover,.cp-audio-drop:focus,.cp-audio-drop.dragging{
+  border-color:#8b8b92;
+  background:#f2f2f4
+}
+.cp-audio-drop.dragging{transform:scale(.995)}
+.cp-audio-drop.has-file{border-style:solid;background:#fff}
+.cp-audio-icon{
+  width:42px;height:42px;margin:0 auto 10px;border-radius:12px;
+  display:grid;place-items:center;background:#111;color:#fff;font-size:18px;font-weight:700
+}
+.cp-audio-title{font-size:14px;font-weight:650}
+.cp-audio-meta{margin-top:5px;color:var(--muted);font-size:12px;word-break:break-word}
+.cp-audio-preview{width:100%;margin-top:12px}
+.cp-record-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.cp-record-time{
+  margin-left:auto;
+  min-width:54px;
+  text-align:right;
+  font:12px/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  color:var(--muted)
+}
+.cp-transcript{
+  min-height:240px;
+  white-space:pre-wrap;
+  font-size:17px;
+  line-height:1.7
+}
+.cp-format-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:8px;
+  margin-top:10px
+}
+.cp-format-card{
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:12px;
+  background:#fff
+}
+.cp-format-card strong{display:block;font-size:12px}
+.cp-format-card span{display:block;margin-top:5px;color:var(--muted);font-size:11px;line-height:1.45}
+.cp-playground-cards{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;
+  margin-top:28px
+}
+.cp-playground-card{
+  display:block;
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:22px;
+  background:#fff;
+  transition:transform .18s,border-color .18s,box-shadow .18s
+}
+.cp-playground-card:hover{
+  transform:translateY(-2px);
+  border-color:var(--border-strong);
+  box-shadow:0 12px 34px rgba(0,0,0,.06)
+}
+.cp-playground-card .eyebrow{color:var(--muted);font-size:12px}
+.cp-playground-card h2{margin:8px 0 7px;font-size:22px;letter-spacing:-.03em}
+.cp-playground-card p{margin:0;color:var(--muted);font-size:13px;line-height:1.55}
+@media(max-width:700px){
+  .cp-format-grid,.cp-playground-cards{grid-template-columns:1fr}
+  .cp-record-time{margin-left:0}
+}
