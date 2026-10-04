@@ -37,6 +37,7 @@ a{color:inherit;text-decoration:none}
 }
 .cp-brand{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:650;white-space:nowrap}
 .cp-brand svg{width:31px;height:31px}
+.cp-brand img{width:31px;height:31px;display:block}
 .cp-nav{display:flex;align-items:center;gap:4px}
 .cp-nav a{
   padding:8px 10px;border-radius:8px;color:var(--muted);font-size:14px
