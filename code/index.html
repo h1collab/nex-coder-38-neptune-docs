@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Zorix Code | Zorix Developers</title>
+<meta name="description" content="Zorix Code is Zorix's agentic coding experience for real software engineering work, from repository understanding to implementation and review.">
+<link rel="canonical" href="https://developer.zorix.it/code/">
+<link rel="stylesheet" href="/assets/css/zorix-code.css">
+</head>
+<body>
+<header class="zc-header">
+  <div class="zc-header-in">
+    <a class="zc-brand" href="/">
+      <img src="/assets/zorix-logo.svg" alt="Zorix">
+      <span>Zorix Developers</span>
+    </a>
+
+    <nav class="zc-nav">
+      <a href="/">Home</a>
+      <a href="/models/">Models</a>
+      <a href="/playground/">Playground</a>
+      <a class="active" href="/code/">Code</a>
+      <a href="/book/">Books</a>
+      <a href="/education/list/total/">Education</a>
+      <a href="/letter/">Letters</a>
+    </nav>
+
+    <div class="zc-actions">
+      <a class="zc-pill" href="https://code.zorix.it/" target="_blank" rel="noopener">Open Zorix Code</a>
+    </div>
+  </div>
+</header>
+
+<main class="zc-main">
+  <div class="zc-breadcrumb">Developers / Zorix Code</div>
+
+  <section class="zc-hero zc-reveal">
+    <div>
+      <div class="zc-kicker">Agentic coding</div>
+      <h1>Zorix<br>Code.</h1>
+    </div>
+
+    <div class="zc-hero-copy">
+      <p>A coding agent built for real software engineering work — understanding repositories, planning changes, editing code, and moving from an idea to working software without losing context.</p>
+
+      <div class="zc-hero-meta">
+        <span class="zc-chip">Repository understanding</span>
+        <span class="zc-chip">Terminal + IDE workflows</span>
+        <span class="zc-chip">Agentic execution</span>
+        <span class="zc-chip">Early Access</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="zc-update zc-reveal">
+    <strong>Zorix Code 2</strong>
+    <span>October 6, 2026 — a major update is planned within two days, shaped by community feedback with more features and refinements.</span>
+    <b>Coming next</b>
+  </div>
+
+  <section class="zc-section zc-reveal">
+    <div class="zc-section-head">
+      <div class="zc-section-label">Built for real development</div>
+      <div>
+        <h2>One agent across the work that actually matters.</h2>
+        <p>Zorix Code is designed around the same kinds of end-to-end engineering tasks developers face in production: understanding an unfamiliar codebase, planning a migration, changing multiple files, validating behavior, and reviewing the result before it ships.</p>
+      </div>
+    </div>
+
+    <div class="zc-feature-grid">
+      <article class="zc-feature">
+        <div class="zc-feature-num">01</div>
+        <h3>Understand the repository</h3>
+        <p>Map architecture, dependencies, data flows, and the parts of the codebase that matter before making changes.</p>
+      </article>
+      <article class="zc-feature">
+        <div class="zc-feature-num">02</div>
+        <h3>Reason before editing</h3>
+        <p>Turn a request into an implementation plan that considers compatibility, risk, scope, and the surrounding system.</p>
+      </article>
+      <article class="zc-feature">
+        <div class="zc-feature-num">03</div>
+        <h3>Execute with tools</h3>
+        <p>Work through real development loops that include editing, terminal execution, validation, and follow-up changes.</p>
+      </article>
+      <article class="zc-feature">
+        <div class="zc-feature-num">04</div>
+        <h3>Review what changed</h3>
+        <p>Keep the work inspectable so developers can review the implementation instead of treating the agent as a black box.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="zc-section zc-reveal">
+    <div class="zc-section-head">
+      <div class="zc-section-label">Terminal and editor</div>
+      <div>
+        <h2>Code wherever you think best.</h2>
+        <p>The current Zorix Code experience is built around moving between terminal-style agent work and editor-style code review without dropping the task context or intent. The public Early Access site currently presents both CLI and IDE-oriented flows. </p>
+      </div>
+    </div>
+
+    <div class="zc-workspace">
+      <div class="zc-tabs">
+        <button class="zc-tab active" data-code-tab="terminal">
+          <strong>Terminal</strong>
+          <span>Agent execution</span>
+        </button>
+        <button class="zc-tab" data-code-tab="ide">
+          <strong>IDE</strong>
+          <span>Review and edit</span>
+        </button>
+      </div>
+
+      <div class="zc-stage">
+        <div class="zc-stage-top">
+          <span>Zorix Code</span>
+          <span>Early Access</span>
+        </div>
+
+        <div class="zc-window active" data-code-window="terminal">
+          <div class="zc-terminal">
+<pre><span class="zc-dim">dev@zorix ❯</span> understand this repository and modernize the data layer
+
+<span class="zc-accent">●</span> Mapping architecture, dependencies, and data flows…
+<span class="zc-ok">✓</span> Indexed project structure and traced critical paths
+<span class="zc-ok">✓</span> Built a migration plan with compatibility boundaries
+<span class="zc-accent">◌</span> Implementing changes and validating behavior
+
+<span class="zc-dim">ZORIX CODE</span>
+The migration is ready for review.
+I kept the implementation scoped and preserved compatibility.</pre>
+          </div>
+        </div>
+
+        <div class="zc-window" data-code-window="ide">
+          <div class="zc-ide">
+            <div class="zc-tree">
+              EXPLORER<br>
+              ▾ app<br>
+              &nbsp;&nbsp;page.tsx<br>
+              &nbsp;&nbsp;dashboard.tsx<br>
+              ▾ components<br>
+              &nbsp;&nbsp;charts.tsx<br>
+              ▾ lib<br>
+              &nbsp;&nbsp;data.ts
+            </div>
+            <div class="zc-editor">
+<pre>export async function loadDashboard() {
+  const events = await getEvents();
+
+  return {
+    events,
+    generatedAt: Date.now()
+  };
+}</pre>
+
+              <div class="zc-editor-note">
+                Zorix Code is intended to keep implementation and review connected: understand the codebase, make the change, then inspect the result in context.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="zc-section zc-reveal">
+    <div class="zc-section-head">
+      <div class="zc-section-label">History</div>
+      <div>
+        <h2>From a first release to Zorix Code 2.</h2>
+        <p>Zorix Code started as an Early Access coding agent and is now moving into its next product phase.</p>
+      </div>
+    </div>
+
+    <div class="zc-history">
+      <article class="zc-event">
+        <div class="zc-date">2026-07-04</div>
+        <div class="zc-event-body">
+          <h3>Zorix Code launches.</h3>
+          <p>Zorix Code was first introduced on July 4, 2026. The initial product centered on agentic coding, real repository work, and a workflow spanning terminal and editor experiences.</p>
+          <div class="zc-callout">The original Early Access site described Zorix Code as a next-generation coding agent, with three models available at the time and workflows built around deep reasoning, fast execution, repository understanding, and review. </div>
+        </div>
+      </article>
+
+      <article class="zc-event">
+        <div class="zc-date">2026-10-06</div>
+        <div class="zc-event-body">
+          <h3>Zorix Code 2 is announced.</h3>
+          <p>On October 6, 2026, Zorix Code enters its next stage. Zorix Code 2 is planned to arrive within two days.</p>
+          <div class="zc-callout">The update is being shaped by community feedback and is expected to add or improve more parts of the product rather than focusing on a single isolated feature.</div>
+        </div>
+      </article>
+
+      <article class="zc-event">
+        <div class="zc-date">Within 2 days</div>
+        <div class="zc-event-body">
+          <h3>More capability, refined by feedback.</h3>
+          <p>Zorix Code 2 will expand and refine the experience based on what the community has been asking for. Specific feature details have not been finalized here, so this page does not invent a feature list ahead of the update.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="zc-section zc-reveal">
+    <div class="zc-section-head">
+      <div class="zc-section-label">Long-term direction</div>
+      <div>
+        <h2>Three systems. One coding intelligence.</h2>
+        <p>The current public Zorix Code site describes a future direction built around the fusion of Darkflux, Nexcode, and Eclipse into a unified coding experience.</p>
+      </div>
+    </div>
+
+    <div class="zc-system-grid">
+      <article class="zc-system">
+        <div class="mark">D</div>
+        <h3>Darkflux</h3>
+        <p>Deep systems.</p>
+      </article>
+      <article class="zc-system">
+        <div class="mark">N</div>
+        <h3>Nexcode</h3>
+        <p>Code intelligence.</p>
+      </article>
+      <article class="zc-system">
+        <div class="mark">E</div>
+        <h3>Eclipse</h3>
+        <p>Adaptive reasoning.</p>
+      </article>
+    </div>
+
+    <div class="zc-fusion">
+      <div>
+        <h3>Zorix Code</h3>
+        <p>A unified coding experience that brings those different strengths together rather than forcing developers to think in terms of disconnected tools.</p>
+      </div>
+      <div class="arrow">→</div>
+    </div>
+  </section>
+
+  <section class="zc-cta zc-reveal">
+    <div class="zc-cta-box">
+      <div>
+        <h2>Build with Zorix Code.</h2>
+        <p>Explore the current Early Access experience today, and follow the transition into Zorix Code 2.</p>
+      </div>
+      <a class="zc-pill" href="https://code.zorix.it/" target="_blank" rel="noopener">Open Zorix Code</a>
+    </div>
+  </section>
+</main>
+
+<footer class="zc-footer">
+  <span>Zorix Developers</span>
+  <span>support@zorix.it</span>
+</footer>
+
+<script defer src="/assets/js/zorix-code.js"></script>
+</body>
+</html>
