@@ -155,6 +155,15 @@ const MODELS = [
     api: false
   },
   {
+    name: "Zorix Virexa 4",
+    status: "Future",
+    type: "Image",
+    family: "Virexa",
+    api: false,
+    description:
+      "Expected in October 2026. Final release date and launch details have not been announced."
+  },
+  {
     name: "Zorix Virexa 3.5",
     status: "Preview",
     type: "Image",
@@ -162,14 +171,34 @@ const MODELS = [
     api: false,
     href: "/models/zorix-virexa-3-5/",
     description:
-      "High-quality text-to-image Preview. Available in Zorix Chat; image-to-image is in internal testing."
+      "Image generation model released around mid-September 2026. High-quality text-to-image Preview; image-to-image remains in internal testing."
+  },
+  {
+    name: "Zorix Virexa",
+    status: "Previous release",
+    type: "Image",
+    family: "Virexa",
+    api: false,
+    description:
+      "Introduced in June 2026 when Star Image was renamed Virexa. It had no version number and was divided by effort levels."
+  },
+  {
+    name: "Star Image 1.5",
+    status: "Previous release",
+    type: "Image",
+    family: "Star Image",
+    api: false,
+    description:
+      "The first Star Image release, launched on April 8, 2026 before the image line was renamed Virexa in June."
   },
   {
     name: "Zorix Virexa 3",
     status: "Available",
     type: "Image",
     family: "Virexa",
-    api: false
+    api: false,
+    description:
+      "Released in August 2026. Virexa 3 merged the earlier effort-based split into a single numbered generation."
   },
   {
     name: "Zorix Helix",
