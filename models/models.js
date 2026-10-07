@@ -1,5 +1,19 @@
 const MODELS = [
   {
+    name: "Zorix Transcribe 2.1",
+    status: "Available",
+    type: "Audio",
+    family: "Transcribe",
+    api: true,
+    href: "/playground/zorix-transcribe-2-1/",
+    modelId: "zorix-transcribe-2-1",
+    inputPrice: "Not announced",
+    outputPrice: "Not announced",
+    description:
+      "Speech-to-text transcription model with json, text, and verbose_json output formats."
+  },
+
+  {
     name: "Zorix Nex Coder 4 Plutos",
     status: "Available",
     type: "Coding",
@@ -367,7 +381,11 @@ function statusClass(status) {
     return "status-retired";
   }
 
-  if (value.includes("preview")) {
+  if (value.includes("internal")) {
+    return "status-internal";
+  }
+
+  if (value.includes("preview") || value.includes("beta")) {
     return "status-preview";
   }
 
@@ -384,31 +402,28 @@ function statusClass(status) {
 
 
 function modelMatchesFilter(model) {
-  if (currentFilter === "all") {
-    return true;
-  }
+  const status = String(model.status || "").toLowerCase();
 
-  if (currentFilter === "api") {
-    return model.api === true;
+  if (currentFilter === "all") return true;
+
+  if (currentFilter === "current") {
+    return !(
+      status.includes("retired") ||
+      status.includes("unsupported") ||
+      status.includes("internal")
+    );
   }
 
   if (currentFilter === "preview") {
-    return model.status.toLowerCase().includes("preview");
+    return status.includes("preview") || status.includes("beta");
   }
 
-  if (currentFilter === "available") {
-    return (
-      model.status.toLowerCase().includes("available") ||
-      model.status.toLowerCase().includes("open source") ||
-      model.status.toLowerCase().includes("local")
-    );
+  if (currentFilter === "internal") {
+    return status.includes("internal") || model.internal === true;
   }
 
   if (currentFilter === "retired") {
-    return (
-      model.status.toLowerCase().includes("retired") ||
-      model.status.toLowerCase().includes("unsupported")
-    );
+    return status.includes("retired") || status.includes("unsupported");
   }
 
   return true;
@@ -423,78 +438,43 @@ function render() {
       model.name,
       model.status,
       model.type,
-      model.family
+      model.family,
+      model.description || ""
     ].join(" ").toLowerCase();
 
     return text.includes(query) && modelMatchesFilter(model);
   });
 
-  count.textContent =
-    `${visible.length} of ${MODELS.length} models`;
-
-  empty.style.display =
-    visible.length ? "none" : "block";
+  count.textContent = `${visible.length} of ${MODELS.length} models`;
+  empty.style.display = visible.length ? "none" : "block";
 
   grid.innerHTML = visible.map((model) => {
-    const apiBlock = model.api
-      ? `
-        <div class="card-api card-api-yes">
-          <span>API AVAILABLE</span>
-          <div>
-            <b>$${model.input}</b>
-            <small>input / 1M</small>
-            <span class="api-divider">·</span>
-            <b>$${model.output}</b>
-            <small>output / 1M</small>
-          </div>
-        </div>
-      `
-      : `
-        <div class="card-api">
-          <span>API NOT AVAILABLE YET</span>
-        </div>
-      `;
-
-    const action = model.href
-      ? `
-        <a class="model-action" href="${escapeHTML(model.href)}">
-          ${model.api ? "View API docs →" : "View model →"}
-        </a>
-      `
-      : `
-        <span class="model-action disabled">
-          API unavailable
-        </span>
-      `;
+    const href = model.href || "";
+    const clickable = href ? " clickable" : "";
+    const action = href
+      ? `<a class="model-action" href="${escapeHTML(href)}">View →</a>`
+      : `<span class="model-action disabled">No detail page</span>`;
 
     return `
-      <article class="model-card">
-
+      <article class="model-card${clickable}">
         <div class="model-card-top">
-          <span class="model-type">
-            ${escapeHTML(model.type)}
-          </span>
-
-          <span class="model-status ${statusClass(model.status)}">
-            ${escapeHTML(model.status)}
+          <span class="model-type">${escapeHTML(model.type || "Model")}</span>
+          <span class="model-status ${statusClass(model.status || "")}">
+            ${escapeHTML(model.status || "Unknown")}
           </span>
         </div>
 
         <h3>${escapeHTML(model.name)}</h3>
 
-        <p>
-          ${
-            escapeHTML(
-              model.description ||
-              `${model.family} model listed in the current Zorix catalog.`
-            )
-          }
-        </p>
+        <p>${escapeHTML(
+          model.description ||
+          `${model.family || "Zorix"} model in the current catalog.`
+        )}</p>
 
-        ${apiBlock}
-
-        ${action}
-
+        <div class="model-meta">
+          <span class="model-family">${escapeHTML(model.family || "Zorix")}</span>
+          ${action}
+        </div>
       </article>
     `;
   }).join("");
