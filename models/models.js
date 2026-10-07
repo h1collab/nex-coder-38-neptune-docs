@@ -6,7 +6,7 @@ const MODELS = [
     family: "e series",
     api: false,
     description:
-      "First e series model built on EOP, a Zorix-developed architecture. The e represents virtual. e1 is intended for experimental testing of the new architecture and is not recommended for coding."
+      "First e series model built on EOP, a Zorix-developed architecture. The e represents virtual. In its first internal test, e1 scored above Haiku 5.5 on that test. This is an early single-test result, not a claim of overall superiority. e1 remains experimental and is not recommended for coding."
   },
 
   {
