@@ -1,5 +1,15 @@
 const MODELS = [
   {
+    name: "Zorix e1",
+    status: "Experimental",
+    type: "Research",
+    family: "e series",
+    api: false,
+    description:
+      "First e series model built on EOP, a Zorix-developed architecture. The e represents virtual. e1 is intended for experimental testing of the new architecture and is not recommended for coding."
+  },
+
+  {
     name: "Zorix Transcribe 2.1",
     status: "Available",
     type: "Audio",
@@ -425,7 +435,7 @@ function statusClass(status) {
     return "status-internal";
   }
 
-  if (value.includes("preview") || value.includes("beta")) {
+  if (value.includes("preview") || value.includes("beta") || value.includes("experimental")) {
     return "status-preview";
   }
 
@@ -455,7 +465,7 @@ function modelMatchesFilter(model) {
   }
 
   if (currentFilter === "preview") {
-    return status.includes("preview") || status.includes("beta");
+    return status.includes("preview") || status.includes("beta") || status.includes("experimental");
   }
 
   if (currentFilter === "internal") {
