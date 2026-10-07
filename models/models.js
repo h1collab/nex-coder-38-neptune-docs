@@ -73,6 +73,17 @@ const MODELS = [
   },
 
   {
+    name: "Zorix NexHate 2.5",
+    status: "Available",
+    type: "Translation",
+    family: "NexHate",
+    api: false,
+    href: "https://st.translate.zorix.it/?=7",
+    description:
+      "Latest available NexHate translation model, officially released on October 7, 2026."
+  },
+
+  {
     name: "Zorix NexHate 2",
     status: "Preview",
     type: "Translation",
