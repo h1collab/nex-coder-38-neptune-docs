@@ -182,7 +182,7 @@ const MODELS = [
     family: "Virexa",
     api: false,
     description:
-      "Expected in October 2026. Final release date and launch details have not been announced."
+      "Virexa 4 remains in preparation. A Zorix team member says it feels similar to Virexa 3.5 on the surface but shows a much larger capability improvement than expected. The release may take a little longer; final timing has not been announced."
   },
   {
     name: "Zorix Virexa 3.5",
