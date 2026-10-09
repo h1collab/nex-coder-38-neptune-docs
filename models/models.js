@@ -181,6 +181,7 @@ const MODELS = [
     type: "Image",
     family: "Virexa",
     api: false,
+    href: "/models/zorix-virexa-4/",
     description:
       "Virexa 4 remains in preparation. A Zorix team member says it feels similar to Virexa 3.5 on the surface but shows a much larger capability improvement than expected. The release may take a little longer; final timing has not been announced."
   },
