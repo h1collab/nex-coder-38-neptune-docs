@@ -186,13 +186,13 @@ const MODELS = [
   },
   {
     name: "Zorix Virexa 3.5",
-    status: "Preview",
+    status: "Available",
     type: "Image",
     family: "Virexa",
     api: false,
     href: "/models/zorix-virexa-3-5/",
     description:
-      "Image generation model released around mid-September 2026. High-quality text-to-image Preview; image-to-image remains in internal testing."
+      "Officially released on October 6, 2026. High-quality text-to-image model; image-to-image remains in internal testing."
   },
   {
     name: "Zorix Virexa",
