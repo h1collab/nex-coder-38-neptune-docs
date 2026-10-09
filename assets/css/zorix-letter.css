@@ -5,3 +5,55 @@
 .zl-index{max-width:var(--max);margin:auto;padding:82px 28px 120px}.zl-index-kicker{font-size:14px;margin-bottom:28px}.zl-index h1{margin:0;max-width:1100px;font-size:clamp(62px,8.5vw,132px);line-height:.91;letter-spacing:-.065em;font-weight:500}.zl-index-lead{max-width:700px;margin:40px 0 72px auto;font-size:clamp(20px,2.25vw,31px);line-height:1.2;letter-spacing:-.025em}.zl-list{border-top:1px solid var(--line)}.zl-card{display:grid;grid-template-columns:220px 1fr auto;gap:28px;align-items:start;padding:30px 0;border-bottom:1px solid var(--line);transition:background .2s ease}.zl-card:hover{background:linear-gradient(90deg,transparent,var(--soft),transparent)}.zl-card-meta{color:var(--muted);font-size:13px}.zl-card-title{font-size:clamp(28px,3.3vw,48px);line-height:1;letter-spacing:-.04em;font-weight:500}.zl-card-desc{margin-top:10px;max-width:700px;color:var(--muted);font-size:15px;line-height:1.45}.zl-arrow{font-size:28px;transition:transform .2s ease}.zl-card:hover .zl-arrow{transform:translateX(6px)}
 .zl-article{max-width:var(--max);margin:auto;padding:34px 28px 120px}.zl-back{display:inline-flex;align-items:center;gap:8px;margin:8px 0 58px;font-size:14px}.zl-hero{display:grid;grid-template-columns:1.3fr .7fr;gap:50px;padding-bottom:70px;border-bottom:1px solid var(--line)}.zl-kicker{margin-bottom:20px;font-size:13px;color:var(--muted)}.zl-hero h1{margin:0;max-width:1000px;font-size:clamp(62px,8vw,122px);line-height:.91;letter-spacing:-.064em;font-weight:500}.zl-hero-side{align-self:end;font-size:18px;line-height:1.45;color:var(--muted)}.zl-letter{display:grid;grid-template-columns:260px minmax(0,760px);gap:46px;padding:62px 0 0}.zl-label{font-size:14px;color:var(--muted)}.zl-copy{font-family:Georgia,"Times New Roman",serif;font-size:clamp(22px,2vw,28px);line-height:1.58;letter-spacing:-.012em}.zl-copy p{margin:0 0 28px}.zl-copy .highlight{margin:50px 0;padding:30px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:clamp(32px,4.4vw,62px);line-height:1.02;letter-spacing:-.045em}.zl-signoff{margin-top:48px}.zl-signoff strong{display:block;margin-top:8px;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:17px}.zl-note{margin-top:70px;padding-top:24px;border-top:1px solid var(--line);color:var(--muted);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:13px}.zl-footer{border-top:1px solid var(--line);padding:28px}.zl-footer-inner{max-width:var(--max);margin:auto;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:13px}
 @media(max-width:900px){.zl-nav{display:none}.zl-hero{grid-template-columns:1fr}.zl-letter{grid-template-columns:1fr}.zl-card{grid-template-columns:1fr auto}.zl-card-meta{grid-column:1/-1}}@media(max-width:620px){.zl-header-inner,.zl-index,.zl-article{padding-left:18px;padding-right:18px}.zl-index{padding-top:54px}.zl-index h1{font-size:clamp(54px,18vw,88px)}.zl-hero h1{font-size:clamp(54px,17vw,88px)}.zl-copy{font-size:21px}.zl-footer-inner{flex-direction:column}}
+
+
+/* Ascend 27P numeric ASCII hero */
+.zl-ascend-hero{
+  position:relative;
+  overflow:hidden;
+  min-height:520px;
+  align-items:end;
+  isolation:isolate
+}
+.zl-ascend-title,.zl-ascend-hero .zl-hero-side{
+  position:relative;
+  z-index:2
+}
+.zl-ascii-ascend{
+  position:absolute;
+  z-index:0;
+  left:-1.5%;
+  right:0;
+  top:50%;
+  margin:0;
+  transform:translateY(-50%) scaleX(1.04);
+  transform-origin:left center;
+  white-space:pre;
+  pointer-events:none;
+  user-select:none;
+  color:#111;
+  opacity:.055;
+  font:700 clamp(18px,2.25vw,34px)/1.02 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  letter-spacing:-.08em
+}
+.zl-ascend-title h1{
+  text-shadow:0 0 1px rgba(255,255,255,.85)
+}
+@media(max-width:900px){
+  .zl-ascend-hero{min-height:470px}
+  .zl-ascii-ascend{
+    top:44%;
+    left:-10%;
+    font-size:clamp(15px,3.8vw,25px);
+    opacity:.06
+  }
+}
+@media(max-width:620px){
+  .zl-ascend-hero{min-height:440px}
+  .zl-ascii-ascend{
+    left:-22%;
+    top:38%;
+    font-size:13px;
+    opacity:.07
+  }
+}
