@@ -38,3 +38,12 @@ blockquote{margin:28px 0;padding:25px 0 25px 25px;border-left:2px solid var(--si
 .fg2-bullets strong{display:block;margin-top:58px;font-size:23px;font-weight:500;letter-spacing:-.035em}
 .fg2-source-note{margin-top:28px;color:#707078!important;font-size:13px!important}
 @media(max-width:900px){.fg2-reveal-grid,.fg2-bullets{grid-template-columns:1fr}.fg2-reveal-hero{grid-template-columns:1fr}.fg2-reveal-code{font-size:96px}}
+
+.fg2-captures{overflow:hidden}
+.fg2-capture-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:32px}
+.fg2-capture-grid figure{margin:0;border:1px solid var(--line);background:#090909;border-radius:14px;overflow:hidden}
+.fg2-capture-grid img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#111}
+.fg2-capture-grid figcaption{display:flex;flex-direction:column;gap:6px;padding:14px 15px 17px}
+.fg2-capture-grid figcaption span{font-size:11px;color:#4d87ff;text-transform:uppercase;letter-spacing:.12em}
+.fg2-capture-grid figcaption strong{font-size:16px;font-weight:500;letter-spacing:-.02em}
+@media(max-width:760px){.fg2-capture-grid{grid-template-columns:1fr}}
