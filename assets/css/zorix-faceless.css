@@ -47,3 +47,6 @@ blockquote{margin:28px 0;padding:25px 0 25px 25px;border-left:2px solid var(--si
 .fg2-capture-grid figcaption span{font-size:11px;color:#4d87ff;text-transform:uppercase;letter-spacing:.12em}
 .fg2-capture-grid figcaption strong{font-size:16px;font-weight:500;letter-spacing:-.02em}
 @media(max-width:760px){.fg2-capture-grid{grid-template-columns:1fr}}
+
+.fg-archive-banner{margin:18px 0 34px;padding:17px 19px;border:1px solid #343434;border-left:3px solid #8a8a8a;background:#0a0a0a;display:grid;grid-template-columns:190px 1fr;gap:20px;align-items:start}.fg-archive-banner strong{font-size:12px;text-transform:uppercase;letter-spacing:.13em;color:#aaa}.fg-archive-banner span{color:#c6c6c1;line-height:1.55;font-size:14px}.fg-archive-banner a{text-decoration:underline;text-underline-offset:3px}.fg-history-hero{filter:saturate(.5)}
+@media(max-width:700px){.fg-archive-banner{grid-template-columns:1fr}}
